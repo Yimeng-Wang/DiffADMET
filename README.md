@@ -40,7 +40,7 @@ The main dataset contains 179,810 molecular inputs and 471,034 observed endpoint
 
 The BIN package contains 2D/3D graphs, labels, missing-label masks, predefined five-fold splits, task relationships and fold normalization parameters. Missing labels are masked; observed zeros are retained. Plaintext SMILES, original CSVs and pretrained weights are not included.
 
-Extract all three data ZIPs in the repository root:
+Download all three data ZIPs from the [v1.0.0 release](https://github.com/Yimeng-Wang/DiffADMET/releases/tag/v1.0.0), then extract them in the repository root:
 
 ```bash
 unzip DiffADMET-reproduction-data-part01.zip

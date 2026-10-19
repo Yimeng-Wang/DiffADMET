@@ -89,8 +89,8 @@
     },
     {
       "path": "environment.yml",
-      "bytes": 3403,
-      "sha256": "5aaf6650d863f9401f4e21d6e89caf41a410b874b29812ef1263c8790bb696ee"
+      "bytes": 3461,
+      "sha256": "36e4f4a3cbd47334ceadcc2271e7d13215171ae903f10f8268fc8a987c64ab01"
     },
     {
       "path": "pyproject.toml",

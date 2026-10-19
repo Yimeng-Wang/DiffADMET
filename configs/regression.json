@@ -1,0 +1,22 @@
+{
+  "seed": 66,
+  "epochs": 1000,
+  "batch_size": 2048,
+  "learning_rate": 0.0006,
+  "patience": 40,
+  "model": {
+    "node_feat_sizes": [
+      78,
+      4
+    ],
+    "edge_feat_sizes": [
+      13,
+      1
+    ],
+    "graph_feat_size": 128,
+    "num_layer": 2,
+    "dropout": 0.3,
+    "num_timestep": 2,
+    "predictor_hidden_feats": 256
+  }
+}

@@ -1,0 +1,251 @@
+{
+  "included": [
+    {
+      "source": "featurizers.py",
+      "published": "src/featurizers.py",
+      "removed_top_level_definitions": [
+        "AttentiveFPAtomFeaturizer",
+        "AttentiveFPBondFeaturizer",
+        "PAGTNAtomFeaturizer",
+        "PAGTNEdgeFeaturizer",
+        "PretrainAtomFeaturizer",
+        "PretrainBondFeaturizer",
+        "WeaveAtomFeaturizer",
+        "WeaveEdgeFeaturizer",
+        "atom_chiral_tag_one_hot",
+        "atom_degree",
+        "atom_explicit_valence",
+        "atom_explicit_valence_one_hot",
+        "atom_formal_charge_one_hot",
+        "atom_implicit_valence",
+        "atom_is_aromatic_one_hot",
+        "atom_is_in_ring",
+        "atom_is_in_ring_one_hot",
+        "atom_mass",
+        "atom_num_radical_electrons_one_hot",
+        "atom_partial_charge",
+        "atom_total_degree",
+        "atom_total_degree_one_hot",
+        "atom_total_num_H",
+        "atomic_number",
+        "atomic_number_one_hot",
+        "bond_direction_one_hot",
+        "bond_is_conjugated_one_hot",
+        "bond_is_in_ring_one_hot"
+      ],
+      "removed_methods": [],
+      "source_sha256": "e311e51a0bde0f52f2cedecf2b377c87adb0b0a9deccbefc55909015026260ae",
+      "source_lines": 2345,
+      "published_lines": 314
+    },
+    {
+      "source": "compound_constants.py",
+      "published": "src/compound_constants.py",
+      "removed_top_level_definitions": [],
+      "removed_methods": [],
+      "source_sha256": "44d564a4d9b8b8cfd49e222ddb825d3447d905338ae885362883724cb782bc36",
+      "source_lines": 162,
+      "published_lines": 143
+    },
+    {
+      "source": "compound_tools.py",
+      "published": "src/compound_tools.py",
+      "removed_top_level_definitions": [
+        "check_smiles_validity",
+        "create_standardized_mol_id",
+        "get_atom_feature_dims",
+        "get_bond_feature_dims",
+        "get_gasteiger_partial_charges",
+        "get_largest_mol",
+        "mol_to_geognn_graph_data_raw3d",
+        "new_mol_to_graph_data",
+        "new_smiles_to_graph_data",
+        "split_rdkit_mol_obj"
+      ],
+      "removed_methods": [
+        "CompoundKit.get_atom_feature_size",
+        "CompoundKit.get_morgan2048_fingerprint",
+        "CompoundKit.get_ring_size",
+        "CompoundKit.atom_to_feat_vector",
+        "CompoundKit.get_atom_names",
+        "CompoundKit.check_partial_charge"
+      ],
+      "source_sha256": "8614e986347a39801175e5fdc4c3e1d48c9e1db4d0ae441837612d186dd7efa8",
+      "source_lines": 697,
+      "published_lines": 323
+    },
+    {
+      "source": "mol_to_2d3dgraph.py",
+      "published": "src/mol_to_2d3dgraph.py",
+      "removed_top_level_definitions": [
+        "construct_complete_graph_from_mol",
+        "fix_graph_dtypes",
+        "smiles_to_complete_graph",
+        "validate_graph_dtypes"
+      ],
+      "removed_methods": [],
+      "source_sha256": "8102dc278cf9c233f2c7c5a8abdd0cd755844678170029ebed755aee200544aa",
+      "source_lines": 357,
+      "published_lines": 238
+    },
+    {
+      "source": "model_lightmultipredictor.py",
+      "published": "src/model_lightmultipredictor.py",
+      "removed_top_level_definitions": [
+        "LightweightCrossAttention"
+      ],
+      "removed_methods": [],
+      "source_sha256": "7ec26d49a2bcbbf764a2d5412eb3ae1dd41ef0c42777a9bf89114ac203c7db99",
+      "source_lines": 879,
+      "published_lines": 535
+    },
+    {
+      "source": "eval_meter.py",
+      "published": "src/eval_meter.py",
+      "removed_top_level_definitions": [],
+      "removed_methods": [
+        "rmsle",
+        "gmfe"
+      ],
+      "source_sha256": "ba55c7d3b73a43fb6340686768453bb81591db08caebaa6338ca5ea67a857417",
+      "source_lines": 773,
+      "published_lines": 318
+    },
+    {
+      "source": "train_learning_c.py",
+      "published": "src/train_learning_c.py",
+      "removed_top_level_definitions": [
+        "cleanup",
+        "setup"
+      ],
+      "removed_methods": [
+        "compute_difficulty_aware_rloss",
+        "fine_tune_physchem_heads",
+        "run_a_valid_epoch_return_logits",
+        "run_a_train_epoch_sc",
+        "run_a_valid_epoch_sc",
+        "eval_epoch_m",
+        "eval_epoch_sc"
+      ],
+      "source_sha256": "5a430247ce5b20e552dc656ef44eb2461bf490d033c0c3663c20799cc6a92d95",
+      "source_lines": 1237,
+      "published_lines": 584
+    },
+    {
+      "source": "train_learning_r.py",
+      "published": "src/train_learning_r.py",
+      "removed_top_level_definitions": [
+        "cleanup",
+        "setup"
+      ],
+      "removed_methods": [
+        "compute_difficulty_aware_rloss",
+        "fine_tune_physchem_heads",
+        "run_a_valid_epoch_return_logits",
+        "run_a_train_epoch_sr",
+        "run_a_valid_epoch_sr",
+        "eval_epoch_sr"
+      ],
+      "source_sha256": "b3c66d899df725f048017ba876e8025e95a1b2e5dcca5956f9a84997d27acef6",
+      "source_lines": 1221,
+      "published_lines": 608
+    }
+  ],
+  "excluded": [
+    "ADMET_pred2d_c.py",
+    "ADMET_pred2d_r.py",
+    "attentivefp_encoder.py",
+    "csv_dataset_7.py",
+    "multi_dataset7.py",
+    "utils.py",
+    "server/",
+    "system_data/",
+    "c/",
+    "r/",
+    "all data files and trained artifacts"
+  ],
+  "fixed_path_cleanup": {
+    "forward": "graph_data only -> logits",
+    "fixed_path": "2dg fusion; 2D/3D task-modality attention; matrix-directed transfer; gate initialized at 3",
+    "removed_model_classes": [
+      "FastCrossAttention",
+      "ContrastiveAlignment",
+      "GradientReversalLayer",
+      "Discriminator"
+    ],
+    "removed_branches": [
+      "all/3dg fusion",
+      "alignment/adversarial objectives",
+      "embedding/hybrid relationship modes",
+      "unused fusion-branch 3D encoder"
+    ],
+    "removed_arguments": [
+      "cross_attention",
+      "fusion_type",
+      "return_alignment_loss",
+      "use_task_modality",
+      "use_directed_transfer",
+      "enable_adversarial",
+      "relation_mode",
+      "embedding_dim",
+      "task_hidden_dim",
+      "task_types",
+      "transfer_gate"
+    ],
+    "outputs": "best.pth, normalizer.json, run_manifest.json, history.json; CSVs limited to *_evalue_c.csv or *_evalue_r_denorm.csv",
+    "seed": 66,
+    "initialization_note": "Removing inactive modules changes RNG consumption; no historical trajectory identity claim"
+  },
+  "preset_fold_loading": {
+    "behavior": "Read supplied preset folds directly",
+    "runtime_cross_split_molecule_guard": "removed",
+    "runtime_overlap_warning_and_manifest_field": "removed",
+    "dataset_split_assignments": "unchanged",
+    "historical_dataset_provenance": "preserved in unchanged data manifest"
+  },
+  "current_evaluation_reporting": {
+    "active_splits": [
+      "train",
+      "valid",
+      "test",
+      "external"
+    ],
+    "removed": [
+      "legacy hard-coded moderate/hard/novel console report lists",
+      "per-endpoint console lists"
+    ],
+    "performance_tiers": {
+      ">0.9": "Robust",
+      "0.8-0.9": "Intermediate",
+      "0.7-0.8": "Difficult",
+      "<0.7": "Difficult",
+      "new": "Novel"
+    },
+    "tier_metrics": {
+      "classification": "AUC",
+      "regression": "R2_denorm"
+    },
+    "training_difficulty_weights": "unchanged",
+    "data_archives": "unchanged for compatibility",
+    "tier_summary": "arithmetic mean of finite endpoint metrics within each fixed tier",
+    "overall_summary": "mean_AUC or mean_R2; regression MAE and RMSE retained",
+    "empty_tier": "nan only when no endpoint in the fixed tier has a valid metric in the evaluated split",
+    "endpoint_counts": "not printed",
+    "external_evaluation": "restored when available; not used for optimization or checkpoint selection",
+    "tier_assignment": "fixed configs/Type.csv Type1 endpoint labels mirrored in configs/task_schema.json; identical across all folds and splits",
+    "public_tier_table": {
+      "path": "configs/Type.csv",
+      "columns": [
+        "Task",
+        "Type1"
+      ],
+      "rows": 135
+    }
+  },
+  "publication_language": {
+    "language": "English",
+    "documentation": "English only",
+    "runtime_messages": "English",
+    "release_check": "Reject CJK text in publication filenames or contents"
+  }
+}

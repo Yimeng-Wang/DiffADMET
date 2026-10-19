@@ -1,0 +1,192 @@
+{
+  "project": "DiffADMET",
+  "distribution": "training source with separately published real graph/label BIN assets",
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 124,
+      "sha256": "52d7738c4c02b85737fc76d922d7ea4b039d310888739edbd396e36920ad209c"
+    },
+    {
+      "path": ".github/workflows/validate.yml",
+      "bytes": 573,
+      "sha256": "07ec787d35b2cb633fa2b56ca6196c80cdc40770c267650d75e750035b903382"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 297,
+      "sha256": "dfc838ebd60c4181f32eebd2202f5fa072d62ac394e6db6cc38b9cea5f421dbb"
+    },
+    {
+      "path": "LICENSES/Apache-2.0.txt",
+      "bytes": 11358,
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "path": "NOTICE.md",
+      "bytes": 1184,
+      "sha256": "c85a36f9a6bb6b63273779cec2d57404689531fe5816688aaa0e03b1e0f77f0b"
+    },
+    {
+      "path": "README.md",
+      "bytes": 3544,
+      "sha256": "4e6d492696e0e226bcc3ead6014ae4a6dc4567709a728c5f0f18732b615ed981"
+    },
+    {
+      "path": "configs/Type.csv",
+      "bytes": 2933,
+      "sha256": "717e8f3e21e447059616f314da4ca38e48e958fa3aa3d00a51146418897ccfb2"
+    },
+    {
+      "path": "configs/classification.json",
+      "bytes": 345,
+      "sha256": "07b47a9fa993940f3d50b7c0e6711ac6e93f52d88d38f05abbd28d9fc033ee7f"
+    },
+    {
+      "path": "configs/regression.json",
+      "bytes": 345,
+      "sha256": "42e46455424aa4f6b8af494e0d490ac894728c7d84321f3f10a8fc1f30e334ef"
+    },
+    {
+      "path": "configs/reproduction_manifest.json",
+      "bytes": 156518,
+      "sha256": "f8cf0731850380e865ae5d5e3584f15489c2408086d059171f420e000778ad17"
+    },
+    {
+      "path": "configs/task_schema.json",
+      "bytes": 8271,
+      "sha256": "2413a0f25132c1cbf065a4dae48f2a82f0e0680e4e9b004fb06717488980eb23"
+    },
+    {
+      "path": "docs/BIN_DATA_FORMAT.md",
+      "bytes": 5490,
+      "sha256": "5636bc5d3a1929a3191ce0f786512d0ce0a78bce88dc966d9d96013c751881dc"
+    },
+    {
+      "path": "docs/DATA_AVAILABILITY.md",
+      "bytes": 2727,
+      "sha256": "f43a4e42b22309a2472a765f78f0735afeded3e3bf2a0d771fa2c0773fbe6f78"
+    },
+    {
+      "path": "docs/DATA_FORMAT.md",
+      "bytes": 3868,
+      "sha256": "f75a3cca5c2f8cecc1ff3de5d9625017f6acd209a3c140b3f69105b2364ad83f"
+    },
+    {
+      "path": "docs/REPRODUCIBILITY.md",
+      "bytes": 8660,
+      "sha256": "d78c22c476a454e276eb61d5b082a2b5d66b3b2b92e222a8b0466b762341b2d9"
+    },
+    {
+      "path": "docs/VALIDATION.md",
+      "bytes": 23083,
+      "sha256": "1a17edb50daff2a4e6f9d686d6e5972e327ecc65db7a07f245d95f16ae3e6053"
+    },
+    {
+      "path": "docs/cleanup_manifest.json",
+      "bytes": 8100,
+      "sha256": "27adea85e3ced538020f9ffe88d4e7a6df68c058460d24b0210b6b542472ca65"
+    },
+    {
+      "path": "environment.yml",
+      "bytes": 3403,
+      "sha256": "5aaf6650d863f9401f4e21d6e89caf41a410b874b29812ef1263c8790bb696ee"
+    },
+    {
+      "path": "pyproject.toml",
+      "bytes": 105,
+      "sha256": "bf581ac2c44be795340eb8bd95d85dbd789ce2d2a0f3f8fcf4c139535f53f820"
+    },
+    {
+      "path": "scripts/build_release.py",
+      "bytes": 4646,
+      "sha256": "5287f6a1a2236a58c4e390853e89c6c6c5cbea724d265d9c1f33c07aeb0b5098"
+    },
+    {
+      "path": "scripts/check_release.py",
+      "bytes": 6227,
+      "sha256": "5d4e0ce9cde8b3938a67a5410bb28510c64c9daaaffd59a2105c5e4bb724758b"
+    },
+    {
+      "path": "scripts/make_binary_demo.py",
+      "bytes": 5047,
+      "sha256": "5915b13d4c799afb393b2190dc8e8f065cfa18ed38d364084f082ba440dabe70"
+    },
+    {
+      "path": "scripts/make_demo_data.py",
+      "bytes": 2088,
+      "sha256": "664ab67906922b8d8c588f407c532f312bc9fc34e4d045ac07e32b0eeb7ced1d"
+    },
+    {
+      "path": "scripts/smoke_test.py",
+      "bytes": 3903,
+      "sha256": "0353dccef38cc9319b82ba1aaae0a69b40e28af706c7a20ef4c406ccfd3f5899"
+    },
+    {
+      "path": "scripts/validate_binary_dataset.py",
+      "bytes": 3709,
+      "sha256": "70ae9945d2e0cff93e4fefe53eff4b19e8ea67368c6ba3ee6bdfbcb1710e9039"
+    },
+    {
+      "path": "src/binary_data.py",
+      "bytes": 6522,
+      "sha256": "f7d8713ace946198907577540fb224ad315b92e854bb1dc771d8685b2963d764"
+    },
+    {
+      "path": "src/compound_constants.py",
+      "bytes": 6302,
+      "sha256": "e20a0500cb742375bdf59107bcca672cfbdd3ab8817df1434497d13bd396a638"
+    },
+    {
+      "path": "src/compound_tools.py",
+      "bytes": 12975,
+      "sha256": "3c745d7ddb9e4d7fad7907b4a5e1b0557a59271988b2ad953123547b5f11ce03"
+    },
+    {
+      "path": "src/data.py",
+      "bytes": 6652,
+      "sha256": "9aa145bd30c96899a83d6a98b5716bd258529149defb70660e768073cf328168"
+    },
+    {
+      "path": "src/data_io.py",
+      "bytes": 2518,
+      "sha256": "b477186cb65950470c90753d6c9895bd465978c91efd477248b69fd4dee3f9a9"
+    },
+    {
+      "path": "src/eval_meter.py",
+      "bytes": 12465,
+      "sha256": "2ff9d24e2b68280922730086732a7566cb61fab9d9ee287953ebfd7b59e8d30d"
+    },
+    {
+      "path": "src/featurizers.py",
+      "bytes": 10490,
+      "sha256": "be3cd4be6966eaa7ca4aa1c5b8b684dea4d0e012f5ceb07bf883f95eb7f28697"
+    },
+    {
+      "path": "src/model_lightmultipredictor.py",
+      "bytes": 6534,
+      "sha256": "523dfa9113dd628b088e05479aaaade0aa76400724875d3360f1a34dd1f8f132"
+    },
+    {
+      "path": "src/mol_to_2d3dgraph.py",
+      "bytes": 9238,
+      "sha256": "fa48c4ae9a024ffe75e3070704051b27d55bcf5b6de0ef7649548f055b96bb29"
+    },
+    {
+      "path": "src/train.py",
+      "bytes": 13755,
+      "sha256": "d959e40068bbede061b3371cb4fd5f7334fb7a3e9eb5732329efa3ff11e1f579"
+    },
+    {
+      "path": "src/train_learning_c.py",
+      "bytes": 13959,
+      "sha256": "f4f27d2f60c3c9c94255a86fdf8d81626e1e78b9b54973d4fd9397052846ef98"
+    },
+    {
+      "path": "src/train_learning_r.py",
+      "bytes": 14198,
+      "sha256": "83e2a2c12dda0478d545daffb3392ad95d289fbbd1fc965156c39db214e68341"
+    }
+  ],
+  "excluded": "original CSVs, plaintext SMILES mapping, pretrained weights, legacy pickle containers, per-run outputs and service code"
+}

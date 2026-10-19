@@ -1,0 +1,4872 @@
+{
+  "format_version": 1,
+  "project": "DiffADMET",
+  "distribution": "real molecular graphs and labels without plaintext SMILES",
+  "tasks": 135,
+  "classification_tasks": 108,
+  "regression_tasks": 27,
+  "molecules": 180100,
+  "records_across_profiles": 829848,
+  "source_filtering": "Within each original CSV split, retain first row for each exact SMILES, matching the supplied legacy training dataset. Graph cache selection uses the last valid cached occurrence.",
+  "graph_source": "Existing provided graph cache; no conformers regenerated",
+  "graph_order": "all 2D graphs then all 3D graphs within each shard",
+  "graph_index": "graph_index.bin",
+  "graph_shards": [
+    {
+      "path": "graphs/graphs_0000.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9534632,
+      "sha256": "17a6e0294b77cced66924549e49d10f9af6b64ba27ebd0a5071303ac8e591038"
+    },
+    {
+      "path": "graphs/graphs_0001.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9396476,
+      "sha256": "9ba5b149774e37026e9ff14e18f01fa8b72194b54696774a160a7378f07ad466"
+    },
+    {
+      "path": "graphs/graphs_0002.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9587052,
+      "sha256": "a407d4eef2dae70f6306657c6b71f40d423776c30b478060c9ad4b8af615602b"
+    },
+    {
+      "path": "graphs/graphs_0003.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9654656,
+      "sha256": "be9e51ea4d635794c524044adac4b8f345396c3a2f5c991ba6e7f64fead26698"
+    },
+    {
+      "path": "graphs/graphs_0004.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9544868,
+      "sha256": "9bfe4bcd1d1e0f5296dd7baa199ef2094ea1d120e4eefcde2167b4063f948c37"
+    },
+    {
+      "path": "graphs/graphs_0005.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9214784,
+      "sha256": "6389981db41dd88c4f5a274ff9438ae43eafcd2da8252db9cbd6e9a363ac07df"
+    },
+    {
+      "path": "graphs/graphs_0006.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9554100,
+      "sha256": "fee3d44fd0374b27a15b8bd5a7217758d994565116579e6d13fb6077ea3b23be"
+    },
+    {
+      "path": "graphs/graphs_0007.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9467712,
+      "sha256": "3494114248c1986cdca486527210808add0b9a8e3c4034bea3cfcc6f9a15fa4f"
+    },
+    {
+      "path": "graphs/graphs_0008.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9325928,
+      "sha256": "23a13568c7a38fc996574bb81a6faf5e8de015b65e0c29499cced3b2d5ba9e94"
+    },
+    {
+      "path": "graphs/graphs_0009.bin",
+      "format": "dgl-native",
+      "molecules": 392,
+      "bytes": 6999528,
+      "sha256": "6a6139cb4b548e8c0a4e10a9cc6756f20e002240e41a445f90791516e17b3d50"
+    },
+    {
+      "path": "graphs/graphs_0010.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9587640,
+      "sha256": "ac8836410442a0e6866fa9b61b3238599829b5c6fb86f6bfc1d191ccba3d00dc"
+    },
+    {
+      "path": "graphs/graphs_0011.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9216388,
+      "sha256": "4a0ceff6fffdc3c809cf5f1ff1e718f8de77cb0d026c2874f3efca23cd36a56d"
+    },
+    {
+      "path": "graphs/graphs_0012.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9531448,
+      "sha256": "3981219d1f2d5b0cf3aed2187174701ed68050160aca738b1afa8acf8790714b"
+    },
+    {
+      "path": "graphs/graphs_0013.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9185344,
+      "sha256": "4f786444eb7391db1a2e5af45c97ad2cdc6639888da8c6ce81089f4b4df89995"
+    },
+    {
+      "path": "graphs/graphs_0014.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9655340,
+      "sha256": "d9df4f1d9a7964715b18f59e81f52e278be9c88f480c85a770a0046b6d891d02"
+    },
+    {
+      "path": "graphs/graphs_0015.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9457036,
+      "sha256": "ea8c9cd3ec5ba719af294f27257425fd7bb8f42985059b94d8c73810eb6a3563"
+    },
+    {
+      "path": "graphs/graphs_0016.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9345280,
+      "sha256": "89e3b47449b3695307eeb22ae86c57ca11de5d59d58acd7488b81ad799dffd47"
+    },
+    {
+      "path": "graphs/graphs_0017.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9184048,
+      "sha256": "e1fab1a06e20d7227aa2bf10b1146c708662f6c247df93811c937c6639d4b3a3"
+    },
+    {
+      "path": "graphs/graphs_0018.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9451652,
+      "sha256": "98f3ea41ef970409baa3b3ae0eb727a919cd5ddae1dd194f15b7cda62815332c"
+    },
+    {
+      "path": "graphs/graphs_0019.bin",
+      "format": "dgl-native",
+      "molecules": 392,
+      "bytes": 7327712,
+      "sha256": "f7e0220fbd4967cd91c8c989aede7d3b3dbac0225febba63999eb6512d4129fd"
+    },
+    {
+      "path": "graphs/graphs_0020.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9272480,
+      "sha256": "de0b7911cc363ce712494b1157f9c5be43aea3e8d8ee7b641cd74a4a20cb2f08"
+    },
+    {
+      "path": "graphs/graphs_0021.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9593780,
+      "sha256": "f16f3ce96a871462c2d74139a28c1111b461b73c3c7b1dd1c8f9abf4c6a337ce"
+    },
+    {
+      "path": "graphs/graphs_0022.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9455716,
+      "sha256": "15acdbcd11c6097dd3409133325bf9a91d43d32979903eb66b443a144060c707"
+    },
+    {
+      "path": "graphs/graphs_0023.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9686516,
+      "sha256": "596a02a7c98664ab1d4490c0cb128403e698252b2eb71eb33503ddbd89693688"
+    },
+    {
+      "path": "graphs/graphs_0024.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9779260,
+      "sha256": "9083862b32037ab8c5c26ab2d46e8fad7528df6f56265cdb68b335a678932c80"
+    },
+    {
+      "path": "graphs/graphs_0025.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9758504,
+      "sha256": "5a1b889032ba980abf2255e09b4d699b24b7e29ea38fbf1ff8dd964a71bcc409"
+    },
+    {
+      "path": "graphs/graphs_0026.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9659576,
+      "sha256": "118df5822ed798c679be7488b7fd6b5bd9d393a1860355969645be1ab42a8d33"
+    },
+    {
+      "path": "graphs/graphs_0027.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9494296,
+      "sha256": "db528150b2ee357118c6a66d688b8d73631f601604d12063f863a4515acff7c8"
+    },
+    {
+      "path": "graphs/graphs_0028.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9566700,
+      "sha256": "6f288e547da511186d08b8d0a05d0bac0ce1e878cf825de51ef63bf4a1337e48"
+    },
+    {
+      "path": "graphs/graphs_0029.bin",
+      "format": "dgl-native",
+      "molecules": 392,
+      "bytes": 7373392,
+      "sha256": "f8739cc5db51486afb0cd1f521c4b11919f2ca422a5cdd13c8393593efca8044"
+    },
+    {
+      "path": "graphs/graphs_0030.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9324920,
+      "sha256": "8bf531b246021736247eb8fb1841f2fa3dd486ebaf905877533639e68ad6183f"
+    },
+    {
+      "path": "graphs/graphs_0031.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9109896,
+      "sha256": "c382aeee4404b9306471d7aa518a9f0bb49e28b5878ef71a611f44ec2e207538"
+    },
+    {
+      "path": "graphs/graphs_0032.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9461456,
+      "sha256": "4bb83d1dc7ca86671f844d62e7d57264ab8cd11e3744183ebb4bbe3366e7d958"
+    },
+    {
+      "path": "graphs/graphs_0033.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9516420,
+      "sha256": "e20c3101bf3622dc28a1207207e55c19d5e897af094de92ba3373b5cecd4e4a7"
+    },
+    {
+      "path": "graphs/graphs_0034.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9698780,
+      "sha256": "f46a2f604f0df60d153fbff8b628a834516beb85fd240865d1d426d6bc852427"
+    },
+    {
+      "path": "graphs/graphs_0035.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9295028,
+      "sha256": "ad47471005b13e7aafd39106220711cc4e99193d0118da0031a88648c5581bcd"
+    },
+    {
+      "path": "graphs/graphs_0036.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9773696,
+      "sha256": "00c15f67faf6de8a46822ea0c03953cf8cc06f1a29d0ff9f0a67bc1d1a9aec85"
+    },
+    {
+      "path": "graphs/graphs_0037.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9651128,
+      "sha256": "2775343cf0c8c8f8a889d83d88be7250784a9e30cbd2d3819fce983d4c39429f"
+    },
+    {
+      "path": "graphs/graphs_0038.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9835088,
+      "sha256": "113436ac6651dc0381e54028a13c37a78237b117bf5b77ad25f25f2ba1efce2c"
+    },
+    {
+      "path": "graphs/graphs_0039.bin",
+      "format": "dgl-native",
+      "molecules": 392,
+      "bytes": 7378384,
+      "sha256": "5dea063d92f659b9483e79839e570c844202bb99636b38f3096ebefebdfe0897"
+    },
+    {
+      "path": "graphs/graphs_0040.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9436436,
+      "sha256": "a395531078df46b4e5715350862c5982f461e2a085e24dfb9efdac7390f515f1"
+    },
+    {
+      "path": "graphs/graphs_0041.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9303268,
+      "sha256": "8e532c41839eaac3e8bd13a1a9c2641c6f948c5c5cb7d719da72516f07f6fc94"
+    },
+    {
+      "path": "graphs/graphs_0042.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9584944,
+      "sha256": "e6b9be9cb5a1cac82b4d3012519f07943f2b3a16637cd7eb046c1bd6cbf7d2be"
+    },
+    {
+      "path": "graphs/graphs_0043.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9540328,
+      "sha256": "8372d608224dd92c3be97028e1afd420a4904d4616244586c394b225ba5cf39f"
+    },
+    {
+      "path": "graphs/graphs_0044.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9412568,
+      "sha256": "ccd54f0759344e955cb04d40cebe5b57e52f8bc6203d3885c33bf12b349c1c91"
+    },
+    {
+      "path": "graphs/graphs_0045.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9364684,
+      "sha256": "92b8e146b381de89b7d5583b97849759cbda7c05313db18d88d7ceabe9f49f83"
+    },
+    {
+      "path": "graphs/graphs_0046.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9626456,
+      "sha256": "372560d5716cce3347c819cc8009af8874bf82f662ddea738e8818d2deee2274"
+    },
+    {
+      "path": "graphs/graphs_0047.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9699384,
+      "sha256": "ed326a5b5433d07fc5a868fcc2785f61c8e1b2998cdb7eb9d4b8f392e67537d8"
+    },
+    {
+      "path": "graphs/graphs_0048.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9370664,
+      "sha256": "3b1766dd3f7f6151ab534ae699aa8d9709cbed668c2a9788e889df9103923c16"
+    },
+    {
+      "path": "graphs/graphs_0049.bin",
+      "format": "dgl-native",
+      "molecules": 392,
+      "bytes": 7007396,
+      "sha256": "1df7adcbf8d244caa698a959dcb97781eb28ce5598e7a31b2bfdea7ee6036971"
+    },
+    {
+      "path": "graphs/graphs_0050.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9185808,
+      "sha256": "c84e178c3190ef24b55bf4fc4c6e126d7f045e0b8568f2642c2f8d9a4d21f3ca"
+    },
+    {
+      "path": "graphs/graphs_0051.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9423888,
+      "sha256": "4316461641d0b86917d91fa289b32436f3b768f49650cef1a7cacc65d9e45f99"
+    },
+    {
+      "path": "graphs/graphs_0052.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9536712,
+      "sha256": "91db7e312a91de4ffb7a25a6d6213551725b9ae65a319d77efa384ddd8da0c33"
+    },
+    {
+      "path": "graphs/graphs_0053.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9554404,
+      "sha256": "eba762c4c270f30062ce56f541127345d24351de39d6f8a7680c4828bb1fae7f"
+    },
+    {
+      "path": "graphs/graphs_0054.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9098408,
+      "sha256": "35be7d3067a582faafcb857a306c49fe8b6c429b88f2124dc52b5babf852743a"
+    },
+    {
+      "path": "graphs/graphs_0055.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9494704,
+      "sha256": "adbaa95a58c577eaf95992baccb75a59431aee3acfc70375a65f648f27cb607a"
+    },
+    {
+      "path": "graphs/graphs_0056.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9494772,
+      "sha256": "2687efca7f05cf3ef17d8719fdfd2993e36bcbe4c32e4101cf13c9c21fcf4c40"
+    },
+    {
+      "path": "graphs/graphs_0057.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9501288,
+      "sha256": "30d68121fedeb16f1f2b8c6c151f471c79f1f47e25ea2ab5ab15d74faa5e9611"
+    },
+    {
+      "path": "graphs/graphs_0058.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9811332,
+      "sha256": "f1dd94215064006a4507a4837ff5e848ed2e3343c4307797af6ccd74316b9bc2"
+    },
+    {
+      "path": "graphs/graphs_0059.bin",
+      "format": "dgl-native",
+      "molecules": 392,
+      "bytes": 7234224,
+      "sha256": "e5e661f29e1d8642b8f1681d50db38ead2a180a535753c84b21c35875898a793"
+    },
+    {
+      "path": "graphs/graphs_0060.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9915408,
+      "sha256": "cfa8344829c9ec28d5db15a42e6455978c563a3172aa053cd4b589a84765085d"
+    },
+    {
+      "path": "graphs/graphs_0061.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9454604,
+      "sha256": "49dea1545e1c7b8a672b77171128d47b9f7ed96b4a9273abb88f9a6138c018ad"
+    },
+    {
+      "path": "graphs/graphs_0062.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9370092,
+      "sha256": "0232b1cf1d42fe37fd5d37b1f1aa9bcfef2ee2c093977493f7562f9153e99af6"
+    },
+    {
+      "path": "graphs/graphs_0063.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9533572,
+      "sha256": "46580c71afbea479f3ea25d53530b5560b2ecf6af78df121725141e97d69dc5f"
+    },
+    {
+      "path": "graphs/graphs_0064.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9738620,
+      "sha256": "49d3140abc8195f74249490ea350aed96a42f7981bc988f4129b704218ec750c"
+    },
+    {
+      "path": "graphs/graphs_0065.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9464328,
+      "sha256": "096d93eaad218788b8985a51666b2dd2e5280044b8d8eeea395ce000ea2c2d59"
+    },
+    {
+      "path": "graphs/graphs_0066.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9553404,
+      "sha256": "3caee469da5d2b090cbf980de164c8ef06f464d00030293aabe2378f04a5ded9"
+    },
+    {
+      "path": "graphs/graphs_0067.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9746640,
+      "sha256": "40790c38ad2f113416bb858af9ce3d3ae490061f81fae31e7033dfdada09759a"
+    },
+    {
+      "path": "graphs/graphs_0068.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9415232,
+      "sha256": "460513f1830269b0b6543c20977985bebc8c8e3540f27ce4035cf487ac2fe880"
+    },
+    {
+      "path": "graphs/graphs_0069.bin",
+      "format": "dgl-native",
+      "molecules": 392,
+      "bytes": 7131788,
+      "sha256": "bfc5ff909572f92c1138aeb109b45f995bac293e7becf282a1ecc4eb735e7f3b"
+    },
+    {
+      "path": "graphs/graphs_0070.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9483200,
+      "sha256": "038cf13edd694c3669d03e406c56cd6e13445276fd29ebe9854f875ac9f6fd79"
+    },
+    {
+      "path": "graphs/graphs_0071.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9380900,
+      "sha256": "f00fcb1be1d8efb84898b2f81ec8e150d7447d5dd0ec8dfbeafbafea80222c33"
+    },
+    {
+      "path": "graphs/graphs_0072.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9274664,
+      "sha256": "c8ad4a005973a8ec7d50d3c2f43fcfc2525be85bd6563f67be6844a8054debca"
+    },
+    {
+      "path": "graphs/graphs_0073.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9474316,
+      "sha256": "4e61471c25dd4d23d908ae227b71a3c7e44d551edc57cfb87fdcd73269f33650"
+    },
+    {
+      "path": "graphs/graphs_0074.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9547564,
+      "sha256": "8311e1bd9c9d632670a0fecbe509c4aa648adb7185b2472003725ab38935c71e"
+    },
+    {
+      "path": "graphs/graphs_0075.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9626668,
+      "sha256": "0c3eaaef01bf6fc5f39e7b3af873d435a8b5423e559596251136de7613961c91"
+    },
+    {
+      "path": "graphs/graphs_0076.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9631044,
+      "sha256": "8e9675881e2bdb2ba92d225608a810ef1e1bf7b75e0a51157a2caf88fab365bb"
+    },
+    {
+      "path": "graphs/graphs_0077.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9375052,
+      "sha256": "a532a0f882a793fa57194f2da3ab4302febb2f285c45166334f29e4c433c56c3"
+    },
+    {
+      "path": "graphs/graphs_0078.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9493616,
+      "sha256": "871a2d1eae0d6bbc0c1d1397e45e8df569788e8a3f7ea708617715df874669a0"
+    },
+    {
+      "path": "graphs/graphs_0079.bin",
+      "format": "dgl-native",
+      "molecules": 392,
+      "bytes": 7412464,
+      "sha256": "721979ec599fe2af948c7ebd2997bd149619b9ecabc9034670d0a742a1281b8f"
+    },
+    {
+      "path": "graphs/graphs_0080.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9386612,
+      "sha256": "7ae66c07c2bb96748dbc74fce3a8977cc1ab460ba6c07255d1ee2f15dd6c150b"
+    },
+    {
+      "path": "graphs/graphs_0081.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9654112,
+      "sha256": "378527d7fcc39b99cacf6120f9c0e9f5daa7ed3abc86d0628c91cf687e9dc68c"
+    },
+    {
+      "path": "graphs/graphs_0082.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9416816,
+      "sha256": "4260c48aa2e4ecb330f0e421d0a27d79ef2705c2be7c1d5717c28dcf0400cb72"
+    },
+    {
+      "path": "graphs/graphs_0083.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9530032,
+      "sha256": "bc3304804e6df02fd300f89ddee82a571a20bcc8f6f104a9f3c18ff9a53a084b"
+    },
+    {
+      "path": "graphs/graphs_0084.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9778816,
+      "sha256": "4c2842a542e73ffe8bad301c628c107f80f8ce168fe7fd6fbb1d35ddeda47224"
+    },
+    {
+      "path": "graphs/graphs_0085.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9230452,
+      "sha256": "394414d33cd95d88c8ea99b0cce8c701b8350b7fd56afa5f9fe2f6d3b8f6b83a"
+    },
+    {
+      "path": "graphs/graphs_0086.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9678212,
+      "sha256": "8f105786cb95ceccc08cf292501687ee60c5afc960ba475b0b2afbce4c64068f"
+    },
+    {
+      "path": "graphs/graphs_0087.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9360192,
+      "sha256": "d9281fe4360d29299bfa6d79fe2d23b8caf63edb34a0cd6bb9f1a4bc822e65f2"
+    },
+    {
+      "path": "graphs/graphs_0088.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9194928,
+      "sha256": "1a3ed893afa9de6aaf9f5805c92af29836a64bb9656f4318ca9f8863ee4664df"
+    },
+    {
+      "path": "graphs/graphs_0089.bin",
+      "format": "dgl-native",
+      "molecules": 392,
+      "bytes": 7250752,
+      "sha256": "27b235aee6f7ff543ff82e1d6b45642a242c4e7908e9291bcbd686e0c522388d"
+    },
+    {
+      "path": "graphs/graphs_0090.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9693268,
+      "sha256": "52f2b4e15c16d4e79f93aa6686514908f53224a99f5e1dbcd0862cf454fc8a6e"
+    },
+    {
+      "path": "graphs/graphs_0091.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9276816,
+      "sha256": "de5d8fc845720e707306e31538d6d970295cbbdd23e12eb8cd69b2c87136856e"
+    },
+    {
+      "path": "graphs/graphs_0092.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9560028,
+      "sha256": "de98492128dd8e2f93886f1665d4e30a115fb8273e7503ac617695911db09fd3"
+    },
+    {
+      "path": "graphs/graphs_0093.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9439604,
+      "sha256": "7d9d1d54e1ac87bdd6032133768dfaa2c2a94585218e4a6d3cc4ab86536ffa47"
+    },
+    {
+      "path": "graphs/graphs_0094.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9352916,
+      "sha256": "88221cf24211025200c52c5fc52b1947cfd76efc1895eb300b37a9831a1ec021"
+    },
+    {
+      "path": "graphs/graphs_0095.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9265644,
+      "sha256": "2c01c286f49fca1452d18d5b2470dd92dc16d03f1b7599f609564e3dd484dd56"
+    },
+    {
+      "path": "graphs/graphs_0096.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 10134616,
+      "sha256": "f6ede0cd5a874f7292eed80bcaeba1398e8c9f204d6831fdbfbf4fed72dc2298"
+    },
+    {
+      "path": "graphs/graphs_0097.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9251672,
+      "sha256": "a8f3180ed6301c66c378bcd90fdfb791dc5251035486309f700fcc376f44d7a1"
+    },
+    {
+      "path": "graphs/graphs_0098.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9405700,
+      "sha256": "c1d50150d3d32b2e314bba467c234a9b4d33cc6ee63608974273b8702f7a104d"
+    },
+    {
+      "path": "graphs/graphs_0099.bin",
+      "format": "dgl-native",
+      "molecules": 392,
+      "bytes": 7336104,
+      "sha256": "b22220e1bd31376c329dd154d69593e1067952b90ebe9cf1ae09a1ac876120c6"
+    },
+    {
+      "path": "graphs/graphs_0100.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9621964,
+      "sha256": "c9d99ee22087d795da79778a1cfcc0af33e41b903a8c1891e02c22f33a0d506b"
+    },
+    {
+      "path": "graphs/graphs_0101.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9573532,
+      "sha256": "87c628657b6b693431a7bbb7559e6fd7496d4a8d0d8ce87c23353850525ed0d2"
+    },
+    {
+      "path": "graphs/graphs_0102.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9513576,
+      "sha256": "94ba50e4630128694a5ce56e1fb9106a2519f0c8879f895894040892a922a652"
+    },
+    {
+      "path": "graphs/graphs_0103.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9526676,
+      "sha256": "c516024a5d2e1b48cfa38c34c7ba33e2c013a9050f0c50bb588a759616163547"
+    },
+    {
+      "path": "graphs/graphs_0104.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9505816,
+      "sha256": "62b1c4e8d332fd1183a15c6944646e9571780149134dbdd87941f3e16e808c25"
+    },
+    {
+      "path": "graphs/graphs_0105.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9555508,
+      "sha256": "0f3c5a735e7f14dfc624efff1ba5863899b9b64b5023c888805585ff0d77eba0"
+    },
+    {
+      "path": "graphs/graphs_0106.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9342240,
+      "sha256": "41b64cd2b783386471b7435b998cb866d4f5044ec10c94e4b3611cb4e453dd84"
+    },
+    {
+      "path": "graphs/graphs_0107.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9902332,
+      "sha256": "1ab0a459e41aa7f165e66092e51d0e8944ad7c1ef42919a8d9e77052f2d12600"
+    },
+    {
+      "path": "graphs/graphs_0108.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9456388,
+      "sha256": "58bb7b4565d5cd5c38d8fe0e79e2c04d08ca2e36ed6a2ede4bcfd4f63cc1bbea"
+    },
+    {
+      "path": "graphs/graphs_0109.bin",
+      "format": "dgl-native",
+      "molecules": 392,
+      "bytes": 7194984,
+      "sha256": "16e5bf9cc2a005fac8b6d200b67af42946c0cb21381d6d3a7752eae3f0c6c28d"
+    },
+    {
+      "path": "graphs/graphs_0110.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9618344,
+      "sha256": "d93da1132c8e0459a3a49e49d08d1fd53f1d4fb3cce24ce1396584ccc2f19d9e"
+    },
+    {
+      "path": "graphs/graphs_0111.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9442020,
+      "sha256": "39b8083da3a46edefd4221c2c85abfd14d39ea422a3a83f4d1cc0cbb3b9addd7"
+    },
+    {
+      "path": "graphs/graphs_0112.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9509764,
+      "sha256": "149f899f560d391135f97bbc62f54e3b3b45d864d38fd176f7bd88bcd28647cf"
+    },
+    {
+      "path": "graphs/graphs_0113.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9959236,
+      "sha256": "6e5e192196fa7dccd861bde1d6a0e0c7e13a9adb230d413c150cc9d45577bb11"
+    },
+    {
+      "path": "graphs/graphs_0114.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9559840,
+      "sha256": "080cd065b3cf21d219abe6ff86897b4139b5133713518914769dec0f6d4bd5b1"
+    },
+    {
+      "path": "graphs/graphs_0115.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9437124,
+      "sha256": "59d7d669acd5f60a6736ca6fd6803df50e3a55c2422028824cc048473ee84c4e"
+    },
+    {
+      "path": "graphs/graphs_0116.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9444740,
+      "sha256": "196961bf98ec255f4d2f56232a35895e83b8a1d098355bcfc33696f26638da92"
+    },
+    {
+      "path": "graphs/graphs_0117.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9650612,
+      "sha256": "317ed5e7362a6cfdd3722c4bc3fbc46ad9b65cde7c3dc6107bbc733eeb4e3924"
+    },
+    {
+      "path": "graphs/graphs_0118.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9698472,
+      "sha256": "a4941cd7542ea4b6c6ee8c0a7948ea537e28beced72a27c81573e1ad95b6c4e6"
+    },
+    {
+      "path": "graphs/graphs_0119.bin",
+      "format": "dgl-native",
+      "molecules": 392,
+      "bytes": 7259468,
+      "sha256": "cc1dc91c6f7248e084a11268efadfaaac8ba341adfd606d399872b2b4cd60bbe"
+    },
+    {
+      "path": "graphs/graphs_0120.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9657508,
+      "sha256": "d28f4ddc43f48ee1c3308f97d805c66c9664e1653243106ea265bf0381328cfc"
+    },
+    {
+      "path": "graphs/graphs_0121.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9373488,
+      "sha256": "4cf11b3bef7908f6933ef10fd0978c0a85e03ffd4fcb7f4fbd6f1ff4c9b5c191"
+    },
+    {
+      "path": "graphs/graphs_0122.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9692948,
+      "sha256": "5c2bc824ae9f10d9060db43e20a45547bdd277c2f2654213b53680553078ed73"
+    },
+    {
+      "path": "graphs/graphs_0123.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9573812,
+      "sha256": "106e343d77405b063d022f99feab7444b5c07a3da4089e8a8ddcaaf1561dc56b"
+    },
+    {
+      "path": "graphs/graphs_0124.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9401272,
+      "sha256": "cbb2df28eb14076bc45527227278389b581f8f4b99364339d3e1a90d8c3ff485"
+    },
+    {
+      "path": "graphs/graphs_0125.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9463732,
+      "sha256": "03a8c11a083d308296ba08586b3ba01d525f3c7b2f36f8d24bf4974535ce6e55"
+    },
+    {
+      "path": "graphs/graphs_0126.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9583796,
+      "sha256": "72cb7989d27e483c52a5527faa3c2c651ea0bf439cedaac25365907e598cc282"
+    },
+    {
+      "path": "graphs/graphs_0127.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9795932,
+      "sha256": "e67d963bbf827de0825104dfef434cd9dbf8f9fedbd48bfd8fe991546dab955c"
+    },
+    {
+      "path": "graphs/graphs_0128.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9373940,
+      "sha256": "7ee6eacdf33c739ce0b7d71ac92f05c68e785f9efc7385aebc0265073ead4b25"
+    },
+    {
+      "path": "graphs/graphs_0129.bin",
+      "format": "dgl-native",
+      "molecules": 392,
+      "bytes": 7289364,
+      "sha256": "3fb2f6470c22c9e1090526fa68db1d8d9c1ebed49dbcd6183a83463f24f8b45e"
+    },
+    {
+      "path": "graphs/graphs_0130.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9671292,
+      "sha256": "84bf9e2c14133fde8bd7e62d126d524ea55cbc8702401611a21183871e3c9125"
+    },
+    {
+      "path": "graphs/graphs_0131.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9609552,
+      "sha256": "8dc629d5f1a614a6636478c9596c8b2fcfeb587ba61c3a206272a602318910e4"
+    },
+    {
+      "path": "graphs/graphs_0132.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9442668,
+      "sha256": "833277d483fbe36d020cddcdd83474481fb81304cb1ab0ef256e2d432d7ae964"
+    },
+    {
+      "path": "graphs/graphs_0133.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9332444,
+      "sha256": "da399841aab1a09d73c508208c4c8cf001fdc13f8c971f8036c149d3c633bc1f"
+    },
+    {
+      "path": "graphs/graphs_0134.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9680416,
+      "sha256": "41e140b950ae9d055e387b15394ff177b11498686996934697f6ad3f69bb8ca7"
+    },
+    {
+      "path": "graphs/graphs_0135.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9502656,
+      "sha256": "b70141cf0cbe5a8f1ab356c611a48ce4322592439d4cd7bc659dcc43496432b1"
+    },
+    {
+      "path": "graphs/graphs_0136.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9800124,
+      "sha256": "049483053794556aed246688450f6cc469905eef2ccc0eaae5aa40f1e1d849af"
+    },
+    {
+      "path": "graphs/graphs_0137.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9378708,
+      "sha256": "63bb9aed4b799091c7b86179188c09a71824eead50b8e84f3f36d694863f7a5e"
+    },
+    {
+      "path": "graphs/graphs_0138.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9436608,
+      "sha256": "182a7dfe76bea8d250772da9d96c36ff208933ab7caa5ef5c4a9aa104f489583"
+    },
+    {
+      "path": "graphs/graphs_0139.bin",
+      "format": "dgl-native",
+      "molecules": 392,
+      "bytes": 7281240,
+      "sha256": "7873cee99beb6865f77b161896e27753981a8963fcad0b9f99c5f254a76f6736"
+    },
+    {
+      "path": "graphs/graphs_0140.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9574784,
+      "sha256": "c5c4d34740886aecd4cf624b1c45e4d864ccff392803bc4796471de89568b69e"
+    },
+    {
+      "path": "graphs/graphs_0141.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9408816,
+      "sha256": "9a9336ca73aa02d270e7eb350cf5be98e65aaf2d5dd19563d90091e40164eb57"
+    },
+    {
+      "path": "graphs/graphs_0142.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9528852,
+      "sha256": "451e2503efca72a66c802434dc5d00f70f82272d37dbc725aa0bc20f8486dd7e"
+    },
+    {
+      "path": "graphs/graphs_0143.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9313304,
+      "sha256": "70105a933e4658e54851aa523dfbbabf4c8fa9674a5acd8ab28ff14a21699273"
+    },
+    {
+      "path": "graphs/graphs_0144.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9378196,
+      "sha256": "840a40078cd397469beb8586370839c107aa4fa459d7a1a240c07191b1e95c87"
+    },
+    {
+      "path": "graphs/graphs_0145.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9653688,
+      "sha256": "8850569fd297af012f39cb28e955cc9a55dfc8da1bb73f890584aa6344cb7339"
+    },
+    {
+      "path": "graphs/graphs_0146.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9454584,
+      "sha256": "72a611692575c14b40b2dd6b5aa58f134190498ead4187b50b727a9e301e7137"
+    },
+    {
+      "path": "graphs/graphs_0147.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9487764,
+      "sha256": "c4e1ca92b627fbf24b146d26be6eb2d0137e3614909a2d278950c0d97f48e960"
+    },
+    {
+      "path": "graphs/graphs_0148.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9881192,
+      "sha256": "598d45dea44c4bdb1b3b5e6649140603ffa301399c1984424c00a3e5df671373"
+    },
+    {
+      "path": "graphs/graphs_0149.bin",
+      "format": "dgl-native",
+      "molecules": 392,
+      "bytes": 7271592,
+      "sha256": "4226e32d0959f11883916ced5185233868c086636bc7e5d54131d723c694adc9"
+    },
+    {
+      "path": "graphs/graphs_0150.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9358344,
+      "sha256": "7ddaf7cfcbaebc30e48cffd5b1bbdc1bfda4fb44811dc9911e78ec513daa7cf7"
+    },
+    {
+      "path": "graphs/graphs_0151.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9461904,
+      "sha256": "86d1dea01d4afbd2feb017708b962254f8bc97e32d7486d33e5a34f7d0cb34a6"
+    },
+    {
+      "path": "graphs/graphs_0152.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9514396,
+      "sha256": "4169551f0d7234b944d5e39afbdc432bc966adf5bd216169d7a0ff988445d2f4"
+    },
+    {
+      "path": "graphs/graphs_0153.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9475244,
+      "sha256": "82f88ccb7c10acf8345f3e40ed4874636940c09dc700abda800dedf770d16691"
+    },
+    {
+      "path": "graphs/graphs_0154.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9751964,
+      "sha256": "3cfd292d5b5256b5138aab8f70a9f902e2a50518877555ccaa0b6cc0aaa1c1fe"
+    },
+    {
+      "path": "graphs/graphs_0155.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9660504,
+      "sha256": "77a5bc41b608c9c2dc22f1124a4ffb465d4b3c371edbf03b960c4aae5d7929f8"
+    },
+    {
+      "path": "graphs/graphs_0156.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9615984,
+      "sha256": "a4c306b3dffb579bcb8c25df7696f0f7ad0e2050bb991f8f702a078d70015ce2"
+    },
+    {
+      "path": "graphs/graphs_0157.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9279568,
+      "sha256": "e5a8d9cfdaafd6489e20d35df0dcb67424a826a3318753e87b6d859bfd272ec4"
+    },
+    {
+      "path": "graphs/graphs_0158.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9417640,
+      "sha256": "c4f9a1e189d4fc48bbb7f97c59bcf5e074bcec617443ea1388770c0358c5f33e"
+    },
+    {
+      "path": "graphs/graphs_0159.bin",
+      "format": "dgl-native",
+      "molecules": 392,
+      "bytes": 7639340,
+      "sha256": "0bd2aa1bae1e2ea283e321cf14f8a148b3f34a6fe88c3a0ceb5c9d35ff64781b"
+    },
+    {
+      "path": "graphs/graphs_0160.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 10051424,
+      "sha256": "f14500f89f157f375da87bae24c7caf6abb75cba72cac643c023d9a9e06a50e5"
+    },
+    {
+      "path": "graphs/graphs_0161.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9476996,
+      "sha256": "21bce4b6a37e28a90f564ac0a6af8708e4d1bf071ef313872110f3cff61dbb8e"
+    },
+    {
+      "path": "graphs/graphs_0162.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9626008,
+      "sha256": "db774580149118c38d1ad5866e8ce09ca07d8bf598206c2ff6e3d04e2d952dbd"
+    },
+    {
+      "path": "graphs/graphs_0163.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9368596,
+      "sha256": "db8bce049674cdaac1c5914ae04600eb929fcbd08cf360ba5ecea3d5d2be1c44"
+    },
+    {
+      "path": "graphs/graphs_0164.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9426760,
+      "sha256": "9c65e05681c95f45b6ccfc23bac2328ecc0f465487a22f52b07cd24819f1d57f"
+    },
+    {
+      "path": "graphs/graphs_0165.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9633836,
+      "sha256": "ac36e72f856370f7cd867819daf73c4216f31399e1d58d379d223c8fc79b9c4c"
+    },
+    {
+      "path": "graphs/graphs_0166.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9387188,
+      "sha256": "f6ad21d8e2d95a688d39b0f4d079d5d7f7fd390bed6e84300409fad5b3aa3938"
+    },
+    {
+      "path": "graphs/graphs_0167.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9472124,
+      "sha256": "9c86688377a4044a9fc6c78d0e3598058c8e0376772aff0a65c45ceae87ab18e"
+    },
+    {
+      "path": "graphs/graphs_0168.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9312340,
+      "sha256": "6f82371089de07174fec628a50738ad14531a3ffc4ba68214393e8dac0d5d592"
+    },
+    {
+      "path": "graphs/graphs_0169.bin",
+      "format": "dgl-native",
+      "molecules": 392,
+      "bytes": 7374148,
+      "sha256": "694cc23fa51591bc99193271a126a149cacb6a3ad726094c6d546bb978c9a193"
+    },
+    {
+      "path": "graphs/graphs_0170.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9730388,
+      "sha256": "18b47d7451af690cee4bad1fc21a4318cecfda4ac0b9af5ec49c9a85f8918404"
+    },
+    {
+      "path": "graphs/graphs_0171.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9392196,
+      "sha256": "d4174729a6fb6f2f647752e78ae0d6e38962c19f2f248a74d8ad1553008ce7e5"
+    },
+    {
+      "path": "graphs/graphs_0172.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9818108,
+      "sha256": "0c626e67b3c3a731f8c2cb1983716ae228b434d5df1c4507f7ef806689b6db67"
+    },
+    {
+      "path": "graphs/graphs_0173.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9602764,
+      "sha256": "8314ca34ebe1e6d24a82920a7b436dbac0cbbcc0f59b0af14d8f3a7d7a8a4254"
+    },
+    {
+      "path": "graphs/graphs_0174.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9647416,
+      "sha256": "38f274fbfa413e335ec931d0113fe6f98ceecc532fad18c0199d6ee35397bf68"
+    },
+    {
+      "path": "graphs/graphs_0175.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9558780,
+      "sha256": "c2d8398ad7f6e8ad469120560e53d5bcb2da5edec90c880f2160b00efe32f1af"
+    },
+    {
+      "path": "graphs/graphs_0176.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9315156,
+      "sha256": "518c0cf361b52982ca841d195ae85c7251208ff9a07ec433510aaeac35fcf94f"
+    },
+    {
+      "path": "graphs/graphs_0177.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9335548,
+      "sha256": "3c97051c9c1c3dba6fb7924bdfaff95088b0640487d61ccc72258444fb718264"
+    },
+    {
+      "path": "graphs/graphs_0178.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9294528,
+      "sha256": "e871926125faec2617bd6fb1f663a90720266477a045e76dc98e620962812389"
+    },
+    {
+      "path": "graphs/graphs_0179.bin",
+      "format": "dgl-native",
+      "molecules": 392,
+      "bytes": 7376868,
+      "sha256": "1bd9384b935a0836f531e4f2ced21953170a1471e7410f973fba39bd93967024"
+    },
+    {
+      "path": "graphs/graphs_0180.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9226048,
+      "sha256": "aab64e5b00f21b5bcd86f75d75330c780f10c1cd1238a48485de77638cedf531"
+    },
+    {
+      "path": "graphs/graphs_0181.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9298088,
+      "sha256": "d91f4296b011b8f0c930ad67aa48636084a8c7b7df2fd3317a9d463d3885331e"
+    },
+    {
+      "path": "graphs/graphs_0182.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9853376,
+      "sha256": "55fc614433ba875f79d845bf606559e018952bb4c7c85e6879ac72a1ce31c76c"
+    },
+    {
+      "path": "graphs/graphs_0183.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9576500,
+      "sha256": "d9f13bddf9bc586bf09ceb4dccccc3d9ae7654207cf4b51395e4b0e6b6df9731"
+    },
+    {
+      "path": "graphs/graphs_0184.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9507424,
+      "sha256": "82f31312f958905f5aab4e5cb3d1f43264ed7bce0b6aa99c8a0a6b2d56cbb531"
+    },
+    {
+      "path": "graphs/graphs_0185.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9632772,
+      "sha256": "f9c8bcc86da0c498a7ff2c4f74234aaa89dbf4b5bef16c12cf208100c24f2948"
+    },
+    {
+      "path": "graphs/graphs_0186.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9522744,
+      "sha256": "33838d6c7c6b095e2efab500770af097f70cb3cd3949fe703b35589f91027069"
+    },
+    {
+      "path": "graphs/graphs_0187.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9429912,
+      "sha256": "c67c8d1ad84203747d1f7f135c06af3c01e9bbecf6d31a90288f920506039e4b"
+    },
+    {
+      "path": "graphs/graphs_0188.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9426020,
+      "sha256": "281944e8ee5bd93613655019dfe935654d540c329045c5fe569d390c226a38ce"
+    },
+    {
+      "path": "graphs/graphs_0189.bin",
+      "format": "dgl-native",
+      "molecules": 392,
+      "bytes": 7375172,
+      "sha256": "1f8d9533701b804a81eea89e7ba9551f42d2b213fec5fdfa78a51558314ca828"
+    },
+    {
+      "path": "graphs/graphs_0190.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9761116,
+      "sha256": "f0a4aa32dcb60d6706e1797fb3b3b9e9c754a2ae1472ac6136ee6ad5793d5b29"
+    },
+    {
+      "path": "graphs/graphs_0191.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9331540,
+      "sha256": "829f3567e94228b3c8eff93ef3c9abb43e1781b2bce74774afeccc17260c1c41"
+    },
+    {
+      "path": "graphs/graphs_0192.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9185404,
+      "sha256": "3d9e7db50677cadc9169a4140a064a06d7f1b0aecce27d5d28a590365e77b2eb"
+    },
+    {
+      "path": "graphs/graphs_0193.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9472040,
+      "sha256": "ec71261d95b56b00766577a9ce5283de9ec70a529651ddc8293d944455098223"
+    },
+    {
+      "path": "graphs/graphs_0194.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9580516,
+      "sha256": "03ee47b4bcfb02c3e43cfa31f5d88641800797c7d77fbd0464c7c8a7c9fb5169"
+    },
+    {
+      "path": "graphs/graphs_0195.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9222784,
+      "sha256": "ef4e1bdd8588eb400d46e2add25c5fe69f22ec1ae090bf0d439e15b39762529e"
+    },
+    {
+      "path": "graphs/graphs_0196.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9265652,
+      "sha256": "918a90ef1f370c2b4bf0314effa178750bb9c40a8493af2a28e5a6cf1a27159e"
+    },
+    {
+      "path": "graphs/graphs_0197.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9582756,
+      "sha256": "c1e442e58a2e4edb3c49e87819a46f779d7b4aa14ff7726b3918a15c29e17d9d"
+    },
+    {
+      "path": "graphs/graphs_0198.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9615692,
+      "sha256": "070d0e1484bc8d3a4ae45c8d52e8c54d222ec11f250db264af5845ebd445e870"
+    },
+    {
+      "path": "graphs/graphs_0199.bin",
+      "format": "dgl-native",
+      "molecules": 392,
+      "bytes": 7192680,
+      "sha256": "22bd06665564121476c2ebb60a637cc26911ea548f1d752187b6ecefaa540784"
+    },
+    {
+      "path": "graphs/graphs_0200.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9209656,
+      "sha256": "57416c34ea067976a24d3f50828071f7ff30cab533c6af5f94da604978eca7c3"
+    },
+    {
+      "path": "graphs/graphs_0201.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9532640,
+      "sha256": "78b30bbd78189833129009419991c084609fd738479ef5fcead4d00af702e152"
+    },
+    {
+      "path": "graphs/graphs_0202.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9613180,
+      "sha256": "dcaed1acf39fd6b62db6c50a0d872d132128ff981096be3e22821b3c58813c59"
+    },
+    {
+      "path": "graphs/graphs_0203.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9700856,
+      "sha256": "1411dc70e6159f43997f7e5477c41c487881368b24feac25abb2c3c3d4e1186f"
+    },
+    {
+      "path": "graphs/graphs_0204.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9452064,
+      "sha256": "ef6bde9fd5e965d76fdabf3f634f38c19e051588b7543bd6f64532337e51d907"
+    },
+    {
+      "path": "graphs/graphs_0205.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9153548,
+      "sha256": "c71b062ec3fb3dbea258215e8ae2d780d997da0f382e4d4f8bd64d242296e7ed"
+    },
+    {
+      "path": "graphs/graphs_0206.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9849472,
+      "sha256": "697faf2b4ea7fda0f19b0335128eae22357bd5c001092ee8a6efed694cc56cb4"
+    },
+    {
+      "path": "graphs/graphs_0207.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9396488,
+      "sha256": "b0b87764aa2e7fbef9994944f195f82963caf24165a3a98ac18ed5f24430d23e"
+    },
+    {
+      "path": "graphs/graphs_0208.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9536092,
+      "sha256": "8b4cf002583ecc3204a505331b06fd07d2c2025f48a431544d504a28d029eb0b"
+    },
+    {
+      "path": "graphs/graphs_0209.bin",
+      "format": "dgl-native",
+      "molecules": 392,
+      "bytes": 7241420,
+      "sha256": "fd976fd825d2262f8539ed65ee5339f81e01c1d89f544a8f3536339b2663bb04"
+    },
+    {
+      "path": "graphs/graphs_0210.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9393920,
+      "sha256": "1a3f851f48a487c3b8021fc2452170e9804ac430103e3b2c0353eee988a1d995"
+    },
+    {
+      "path": "graphs/graphs_0211.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9404200,
+      "sha256": "4ece8ba191cc820fabac3ac89008910f551afa49317786fcfcda3e77bc7a7f89"
+    },
+    {
+      "path": "graphs/graphs_0212.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9381068,
+      "sha256": "5ddafaae128f815ddb8b11ee38f12a05f17421d0e216127ae5fc1d1aa6f8900f"
+    },
+    {
+      "path": "graphs/graphs_0213.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9507528,
+      "sha256": "445fcb57551215b39208e3bc42c041cc7ca71b2a372b3c0f8a306ced41d7dc0d"
+    },
+    {
+      "path": "graphs/graphs_0214.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9430840,
+      "sha256": "58ace850a1298131f822a62e2e67033af0eda0708925b7ca3a80edbf33a6fdf1"
+    },
+    {
+      "path": "graphs/graphs_0215.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9339320,
+      "sha256": "48f6efb45a7d2c8d1f60b8eed3dd6e740a2508dbfd2ae846c6c598c27a922547"
+    },
+    {
+      "path": "graphs/graphs_0216.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9660764,
+      "sha256": "bb4eaefda4355828667c2c38c13f52346a28d6e33c3e05d57e98d019cde07ae8"
+    },
+    {
+      "path": "graphs/graphs_0217.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9330360,
+      "sha256": "14ff213d60dbac2ab0c3bd0939203e44707d234d13d89edfebd86f67c52d42c9"
+    },
+    {
+      "path": "graphs/graphs_0218.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9425924,
+      "sha256": "58cfcf5af0096de1f9ade094e3581ab3ca358d1b71e9d6f6c57d866bfba5b3ad"
+    },
+    {
+      "path": "graphs/graphs_0219.bin",
+      "format": "dgl-native",
+      "molecules": 392,
+      "bytes": 7126180,
+      "sha256": "80bc2eb50fa429f4afc1cb7f62326224cefccf1a74e2a44f4b3b5b45dcc5acdf"
+    },
+    {
+      "path": "graphs/graphs_0220.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 10037608,
+      "sha256": "94fa3b630cb952539bf6f8ba23ec8db46f5fce6e14a97580e6fa7a92c22a7d12"
+    },
+    {
+      "path": "graphs/graphs_0221.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9670924,
+      "sha256": "bf85b66761f7fdc0e302b9bd498e503b282735ac5e162936e767c76a14be7d5f"
+    },
+    {
+      "path": "graphs/graphs_0222.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9589312,
+      "sha256": "6b0d1f0bbae00b1feb1fa05cfb9785df50658cd988107a3b74b223e5f4ae5ebf"
+    },
+    {
+      "path": "graphs/graphs_0223.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9804956,
+      "sha256": "11c4d34b1149bb6d23f75902c8583905d513cf2c7f64a4bc5202d9aded1a6b5e"
+    },
+    {
+      "path": "graphs/graphs_0224.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9437612,
+      "sha256": "d5568ca42e7c101aa2bd8d0ed3f974223ed2fc6f0c95f9c5dfa1986cfe561fc4"
+    },
+    {
+      "path": "graphs/graphs_0225.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9474940,
+      "sha256": "761e0a495b64dad96664ee42daf9691a6a9c72043f05c44ebde116b5efffc736"
+    },
+    {
+      "path": "graphs/graphs_0226.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9403100,
+      "sha256": "55835ccb1059af4f5a1bf5fecf028bb702278f45466e33d8351674a6ce9ebd08"
+    },
+    {
+      "path": "graphs/graphs_0227.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9584832,
+      "sha256": "7e7499456af0ca8ad0316b8f2ea2947c4cbf3e3982e493c4746683ed7855b743"
+    },
+    {
+      "path": "graphs/graphs_0228.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9610172,
+      "sha256": "b0dedfdaa3d81926cee8fc9d7172a6857978bd1c206a09df4bbe88da4e65058d"
+    },
+    {
+      "path": "graphs/graphs_0229.bin",
+      "format": "dgl-native",
+      "molecules": 392,
+      "bytes": 7324648,
+      "sha256": "501f842c4afbb4b49649611bda4fbffdc2efb1c58d6c6a258225c7893523cd3b"
+    },
+    {
+      "path": "graphs/graphs_0230.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9593416,
+      "sha256": "6c78102c9616d80a930326a0fb0b2de9d4952067b7695db9afe99065381597df"
+    },
+    {
+      "path": "graphs/graphs_0231.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9618844,
+      "sha256": "005219087bdd6a1fd4a60d8f7df3a644fa4b76a1257bfa5f6b38d47ab8e4cb8a"
+    },
+    {
+      "path": "graphs/graphs_0232.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9483620,
+      "sha256": "242b9729cf5d8a6764db5936099413faf52bbc6a34acf5e641e735c40cf1fc58"
+    },
+    {
+      "path": "graphs/graphs_0233.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9688632,
+      "sha256": "6020757018f42f6a2eb699a58495acf0becfc3bc5356f264cbfe297536c77a2e"
+    },
+    {
+      "path": "graphs/graphs_0234.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9742284,
+      "sha256": "fe0bf3e36064eedb3233c71727629a4160b7b48bfb08bc94203f2e74ef3fa2d4"
+    },
+    {
+      "path": "graphs/graphs_0235.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9623968,
+      "sha256": "12dd8aef9b25a41ed495d45212ff30804f6cc6781b1dad3b7e9fb906fa2f7127"
+    },
+    {
+      "path": "graphs/graphs_0236.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9625656,
+      "sha256": "c740839ec49e295ac8459ce922fd14ff49ad271945c4664fd191a74214d68fae"
+    },
+    {
+      "path": "graphs/graphs_0237.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9503868,
+      "sha256": "d1f569247c82d801c812f20f3e40e035e699c7241f1e251fae2661b46f8e9469"
+    },
+    {
+      "path": "graphs/graphs_0238.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9596344,
+      "sha256": "050a8e6ab1196c84fd80d19d99052207b37d612dff26b86e819501ec91ce2037"
+    },
+    {
+      "path": "graphs/graphs_0239.bin",
+      "format": "dgl-native",
+      "molecules": 392,
+      "bytes": 7138928,
+      "sha256": "aae964b875594be19daf7619399661913ea5e60febcfc64c2cca3aad7c8a04ae"
+    },
+    {
+      "path": "graphs/graphs_0240.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9549216,
+      "sha256": "e57c207235bc0bbda365f3df79ace519dd71749c53a3d9f3c8ad0d00b9d1fe71"
+    },
+    {
+      "path": "graphs/graphs_0241.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9485708,
+      "sha256": "4841d01c8e1f55297ba2ae28a8c6acedde737061285a6fcc729789a9b05397cd"
+    },
+    {
+      "path": "graphs/graphs_0242.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9601968,
+      "sha256": "38f734d73cc621843cab0c32571ebf337d4bf61ecba1c643bb4bd07ccd6baa36"
+    },
+    {
+      "path": "graphs/graphs_0243.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9498800,
+      "sha256": "64776dd88330e49c3ef229e658c830fdc3bf0a81ab6484d433881485cd7d013f"
+    },
+    {
+      "path": "graphs/graphs_0244.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9478496,
+      "sha256": "ed4142647ce472d81296067c1aa21ea3017efa1ad2889b5323304f45ecea4120"
+    },
+    {
+      "path": "graphs/graphs_0245.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9623908,
+      "sha256": "3cf798b3e8018cb0076fe7eeae21f78ea00d542f88739aff6318f3411b35d6e9"
+    },
+    {
+      "path": "graphs/graphs_0246.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9637092,
+      "sha256": "5e0670d828a44e0374db5e773af37860c4c25aa84a0985138894e086fac4c6f4"
+    },
+    {
+      "path": "graphs/graphs_0247.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9484220,
+      "sha256": "28b9439fda0063bd11001059e217c82f34b936e83c12ae5e366223544d0efab4"
+    },
+    {
+      "path": "graphs/graphs_0248.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9512204,
+      "sha256": "86c7849527333fcd2a2aa1ef644fa7be050a226a5593410462979500d8d1c174"
+    },
+    {
+      "path": "graphs/graphs_0249.bin",
+      "format": "dgl-native",
+      "molecules": 392,
+      "bytes": 7231732,
+      "sha256": "e06085f54acf6780f1f9178364e15be38c5bd462f1a7062e2006bc87001720c9"
+    },
+    {
+      "path": "graphs/graphs_0250.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9435032,
+      "sha256": "892a8066b9d8f767a722950119b16a95271fd28e8c6ae00b0a680b92a3523897"
+    },
+    {
+      "path": "graphs/graphs_0251.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9523868,
+      "sha256": "7ef614233994726a48fb7018ebc9d394d0635ceb5d52bd10cedc1266622c4ac5"
+    },
+    {
+      "path": "graphs/graphs_0252.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9535616,
+      "sha256": "0c7e01d0394b016e4f77050341472eca637e78809a6dedda436ca493e6d8369a"
+    },
+    {
+      "path": "graphs/graphs_0253.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9695476,
+      "sha256": "9bbc0986b40e16e310408a11ec43eda96f74b25e64cd6ccbddb03ca06e5f1a3a"
+    },
+    {
+      "path": "graphs/graphs_0254.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9531016,
+      "sha256": "ae31e590f9da0427fbc59dce108c1043c24e07565a19c73dd1af1b9fa5242992"
+    },
+    {
+      "path": "graphs/graphs_0255.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9466720,
+      "sha256": "8fb9c0eeec3c7d48fab38a117aef942ac7b258bd0a568fa2369bb6df1ff3eafc"
+    },
+    {
+      "path": "graphs/graphs_0256.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9492164,
+      "sha256": "045c1d8b310352e0003ca7be1f71504184b0c1f2db92133d104895c29ce03afd"
+    },
+    {
+      "path": "graphs/graphs_0257.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 10124300,
+      "sha256": "9cb6c139e3bae6b6bb346e327ade6b079afdb872a3b121a4aa9982757f4f6060"
+    },
+    {
+      "path": "graphs/graphs_0258.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9137464,
+      "sha256": "28974d2b26d9c8b7e9e5a5098775a329427d16d3a68ff139690eb9f5c6f6d58e"
+    },
+    {
+      "path": "graphs/graphs_0259.bin",
+      "format": "dgl-native",
+      "molecules": 392,
+      "bytes": 7426172,
+      "sha256": "9e8317824d2b03731ece02e363f1d2319ef28964916504ff148f478f4c244c78"
+    },
+    {
+      "path": "graphs/graphs_0260.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9613744,
+      "sha256": "7350a9b2dacc07df92bd2a0480a6f6d679bc44b5f059debc21616c311e7249bc"
+    },
+    {
+      "path": "graphs/graphs_0261.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9523772,
+      "sha256": "2b655b31825c6124e39ff09afe6d733ef9406413ff61933e9f9d6d9fca103811"
+    },
+    {
+      "path": "graphs/graphs_0262.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9398428,
+      "sha256": "e93af432f9e5fb76c6b6e58e31188c2c9eef416105473f6524b320f88f1cc99e"
+    },
+    {
+      "path": "graphs/graphs_0263.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9401488,
+      "sha256": "a136a128e65edf6b065d70c78303ef413da413f2cd015c009b77bc1c60c362ee"
+    },
+    {
+      "path": "graphs/graphs_0264.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9802968,
+      "sha256": "b8a71c578bbb996a35dcdb78507c10693fa1f219cf0cf6d20f2c1517c4d51dcb"
+    },
+    {
+      "path": "graphs/graphs_0265.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9480200,
+      "sha256": "d2d87e001ba657d9484a3e0109f5c31f1b83e8e63cb0fddcb1c2e4b7e4e2a98c"
+    },
+    {
+      "path": "graphs/graphs_0266.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9701724,
+      "sha256": "2845d90572d4950fda1275ba60792460a50c3242e6c121e48e2a4bab0a2c7d26"
+    },
+    {
+      "path": "graphs/graphs_0267.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9310904,
+      "sha256": "05fdd20b1ee6e036b05aa578cda32b87b13d3e434b653eab0f698da8a71e450a"
+    },
+    {
+      "path": "graphs/graphs_0268.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9312820,
+      "sha256": "e792edf758b40fe1ac96db6a4c22140a320ef9595a6f8c77a798d83aa9f68b39"
+    },
+    {
+      "path": "graphs/graphs_0269.bin",
+      "format": "dgl-native",
+      "molecules": 392,
+      "bytes": 7217316,
+      "sha256": "19a206cc220b3f0d5eb2308674420ff4ce5eef96eaae3e5ffde107066c362e7c"
+    },
+    {
+      "path": "graphs/graphs_0270.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9727300,
+      "sha256": "8f9c745b1563100fd660e5e9532460690cef77ccc615f3790a0b8bcb8371f941"
+    },
+    {
+      "path": "graphs/graphs_0271.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9455112,
+      "sha256": "8c9877ad7aa57101bdaabd71daa28d00026c4714939bc17212c2dead89c2216a"
+    },
+    {
+      "path": "graphs/graphs_0272.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9611644,
+      "sha256": "06c3c887972e16326f732431b02e2aab972c8c42ade71f8a1678c7beecd3eca2"
+    },
+    {
+      "path": "graphs/graphs_0273.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9225448,
+      "sha256": "591f89b4736c5c7a1091ae220b616072fe89cf8b8ce30217ff968de849385bbf"
+    },
+    {
+      "path": "graphs/graphs_0274.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9423604,
+      "sha256": "5c6173ac23b20fc1b1a8c287fa78c93b5c97ef681ef5b737fbbf672ca287397b"
+    },
+    {
+      "path": "graphs/graphs_0275.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9935636,
+      "sha256": "cc01d139ef2d13d6221e9ce5d3bb77a9c6a9562b6c9fd8bb438980b51898ba96"
+    },
+    {
+      "path": "graphs/graphs_0276.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9531168,
+      "sha256": "08d92057a2fe38766b9050f594f29a285949b139c9cd932bd408f59726b6a622"
+    },
+    {
+      "path": "graphs/graphs_0277.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9551012,
+      "sha256": "61d452f3387598573e596838297304c0e1dbb0f4393990d9c546f040876e3477"
+    },
+    {
+      "path": "graphs/graphs_0278.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9252176,
+      "sha256": "ae26e838b6534d3856eb35e29aa0e666b8d6124df90515cf79b883ae33316587"
+    },
+    {
+      "path": "graphs/graphs_0279.bin",
+      "format": "dgl-native",
+      "molecules": 392,
+      "bytes": 7349104,
+      "sha256": "e44079c783e007fe62453145ae832becc16ffa0aa950a38223cddbb606407fb6"
+    },
+    {
+      "path": "graphs/graphs_0280.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9638628,
+      "sha256": "aad1e1ffb3b0e1b601b8e1587f4384babbf99428ddbacd3d4facd08638c745e2"
+    },
+    {
+      "path": "graphs/graphs_0281.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9446252,
+      "sha256": "56801d6c7ea4dff33008ee303124ba9724d0592f1d1e0d55a13aa125cfb03618"
+    },
+    {
+      "path": "graphs/graphs_0282.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9622320,
+      "sha256": "371d89cdf1685701e67eb46839ee1b79dc8deea18cec7054b2950bec7f440940"
+    },
+    {
+      "path": "graphs/graphs_0283.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9174180,
+      "sha256": "f82acaffdf31481f328b8dbba93e6eea1060d649663bfd30a94b280974116156"
+    },
+    {
+      "path": "graphs/graphs_0284.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9558176,
+      "sha256": "952ce80732917bcc82c19d25c86694296226e6fe35ea948219d249f360423656"
+    },
+    {
+      "path": "graphs/graphs_0285.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9500960,
+      "sha256": "9c46ce0d220f4bb89c15f870476dfe8f7db4ac98d71209574ae458206bba4c2f"
+    },
+    {
+      "path": "graphs/graphs_0286.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9266400,
+      "sha256": "d221e727fe540a6cab5170138016ac27d6963f4dba2ed0375d018ddfb177b5f4"
+    },
+    {
+      "path": "graphs/graphs_0287.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9332936,
+      "sha256": "c70aa66c3f661f154fc85d3dd51160b35d8b792973dbf7379c738c0a7176c561"
+    },
+    {
+      "path": "graphs/graphs_0288.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9630216,
+      "sha256": "05635df1c775c16ff8f77a01c35c89a0033c9d900c5264f00c7ac72ee87c2254"
+    },
+    {
+      "path": "graphs/graphs_0289.bin",
+      "format": "dgl-native",
+      "molecules": 392,
+      "bytes": 7147928,
+      "sha256": "62fc76ed5f6262bc77cfeb927b926e464d7b0c655c54f152410e17b29b5a15b9"
+    },
+    {
+      "path": "graphs/graphs_0290.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9558560,
+      "sha256": "28b0d41d962b0401b33646bfe0f563b79711601000d630fc1600bde822cdcf76"
+    },
+    {
+      "path": "graphs/graphs_0291.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9750524,
+      "sha256": "6b9c5a2ee3e6f5880eadf40612ea9059c805dab08bd051e6859134ded4ac464e"
+    },
+    {
+      "path": "graphs/graphs_0292.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9240696,
+      "sha256": "7215b0f98603e3391d37106dcdea8bafcd0aeb805d8468d56d302b5e94f4636a"
+    },
+    {
+      "path": "graphs/graphs_0293.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9642940,
+      "sha256": "bdda0166bd3e9d633e3ad07e21478c4fc49b1e3cf11c84c8d56de5cfe728e1e0"
+    },
+    {
+      "path": "graphs/graphs_0294.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9341908,
+      "sha256": "9fc4258469bbd12d8979e5387405e07b49750abd199f2b038e6998b783606f63"
+    },
+    {
+      "path": "graphs/graphs_0295.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9505792,
+      "sha256": "47997f075e2e2e1b5bd0381f7bc473abc2111c17cc1b1eec6255e139824762ab"
+    },
+    {
+      "path": "graphs/graphs_0296.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9476568,
+      "sha256": "c51e31a7aa3a3b94ee3d3131d747be36da164bdf5c79d3e6402fde60a09b5ba7"
+    },
+    {
+      "path": "graphs/graphs_0297.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9515400,
+      "sha256": "8f14e79ca0dc941e35c991e2f8ce6ba4b85760ca7c115a71c2ff7ed43676813e"
+    },
+    {
+      "path": "graphs/graphs_0298.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9608672,
+      "sha256": "3a8775ce2a57c94079238caf14010f008543b3e07afcc5c49fba89f215be9944"
+    },
+    {
+      "path": "graphs/graphs_0299.bin",
+      "format": "dgl-native",
+      "molecules": 392,
+      "bytes": 7117900,
+      "sha256": "57aee1ef26720cf62dc27cb5fb06d2b6f77e1169e732f5c15ef082f467bd8f80"
+    },
+    {
+      "path": "graphs/graphs_0300.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9551104,
+      "sha256": "e14c8ffea5944f712489c0f26b1d8c2a6ce95a67b148dd1cc7931cd04ee41823"
+    },
+    {
+      "path": "graphs/graphs_0301.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9389820,
+      "sha256": "c05a7df262b0f94db2e3c18fc02e4d167e1654a3b4848bce5240aad014f7dcdc"
+    },
+    {
+      "path": "graphs/graphs_0302.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9680464,
+      "sha256": "0ea6106a874caa8a565f970e3e37206dba0a18ad7d1791458a7c09f4601e260a"
+    },
+    {
+      "path": "graphs/graphs_0303.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9708376,
+      "sha256": "964667595427dd9a0a0ed0d6355b379944c190027264019b23438aa7d703e77d"
+    },
+    {
+      "path": "graphs/graphs_0304.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9523180,
+      "sha256": "db09cc530925a7d3b387ed9cb68157cbe1b67096cf788dec7294e404043894a3"
+    },
+    {
+      "path": "graphs/graphs_0305.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9516356,
+      "sha256": "adbb4dd088a1ad3a099cffda760204f4fb4e538747a8c2004259a0fb2bc68b3e"
+    },
+    {
+      "path": "graphs/graphs_0306.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9317052,
+      "sha256": "f6694b5a6c7676d9ee4097aacf90dc72a8ba79edcc1ee4e432d4f94134f59090"
+    },
+    {
+      "path": "graphs/graphs_0307.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9783772,
+      "sha256": "28be7c2af74472b03a9562d5081ee452906ad36eb67dea4e428f55c53413b69e"
+    },
+    {
+      "path": "graphs/graphs_0308.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9586736,
+      "sha256": "35c49bf5880adc16d642ea3a1785d64275dd748f81b6122a52d78320d62419ac"
+    },
+    {
+      "path": "graphs/graphs_0309.bin",
+      "format": "dgl-native",
+      "molecules": 392,
+      "bytes": 7424720,
+      "sha256": "376fb7e1e88682a50c04d218dd077ae7de1395a36bc4cd8477976a18746f1a0e"
+    },
+    {
+      "path": "graphs/graphs_0310.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9778724,
+      "sha256": "2d1e3d750e5fd9db7beba8d78b8287260aa64bf03c06d7cc5864e3650f3c25f5"
+    },
+    {
+      "path": "graphs/graphs_0311.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9721880,
+      "sha256": "e9d92952ecf873c66455e024ec40d33ce4c1aa458335c593f815a69ec867cab4"
+    },
+    {
+      "path": "graphs/graphs_0312.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9772524,
+      "sha256": "48bfa8f27d1757d38d98bd908de70e5b52e1d12b61b0951e8231616b38ed7e55"
+    },
+    {
+      "path": "graphs/graphs_0313.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9833600,
+      "sha256": "1ee7750974d37a9d87f1f894c01cc35ad77dc5f80e7da65ce9d8d8a816c459d2"
+    },
+    {
+      "path": "graphs/graphs_0314.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9360108,
+      "sha256": "1407dafcfcd74a21ab095e6f3f46c54779f8d9ea9db7cab0b62effdbb6e20069"
+    },
+    {
+      "path": "graphs/graphs_0315.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9855152,
+      "sha256": "970978049ebe2281e8f9560167edebdf0152296883086bdf88def2a924a743e0"
+    },
+    {
+      "path": "graphs/graphs_0316.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9164396,
+      "sha256": "58af90a4b101dbef81bdb7c81f5fc328a8f6b492290e984c338a662f58ae5444"
+    },
+    {
+      "path": "graphs/graphs_0317.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9706684,
+      "sha256": "41bc5b7e53854a19ae962497edee3d86c406eaf1d0bc78d7f67e4460d17f479d"
+    },
+    {
+      "path": "graphs/graphs_0318.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9621548,
+      "sha256": "a30cbd0c4ab544f09e12c4a3642f705317137b187c2dc8afe5ccffb58f3fad3a"
+    },
+    {
+      "path": "graphs/graphs_0319.bin",
+      "format": "dgl-native",
+      "molecules": 392,
+      "bytes": 7210744,
+      "sha256": "a8a66c30bdea055f930fa30dcb6079478de86e07e76ad3864e6c0aef2ff6ac56"
+    },
+    {
+      "path": "graphs/graphs_0320.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9786984,
+      "sha256": "0e7b8ad9481bd49d1749dad696c9836732d7c19f92948eee8a3398ea65da210b"
+    },
+    {
+      "path": "graphs/graphs_0321.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9658908,
+      "sha256": "ea9a2100e6414cf3283b01e6792a7cb2cf78aadd8c1872eb03fb05fb749a0d57"
+    },
+    {
+      "path": "graphs/graphs_0322.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9586564,
+      "sha256": "ca1fa4462a5ab84624a36db0034a2531c47ae22032dcb91645d04f0b38522068"
+    },
+    {
+      "path": "graphs/graphs_0323.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9631436,
+      "sha256": "ca960fd690a5d99275fbb5b7aac68c92cc664b644ca4c9fc641dd267137ac7fe"
+    },
+    {
+      "path": "graphs/graphs_0324.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9535136,
+      "sha256": "b83d5a2f6252974068f6cfc5677888fe64ec53a1a7f61275c3ca3cdbd2d7d05e"
+    },
+    {
+      "path": "graphs/graphs_0325.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9572588,
+      "sha256": "561fbfcfb2807570776ba0dff2f55813a3453555d7fd0786ee6cbe15356aa22d"
+    },
+    {
+      "path": "graphs/graphs_0326.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9668848,
+      "sha256": "bc6089c7bf455c2759ebe17c0cefeb3b5ff1fda5e330f72a094abfa2ca6d4bef"
+    },
+    {
+      "path": "graphs/graphs_0327.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9471164,
+      "sha256": "9c4fd8ee5d7716a377b83f4740b97a408382242f08ee493f1f0848e70b4e2377"
+    },
+    {
+      "path": "graphs/graphs_0328.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9668012,
+      "sha256": "f6c400cfa48a23af115d462837a45ac0808b3cb673b06f71de9f1ae2931661c9"
+    },
+    {
+      "path": "graphs/graphs_0329.bin",
+      "format": "dgl-native",
+      "molecules": 392,
+      "bytes": 7074484,
+      "sha256": "22ec81bb811c3a823096998157d3eb7af570a73ab87caaa7ca88ebfd15ac4922"
+    },
+    {
+      "path": "graphs/graphs_0330.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9529052,
+      "sha256": "bdb63c401dd15baa0223c7897c7f505cd89c55e19db89b80931516fbfcd22a43"
+    },
+    {
+      "path": "graphs/graphs_0331.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9846576,
+      "sha256": "e58e7e1f010f4ddc2a40b5f2e58c872133e815b02f5ee31bf0df26b39be2d42b"
+    },
+    {
+      "path": "graphs/graphs_0332.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9333144,
+      "sha256": "111663bcbb53ee834fd40e791c75084093e12829264d9e89e9cffafdc653ee58"
+    },
+    {
+      "path": "graphs/graphs_0333.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9824532,
+      "sha256": "5a9131d3de0da5a6f42055847e7ebc827d050ae828d339fd8852ed1f72319696"
+    },
+    {
+      "path": "graphs/graphs_0334.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9435816,
+      "sha256": "c22bec801c90cf434d89a4c071fe5cbb9ea91b6c62260b7a2731da8b4eb66fe8"
+    },
+    {
+      "path": "graphs/graphs_0335.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9237572,
+      "sha256": "85ec31f842ba3ce2b40248e8828e8410ea06ee284a4ac8c6b3f73bf3f2dcaa56"
+    },
+    {
+      "path": "graphs/graphs_0336.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9509992,
+      "sha256": "25fb3b3616401872e39e7ef9cf2cd659c3de626e5f962ceef1dc94be565b2a9b"
+    },
+    {
+      "path": "graphs/graphs_0337.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9460556,
+      "sha256": "273bf81508466735c3403be036bcee3ccace09895b64a4fd8fde1367ac0de406"
+    },
+    {
+      "path": "graphs/graphs_0338.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9717128,
+      "sha256": "eb3843d34ceb3cb25bf1e80bea135d3d4b54d2e3d5f8504fc41b3d29542e32f0"
+    },
+    {
+      "path": "graphs/graphs_0339.bin",
+      "format": "dgl-native",
+      "molecules": 392,
+      "bytes": 7316096,
+      "sha256": "2987b43bf70f5a6a40d7eb8b4da351185d7aaab98c8795d72a2d2a4923d579aa"
+    },
+    {
+      "path": "graphs/graphs_0340.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9636676,
+      "sha256": "bded54b99790c16edcd170cb27ca90cd2d3ab93429da2a9ffd9d36a8003d0eb9"
+    },
+    {
+      "path": "graphs/graphs_0341.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9334588,
+      "sha256": "982a3e446811b021a7cbff4f32ecee704cd320b94698ef43f7ce64911d165449"
+    },
+    {
+      "path": "graphs/graphs_0342.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9292820,
+      "sha256": "bb6a112c7b87c383b5928f6025f12d642423ca905bc2312a690bd5942ae49a9e"
+    },
+    {
+      "path": "graphs/graphs_0343.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9731636,
+      "sha256": "0fe21e595e26ea980f0152975575a32d807a0e554348cbf9960dd86341082c70"
+    },
+    {
+      "path": "graphs/graphs_0344.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9808272,
+      "sha256": "1ed7f19e53770dec278c5dbfe2007f39b64e8ae0cbf39d2934040c7af10600d8"
+    },
+    {
+      "path": "graphs/graphs_0345.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9541056,
+      "sha256": "1a2fb70a67300540080a3871bcd1477b514a0f729ea38e55626c216edf87ad1c"
+    },
+    {
+      "path": "graphs/graphs_0346.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9542868,
+      "sha256": "a3af6f9320f9335013c7d59eb27e49ac8939a6ff4993799b350afff4f614284d"
+    },
+    {
+      "path": "graphs/graphs_0347.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9749176,
+      "sha256": "143bbbe444614a97c43e0603c6c4ef9e09b19edf90963dbd4df6ce6ffca13c4a"
+    },
+    {
+      "path": "graphs/graphs_0348.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9638856,
+      "sha256": "62728efad8dd15b173e83ece607f09a64b1fbdf2737594bf5d2ce0104ea1c91d"
+    },
+    {
+      "path": "graphs/graphs_0349.bin",
+      "format": "dgl-native",
+      "molecules": 392,
+      "bytes": 7431220,
+      "sha256": "13fd344e52894ea5f21647e52149ada5acc4c9c5b058674bd4e1c784c943350b"
+    },
+    {
+      "path": "graphs/graphs_0350.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 9474600,
+      "sha256": "ecb9bf8f1cea29b29f0512e84ce814fe85cdf22374a6bfd4b5b14d2c8a388c5c"
+    },
+    {
+      "path": "graphs/graphs_0351.bin",
+      "format": "dgl-native",
+      "molecules": 340,
+      "bytes": 6159808,
+      "sha256": "cb337277c220023a61a197e9f265c8eac65af7ea662a54c8cb81acd6ffe3eec4"
+    },
+    {
+      "path": "graphs/graphs_0352.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 12781128,
+      "sha256": "5cfd9bd0e52e093e37ad08a2dd5cd15f22ed535fae810ba083064a2016f479cc"
+    },
+    {
+      "path": "graphs/graphs_0353.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 13836128,
+      "sha256": "c887f99003ca4fcdb4ce76e67d7086d5699d1ce87d799af281fe4dfe443124b4"
+    },
+    {
+      "path": "graphs/graphs_0354.bin",
+      "format": "dgl-native",
+      "molecules": 462,
+      "bytes": 12281468,
+      "sha256": "5a2216e9edada1213b7ead6230dc3f15b39a8407c9268e925847d8fda555532c"
+    },
+    {
+      "path": "graphs/graphs_0355.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 12978500,
+      "sha256": "498a4389aa5295350fe683b95e4f3da482bcf47138518faf5678dd2ebaa28419"
+    },
+    {
+      "path": "graphs/graphs_0356.bin",
+      "format": "dgl-native",
+      "molecules": 140,
+      "bytes": 3439248,
+      "sha256": "b707c3161d44a1d7c35357a6a1039426548cf22fef94c119fb800ed9301ed1ad"
+    },
+    {
+      "path": "graphs/graphs_0357.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 13125432,
+      "sha256": "017f897245e7591da6c5f9e7587aa43623f25857cf84984fa74f44358aa9526f"
+    },
+    {
+      "path": "graphs/graphs_0358.bin",
+      "format": "dgl-native",
+      "molecules": 324,
+      "bytes": 8599664,
+      "sha256": "6e9702334ca052bc559d76f4beffb334b0c9cf6e3ce40cc35ecbe98b73193952"
+    },
+    {
+      "path": "graphs/graphs_0359.bin",
+      "format": "dgl-native",
+      "molecules": 7,
+      "bytes": 163604,
+      "sha256": "d3312bbcd1c02e2ade27cd64aab967e531bbf9a040381b461b0282344f06e337"
+    },
+    {
+      "path": "graphs/graphs_0360.bin",
+      "format": "dgl-native",
+      "molecules": 512,
+      "bytes": 10619424,
+      "sha256": "00018519f49c254ec2b3363cfc04fb073abb34c331fa21365d6a7066a6fb4674"
+    },
+    {
+      "path": "graphs/graphs_0361.bin",
+      "format": "dgl-native",
+      "molecules": 494,
+      "bytes": 9669876,
+      "sha256": "09a22a08edcba0312f0fb93b2f3252c0715049ab59024e1a1f56b79385290f22"
+    },
+    {
+      "path": "graphs/graphs_0362.bin",
+      "format": "dgl-native",
+      "molecules": 178,
+      "bytes": 3935716,
+      "sha256": "80ff9478ed85a691be0a4f9754ac5bceef1fab51f86654dcecd57036f60540a2"
+    },
+    {
+      "path": "graphs/graphs_0363.bin",
+      "format": "dgl-native",
+      "molecules": 83,
+      "bytes": 1756520,
+      "sha256": "a690bbc23d262f953cc5d9a23414d82722f4cdde2d92a2b45164594ef8e51acd"
+    }
+  ],
+  "profiles": [
+    {
+      "key": "fold_0/train",
+      "path": "splits/fold_0_train.bin",
+      "format": "npz-numeric",
+      "source_rows": 129019,
+      "rows": 129019,
+      "duplicates_removed": 0,
+      "observed_labels": 335778,
+      "observed_classification_labels": 271698,
+      "observed_regression_labels": 64080,
+      "observed_zeros": 182871,
+      "missing_labels": 17081787,
+      "sha256": "ee4e6d1c588b16d6156931e9d91d855a44f941118ae2864f201d2fbe17b35ce3",
+      "bytes": 1553935
+    },
+    {
+      "key": "fold_0/valid",
+      "path": "splits/fold_0_valid.bin",
+      "format": "npz-numeric",
+      "source_rows": 32802,
+      "rows": 32802,
+      "duplicates_removed": 0,
+      "observed_labels": 82914,
+      "observed_classification_labels": 67336,
+      "observed_regression_labels": 15578,
+      "observed_zeros": 45394,
+      "missing_labels": 4345356,
+      "sha256": "064cd3e156c04274ace6a786fb82e1fe41837893a00a9d6b7d03fe3d06894b56",
+      "bytes": 407471
+    },
+    {
+      "key": "fold_1/train",
+      "path": "splits/fold_1_train.bin",
+      "format": "npz-numeric",
+      "source_rows": 129000,
+      "rows": 129000,
+      "duplicates_removed": 0,
+      "observed_labels": 334441,
+      "observed_classification_labels": 271111,
+      "observed_regression_labels": 63330,
+      "observed_zeros": 182640,
+      "missing_labels": 17080559,
+      "sha256": "e02e748f6ebae5151a7bb0f3adff37d56bc4e4b0addd829260dd5f3b72cef46f",
+      "bytes": 1548698
+    },
+    {
+      "key": "fold_1/valid",
+      "path": "splits/fold_1_valid.bin",
+      "format": "npz-numeric",
+      "source_rows": 32802,
+      "rows": 32802,
+      "duplicates_removed": 0,
+      "observed_labels": 84251,
+      "observed_classification_labels": 67923,
+      "observed_regression_labels": 16328,
+      "observed_zeros": 45625,
+      "missing_labels": 4344019,
+      "sha256": "a4baf3703ca56520ac8e31cff58f6e2cb6e7dbae57dbc22dfc5d2888d763e6dd",
+      "bytes": 413415
+    },
+    {
+      "key": "fold_2/train",
+      "path": "splits/fold_2_train.bin",
+      "format": "npz-numeric",
+      "source_rows": 129006,
+      "rows": 129006,
+      "duplicates_removed": 0,
+      "observed_labels": 334032,
+      "observed_classification_labels": 270369,
+      "observed_regression_labels": 63663,
+      "observed_zeros": 181963,
+      "missing_labels": 17081778,
+      "sha256": "110009c8b7477f4c2af6e363f048f8f5e095e2009cced76532c10666a75fe367",
+      "bytes": 1550107
+    },
+    {
+      "key": "fold_2/valid",
+      "path": "splits/fold_2_valid.bin",
+      "format": "npz-numeric",
+      "source_rows": 32806,
+      "rows": 32806,
+      "duplicates_removed": 0,
+      "observed_labels": 84660,
+      "observed_classification_labels": 68665,
+      "observed_regression_labels": 15995,
+      "observed_zeros": 46302,
+      "missing_labels": 4344150,
+      "sha256": "6b62bb5233b9979a599a09109952974d7db7a1a20b15a7c6f404116d8d366c2a",
+      "bytes": 412449
+    },
+    {
+      "key": "fold_3/train",
+      "path": "splits/fold_3_train.bin",
+      "format": "npz-numeric",
+      "source_rows": 129019,
+      "rows": 129019,
+      "duplicates_removed": 0,
+      "observed_labels": 335809,
+      "observed_classification_labels": 271795,
+      "observed_regression_labels": 64014,
+      "observed_zeros": 182953,
+      "missing_labels": 17081756,
+      "sha256": "71f997f9b8f7d9b9b78bff433dd868ee243651dad95f72442efcf5497922635f",
+      "bytes": 1553711
+    },
+    {
+      "key": "fold_3/valid",
+      "path": "splits/fold_3_valid.bin",
+      "format": "npz-numeric",
+      "source_rows": 32788,
+      "rows": 32788,
+      "duplicates_removed": 0,
+      "observed_labels": 82883,
+      "observed_classification_labels": 67239,
+      "observed_regression_labels": 15644,
+      "observed_zeros": 45312,
+      "missing_labels": 4343497,
+      "sha256": "65a7ec102737d1731a4dbb35df302baf25736d21624382a26b10513afa8a8344",
+      "bytes": 407618
+    },
+    {
+      "key": "fold_4/train",
+      "path": "splits/fold_4_train.bin",
+      "format": "npz-numeric",
+      "source_rows": 129002,
+      "rows": 129002,
+      "duplicates_removed": 0,
+      "observed_labels": 334708,
+      "observed_classification_labels": 271163,
+      "observed_regression_labels": 63545,
+      "observed_zeros": 182633,
+      "missing_labels": 17080562,
+      "sha256": "f5e63432e82918464f11ed1779fa1e2bebda6a451b59c734244b263191741e2f",
+      "bytes": 1549057
+    },
+    {
+      "key": "fold_4/valid",
+      "path": "splits/fold_4_valid.bin",
+      "format": "npz-numeric",
+      "source_rows": 32801,
+      "rows": 32801,
+      "duplicates_removed": 0,
+      "observed_labels": 83984,
+      "observed_classification_labels": 67871,
+      "observed_regression_labels": 16113,
+      "observed_zeros": 45632,
+      "missing_labels": 4344151,
+      "sha256": "c159c949f556a58b60ae7a79d28fd35dbd9a4d7f813f1a3b7f64e7a8bd705abc",
+      "bytes": 412482
+    },
+    {
+      "key": "test",
+      "path": "splits/test.bin",
+      "format": "npz-numeric",
+      "source_rows": 20513,
+      "rows": 20513,
+      "duplicates_removed": 0,
+      "observed_labels": 52342,
+      "observed_classification_labels": 42197,
+      "observed_regression_labels": 10145,
+      "observed_zeros": 28052,
+      "missing_labels": 2716913,
+      "sha256": "a20cf208b5f4522ec457ec4290830f3f8473405143d282d29724d64522d47655",
+      "bytes": 260453
+    },
+    {
+      "key": "external",
+      "path": "splits/external.bin",
+      "format": "npz-numeric",
+      "source_rows": 290,
+      "rows": 290,
+      "duplicates_removed": 0,
+      "observed_labels": 2738,
+      "observed_classification_labels": 2193,
+      "observed_regression_labels": 545,
+      "observed_zeros": 1139,
+      "missing_labels": 36412,
+      "sha256": "62489e8b1fe4bc7c697006536b3dbb86dac468b4b09b4baa90e22411e9277b2f",
+      "bytes": 9184
+    }
+  ],
+  "relations": "relations.bin",
+  "normalizers": [
+    "normalizers/fold_0.json",
+    "normalizers/fold_1.json",
+    "normalizers/fold_2.json",
+    "normalizers/fold_3.json",
+    "normalizers/fold_4.json"
+  ],
+  "normalizer_comparisons": [
+    {
+      "fold": 0,
+      "max_mean_difference_from_raw_train_fit": 8.881784197001252e-16,
+      "max_std_difference_from_raw_train_fit": 4.440892098500626e-16
+    },
+    {
+      "fold": 1,
+      "max_mean_difference_from_raw_train_fit": 1.7763568394002505e-15,
+      "max_std_difference_from_raw_train_fit": 2.220446049250313e-16
+    },
+    {
+      "fold": 2,
+      "max_mean_difference_from_raw_train_fit": 8.881784197001252e-16,
+      "max_std_difference_from_raw_train_fit": 4.440892098500626e-16
+    },
+    {
+      "fold": 3,
+      "max_mean_difference_from_raw_train_fit": 4.440892098500626e-16,
+      "max_std_difference_from_raw_train_fit": 4.440892098500626e-16
+    },
+    {
+      "fold": 4,
+      "max_mean_difference_from_raw_train_fit": 1.7763568394002505e-15,
+      "max_std_difference_from_raw_train_fit": 4.440892098500626e-16
+    }
+  ],
+  "split_overlap": [
+    {
+      "fold": 0,
+      "molecule_overlap_counts": {
+        "fold_0/train/fold_0/valid": 1419,
+        "fold_0/train/test": 880,
+        "fold_0/valid/test": 262
+      },
+      "external_overlap_with_training": 0
+    },
+    {
+      "fold": 1,
+      "molecule_overlap_counts": {
+        "fold_1/train/fold_1/valid": 1400,
+        "fold_1/train/test": 902,
+        "fold_1/valid/test": 241
+      },
+      "external_overlap_with_training": 0
+    },
+    {
+      "fold": 2,
+      "molecule_overlap_counts": {
+        "fold_2/train/fold_2/valid": 1410,
+        "fold_2/train/test": 898,
+        "fold_2/valid/test": 241
+      },
+      "external_overlap_with_training": 0
+    },
+    {
+      "fold": 3,
+      "molecule_overlap_counts": {
+        "fold_3/train/fold_3/valid": 1405,
+        "fold_3/train/test": 904,
+        "fold_3/valid/test": 243
+      },
+      "external_overlap_with_training": 0
+    },
+    {
+      "fold": 4,
+      "molecule_overlap_counts": {
+        "fold_4/train/fold_4/valid": 1401,
+        "fold_4/train/test": 926,
+        "fold_4/valid/test": 224
+      },
+      "external_overlap_with_training": 0
+    }
+  ],
+  "empty_edge_feature_repairs": 0,
+  "files": [
+    {
+      "path": "graph_index.bin",
+      "bytes": 589529,
+      "sha256": "274cbc1685022a6092461b4da562790e6bd76b032410af0b3c63948d96980c25"
+    },
+    {
+      "path": "graphs/graphs_0000.bin",
+      "bytes": 9534632,
+      "sha256": "17a6e0294b77cced66924549e49d10f9af6b64ba27ebd0a5071303ac8e591038"
+    },
+    {
+      "path": "graphs/graphs_0001.bin",
+      "bytes": 9396476,
+      "sha256": "9ba5b149774e37026e9ff14e18f01fa8b72194b54696774a160a7378f07ad466"
+    },
+    {
+      "path": "graphs/graphs_0002.bin",
+      "bytes": 9587052,
+      "sha256": "a407d4eef2dae70f6306657c6b71f40d423776c30b478060c9ad4b8af615602b"
+    },
+    {
+      "path": "graphs/graphs_0003.bin",
+      "bytes": 9654656,
+      "sha256": "be9e51ea4d635794c524044adac4b8f345396c3a2f5c991ba6e7f64fead26698"
+    },
+    {
+      "path": "graphs/graphs_0004.bin",
+      "bytes": 9544868,
+      "sha256": "9bfe4bcd1d1e0f5296dd7baa199ef2094ea1d120e4eefcde2167b4063f948c37"
+    },
+    {
+      "path": "graphs/graphs_0005.bin",
+      "bytes": 9214784,
+      "sha256": "6389981db41dd88c4f5a274ff9438ae43eafcd2da8252db9cbd6e9a363ac07df"
+    },
+    {
+      "path": "graphs/graphs_0006.bin",
+      "bytes": 9554100,
+      "sha256": "fee3d44fd0374b27a15b8bd5a7217758d994565116579e6d13fb6077ea3b23be"
+    },
+    {
+      "path": "graphs/graphs_0007.bin",
+      "bytes": 9467712,
+      "sha256": "3494114248c1986cdca486527210808add0b9a8e3c4034bea3cfcc6f9a15fa4f"
+    },
+    {
+      "path": "graphs/graphs_0008.bin",
+      "bytes": 9325928,
+      "sha256": "23a13568c7a38fc996574bb81a6faf5e8de015b65e0c29499cced3b2d5ba9e94"
+    },
+    {
+      "path": "graphs/graphs_0009.bin",
+      "bytes": 6999528,
+      "sha256": "6a6139cb4b548e8c0a4e10a9cc6756f20e002240e41a445f90791516e17b3d50"
+    },
+    {
+      "path": "graphs/graphs_0010.bin",
+      "bytes": 9587640,
+      "sha256": "ac8836410442a0e6866fa9b61b3238599829b5c6fb86f6bfc1d191ccba3d00dc"
+    },
+    {
+      "path": "graphs/graphs_0011.bin",
+      "bytes": 9216388,
+      "sha256": "4a0ceff6fffdc3c809cf5f1ff1e718f8de77cb0d026c2874f3efca23cd36a56d"
+    },
+    {
+      "path": "graphs/graphs_0012.bin",
+      "bytes": 9531448,
+      "sha256": "3981219d1f2d5b0cf3aed2187174701ed68050160aca738b1afa8acf8790714b"
+    },
+    {
+      "path": "graphs/graphs_0013.bin",
+      "bytes": 9185344,
+      "sha256": "4f786444eb7391db1a2e5af45c97ad2cdc6639888da8c6ce81089f4b4df89995"
+    },
+    {
+      "path": "graphs/graphs_0014.bin",
+      "bytes": 9655340,
+      "sha256": "d9df4f1d9a7964715b18f59e81f52e278be9c88f480c85a770a0046b6d891d02"
+    },
+    {
+      "path": "graphs/graphs_0015.bin",
+      "bytes": 9457036,
+      "sha256": "ea8c9cd3ec5ba719af294f27257425fd7bb8f42985059b94d8c73810eb6a3563"
+    },
+    {
+      "path": "graphs/graphs_0016.bin",
+      "bytes": 9345280,
+      "sha256": "89e3b47449b3695307eeb22ae86c57ca11de5d59d58acd7488b81ad799dffd47"
+    },
+    {
+      "path": "graphs/graphs_0017.bin",
+      "bytes": 9184048,
+      "sha256": "e1fab1a06e20d7227aa2bf10b1146c708662f6c247df93811c937c6639d4b3a3"
+    },
+    {
+      "path": "graphs/graphs_0018.bin",
+      "bytes": 9451652,
+      "sha256": "98f3ea41ef970409baa3b3ae0eb727a919cd5ddae1dd194f15b7cda62815332c"
+    },
+    {
+      "path": "graphs/graphs_0019.bin",
+      "bytes": 7327712,
+      "sha256": "f7e0220fbd4967cd91c8c989aede7d3b3dbac0225febba63999eb6512d4129fd"
+    },
+    {
+      "path": "graphs/graphs_0020.bin",
+      "bytes": 9272480,
+      "sha256": "de0b7911cc363ce712494b1157f9c5be43aea3e8d8ee7b641cd74a4a20cb2f08"
+    },
+    {
+      "path": "graphs/graphs_0021.bin",
+      "bytes": 9593780,
+      "sha256": "f16f3ce96a871462c2d74139a28c1111b461b73c3c7b1dd1c8f9abf4c6a337ce"
+    },
+    {
+      "path": "graphs/graphs_0022.bin",
+      "bytes": 9455716,
+      "sha256": "15acdbcd11c6097dd3409133325bf9a91d43d32979903eb66b443a144060c707"
+    },
+    {
+      "path": "graphs/graphs_0023.bin",
+      "bytes": 9686516,
+      "sha256": "596a02a7c98664ab1d4490c0cb128403e698252b2eb71eb33503ddbd89693688"
+    },
+    {
+      "path": "graphs/graphs_0024.bin",
+      "bytes": 9779260,
+      "sha256": "9083862b32037ab8c5c26ab2d46e8fad7528df6f56265cdb68b335a678932c80"
+    },
+    {
+      "path": "graphs/graphs_0025.bin",
+      "bytes": 9758504,
+      "sha256": "5a1b889032ba980abf2255e09b4d699b24b7e29ea38fbf1ff8dd964a71bcc409"
+    },
+    {
+      "path": "graphs/graphs_0026.bin",
+      "bytes": 9659576,
+      "sha256": "118df5822ed798c679be7488b7fd6b5bd9d393a1860355969645be1ab42a8d33"
+    },
+    {
+      "path": "graphs/graphs_0027.bin",
+      "bytes": 9494296,
+      "sha256": "db528150b2ee357118c6a66d688b8d73631f601604d12063f863a4515acff7c8"
+    },
+    {
+      "path": "graphs/graphs_0028.bin",
+      "bytes": 9566700,
+      "sha256": "6f288e547da511186d08b8d0a05d0bac0ce1e878cf825de51ef63bf4a1337e48"
+    },
+    {
+      "path": "graphs/graphs_0029.bin",
+      "bytes": 7373392,
+      "sha256": "f8739cc5db51486afb0cd1f521c4b11919f2ca422a5cdd13c8393593efca8044"
+    },
+    {
+      "path": "graphs/graphs_0030.bin",
+      "bytes": 9324920,
+      "sha256": "8bf531b246021736247eb8fb1841f2fa3dd486ebaf905877533639e68ad6183f"
+    },
+    {
+      "path": "graphs/graphs_0031.bin",
+      "bytes": 9109896,
+      "sha256": "c382aeee4404b9306471d7aa518a9f0bb49e28b5878ef71a611f44ec2e207538"
+    },
+    {
+      "path": "graphs/graphs_0032.bin",
+      "bytes": 9461456,
+      "sha256": "4bb83d1dc7ca86671f844d62e7d57264ab8cd11e3744183ebb4bbe3366e7d958"
+    },
+    {
+      "path": "graphs/graphs_0033.bin",
+      "bytes": 9516420,
+      "sha256": "e20c3101bf3622dc28a1207207e55c19d5e897af094de92ba3373b5cecd4e4a7"
+    },
+    {
+      "path": "graphs/graphs_0034.bin",
+      "bytes": 9698780,
+      "sha256": "f46a2f604f0df60d153fbff8b628a834516beb85fd240865d1d426d6bc852427"
+    },
+    {
+      "path": "graphs/graphs_0035.bin",
+      "bytes": 9295028,
+      "sha256": "ad47471005b13e7aafd39106220711cc4e99193d0118da0031a88648c5581bcd"
+    },
+    {
+      "path": "graphs/graphs_0036.bin",
+      "bytes": 9773696,
+      "sha256": "00c15f67faf6de8a46822ea0c03953cf8cc06f1a29d0ff9f0a67bc1d1a9aec85"
+    },
+    {
+      "path": "graphs/graphs_0037.bin",
+      "bytes": 9651128,
+      "sha256": "2775343cf0c8c8f8a889d83d88be7250784a9e30cbd2d3819fce983d4c39429f"
+    },
+    {
+      "path": "graphs/graphs_0038.bin",
+      "bytes": 9835088,
+      "sha256": "113436ac6651dc0381e54028a13c37a78237b117bf5b77ad25f25f2ba1efce2c"
+    },
+    {
+      "path": "graphs/graphs_0039.bin",
+      "bytes": 7378384,
+      "sha256": "5dea063d92f659b9483e79839e570c844202bb99636b38f3096ebefebdfe0897"
+    },
+    {
+      "path": "graphs/graphs_0040.bin",
+      "bytes": 9436436,
+      "sha256": "a395531078df46b4e5715350862c5982f461e2a085e24dfb9efdac7390f515f1"
+    },
+    {
+      "path": "graphs/graphs_0041.bin",
+      "bytes": 9303268,
+      "sha256": "8e532c41839eaac3e8bd13a1a9c2641c6f948c5c5cb7d719da72516f07f6fc94"
+    },
+    {
+      "path": "graphs/graphs_0042.bin",
+      "bytes": 9584944,
+      "sha256": "e6b9be9cb5a1cac82b4d3012519f07943f2b3a16637cd7eb046c1bd6cbf7d2be"
+    },
+    {
+      "path": "graphs/graphs_0043.bin",
+      "bytes": 9540328,
+      "sha256": "8372d608224dd92c3be97028e1afd420a4904d4616244586c394b225ba5cf39f"
+    },
+    {
+      "path": "graphs/graphs_0044.bin",
+      "bytes": 9412568,
+      "sha256": "ccd54f0759344e955cb04d40cebe5b57e52f8bc6203d3885c33bf12b349c1c91"
+    },
+    {
+      "path": "graphs/graphs_0045.bin",
+      "bytes": 9364684,
+      "sha256": "92b8e146b381de89b7d5583b97849759cbda7c05313db18d88d7ceabe9f49f83"
+    },
+    {
+      "path": "graphs/graphs_0046.bin",
+      "bytes": 9626456,
+      "sha256": "372560d5716cce3347c819cc8009af8874bf82f662ddea738e8818d2deee2274"
+    },
+    {
+      "path": "graphs/graphs_0047.bin",
+      "bytes": 9699384,
+      "sha256": "ed326a5b5433d07fc5a868fcc2785f61c8e1b2998cdb7eb9d4b8f392e67537d8"
+    },
+    {
+      "path": "graphs/graphs_0048.bin",
+      "bytes": 9370664,
+      "sha256": "3b1766dd3f7f6151ab534ae699aa8d9709cbed668c2a9788e889df9103923c16"
+    },
+    {
+      "path": "graphs/graphs_0049.bin",
+      "bytes": 7007396,
+      "sha256": "1df7adcbf8d244caa698a959dcb97781eb28ce5598e7a31b2bfdea7ee6036971"
+    },
+    {
+      "path": "graphs/graphs_0050.bin",
+      "bytes": 9185808,
+      "sha256": "c84e178c3190ef24b55bf4fc4c6e126d7f045e0b8568f2642c2f8d9a4d21f3ca"
+    },
+    {
+      "path": "graphs/graphs_0051.bin",
+      "bytes": 9423888,
+      "sha256": "4316461641d0b86917d91fa289b32436f3b768f49650cef1a7cacc65d9e45f99"
+    },
+    {
+      "path": "graphs/graphs_0052.bin",
+      "bytes": 9536712,
+      "sha256": "91db7e312a91de4ffb7a25a6d6213551725b9ae65a319d77efa384ddd8da0c33"
+    },
+    {
+      "path": "graphs/graphs_0053.bin",
+      "bytes": 9554404,
+      "sha256": "eba762c4c270f30062ce56f541127345d24351de39d6f8a7680c4828bb1fae7f"
+    },
+    {
+      "path": "graphs/graphs_0054.bin",
+      "bytes": 9098408,
+      "sha256": "35be7d3067a582faafcb857a306c49fe8b6c429b88f2124dc52b5babf852743a"
+    },
+    {
+      "path": "graphs/graphs_0055.bin",
+      "bytes": 9494704,
+      "sha256": "adbaa95a58c577eaf95992baccb75a59431aee3acfc70375a65f648f27cb607a"
+    },
+    {
+      "path": "graphs/graphs_0056.bin",
+      "bytes": 9494772,
+      "sha256": "2687efca7f05cf3ef17d8719fdfd2993e36bcbe4c32e4101cf13c9c21fcf4c40"
+    },
+    {
+      "path": "graphs/graphs_0057.bin",
+      "bytes": 9501288,
+      "sha256": "30d68121fedeb16f1f2b8c6c151f471c79f1f47e25ea2ab5ab15d74faa5e9611"
+    },
+    {
+      "path": "graphs/graphs_0058.bin",
+      "bytes": 9811332,
+      "sha256": "f1dd94215064006a4507a4837ff5e848ed2e3343c4307797af6ccd74316b9bc2"
+    },
+    {
+      "path": "graphs/graphs_0059.bin",
+      "bytes": 7234224,
+      "sha256": "e5e661f29e1d8642b8f1681d50db38ead2a180a535753c84b21c35875898a793"
+    },
+    {
+      "path": "graphs/graphs_0060.bin",
+      "bytes": 9915408,
+      "sha256": "cfa8344829c9ec28d5db15a42e6455978c563a3172aa053cd4b589a84765085d"
+    },
+    {
+      "path": "graphs/graphs_0061.bin",
+      "bytes": 9454604,
+      "sha256": "49dea1545e1c7b8a672b77171128d47b9f7ed96b4a9273abb88f9a6138c018ad"
+    },
+    {
+      "path": "graphs/graphs_0062.bin",
+      "bytes": 9370092,
+      "sha256": "0232b1cf1d42fe37fd5d37b1f1aa9bcfef2ee2c093977493f7562f9153e99af6"
+    },
+    {
+      "path": "graphs/graphs_0063.bin",
+      "bytes": 9533572,
+      "sha256": "46580c71afbea479f3ea25d53530b5560b2ecf6af78df121725141e97d69dc5f"
+    },
+    {
+      "path": "graphs/graphs_0064.bin",
+      "bytes": 9738620,
+      "sha256": "49d3140abc8195f74249490ea350aed96a42f7981bc988f4129b704218ec750c"
+    },
+    {
+      "path": "graphs/graphs_0065.bin",
+      "bytes": 9464328,
+      "sha256": "096d93eaad218788b8985a51666b2dd2e5280044b8d8eeea395ce000ea2c2d59"
+    },
+    {
+      "path": "graphs/graphs_0066.bin",
+      "bytes": 9553404,
+      "sha256": "3caee469da5d2b090cbf980de164c8ef06f464d00030293aabe2378f04a5ded9"
+    },
+    {
+      "path": "graphs/graphs_0067.bin",
+      "bytes": 9746640,
+      "sha256": "40790c38ad2f113416bb858af9ce3d3ae490061f81fae31e7033dfdada09759a"
+    },
+    {
+      "path": "graphs/graphs_0068.bin",
+      "bytes": 9415232,
+      "sha256": "460513f1830269b0b6543c20977985bebc8c8e3540f27ce4035cf487ac2fe880"
+    },
+    {
+      "path": "graphs/graphs_0069.bin",
+      "bytes": 7131788,
+      "sha256": "bfc5ff909572f92c1138aeb109b45f995bac293e7becf282a1ecc4eb735e7f3b"
+    },
+    {
+      "path": "graphs/graphs_0070.bin",
+      "bytes": 9483200,
+      "sha256": "038cf13edd694c3669d03e406c56cd6e13445276fd29ebe9854f875ac9f6fd79"
+    },
+    {
+      "path": "graphs/graphs_0071.bin",
+      "bytes": 9380900,
+      "sha256": "f00fcb1be1d8efb84898b2f81ec8e150d7447d5dd0ec8dfbeafbafea80222c33"
+    },
+    {
+      "path": "graphs/graphs_0072.bin",
+      "bytes": 9274664,
+      "sha256": "c8ad4a005973a8ec7d50d3c2f43fcfc2525be85bd6563f67be6844a8054debca"
+    },
+    {
+      "path": "graphs/graphs_0073.bin",
+      "bytes": 9474316,
+      "sha256": "4e61471c25dd4d23d908ae227b71a3c7e44d551edc57cfb87fdcd73269f33650"
+    },
+    {
+      "path": "graphs/graphs_0074.bin",
+      "bytes": 9547564,
+      "sha256": "8311e1bd9c9d632670a0fecbe509c4aa648adb7185b2472003725ab38935c71e"
+    },
+    {
+      "path": "graphs/graphs_0075.bin",
+      "bytes": 9626668,
+      "sha256": "0c3eaaef01bf6fc5f39e7b3af873d435a8b5423e559596251136de7613961c91"
+    },
+    {
+      "path": "graphs/graphs_0076.bin",
+      "bytes": 9631044,
+      "sha256": "8e9675881e2bdb2ba92d225608a810ef1e1bf7b75e0a51157a2caf88fab365bb"
+    },
+    {
+      "path": "graphs/graphs_0077.bin",
+      "bytes": 9375052,
+      "sha256": "a532a0f882a793fa57194f2da3ab4302febb2f285c45166334f29e4c433c56c3"
+    },
+    {
+      "path": "graphs/graphs_0078.bin",
+      "bytes": 9493616,
+      "sha256": "871a2d1eae0d6bbc0c1d1397e45e8df569788e8a3f7ea708617715df874669a0"
+    },
+    {
+      "path": "graphs/graphs_0079.bin",
+      "bytes": 7412464,
+      "sha256": "721979ec599fe2af948c7ebd2997bd149619b9ecabc9034670d0a742a1281b8f"
+    },
+    {
+      "path": "graphs/graphs_0080.bin",
+      "bytes": 9386612,
+      "sha256": "7ae66c07c2bb96748dbc74fce3a8977cc1ab460ba6c07255d1ee2f15dd6c150b"
+    },
+    {
+      "path": "graphs/graphs_0081.bin",
+      "bytes": 9654112,
+      "sha256": "378527d7fcc39b99cacf6120f9c0e9f5daa7ed3abc86d0628c91cf687e9dc68c"
+    },
+    {
+      "path": "graphs/graphs_0082.bin",
+      "bytes": 9416816,
+      "sha256": "4260c48aa2e4ecb330f0e421d0a27d79ef2705c2be7c1d5717c28dcf0400cb72"
+    },
+    {
+      "path": "graphs/graphs_0083.bin",
+      "bytes": 9530032,
+      "sha256": "bc3304804e6df02fd300f89ddee82a571a20bcc8f6f104a9f3c18ff9a53a084b"
+    },
+    {
+      "path": "graphs/graphs_0084.bin",
+      "bytes": 9778816,
+      "sha256": "4c2842a542e73ffe8bad301c628c107f80f8ce168fe7fd6fbb1d35ddeda47224"
+    },
+    {
+      "path": "graphs/graphs_0085.bin",
+      "bytes": 9230452,
+      "sha256": "394414d33cd95d88c8ea99b0cce8c701b8350b7fd56afa5f9fe2f6d3b8f6b83a"
+    },
+    {
+      "path": "graphs/graphs_0086.bin",
+      "bytes": 9678212,
+      "sha256": "8f105786cb95ceccc08cf292501687ee60c5afc960ba475b0b2afbce4c64068f"
+    },
+    {
+      "path": "graphs/graphs_0087.bin",
+      "bytes": 9360192,
+      "sha256": "d9281fe4360d29299bfa6d79fe2d23b8caf63edb34a0cd6bb9f1a4bc822e65f2"
+    },
+    {
+      "path": "graphs/graphs_0088.bin",
+      "bytes": 9194928,
+      "sha256": "1a3ed893afa9de6aaf9f5805c92af29836a64bb9656f4318ca9f8863ee4664df"
+    },
+    {
+      "path": "graphs/graphs_0089.bin",
+      "bytes": 7250752,
+      "sha256": "27b235aee6f7ff543ff82e1d6b45642a242c4e7908e9291bcbd686e0c522388d"
+    },
+    {
+      "path": "graphs/graphs_0090.bin",
+      "bytes": 9693268,
+      "sha256": "52f2b4e15c16d4e79f93aa6686514908f53224a99f5e1dbcd0862cf454fc8a6e"
+    },
+    {
+      "path": "graphs/graphs_0091.bin",
+      "bytes": 9276816,
+      "sha256": "de5d8fc845720e707306e31538d6d970295cbbdd23e12eb8cd69b2c87136856e"
+    },
+    {
+      "path": "graphs/graphs_0092.bin",
+      "bytes": 9560028,
+      "sha256": "de98492128dd8e2f93886f1665d4e30a115fb8273e7503ac617695911db09fd3"
+    },
+    {
+      "path": "graphs/graphs_0093.bin",
+      "bytes": 9439604,
+      "sha256": "7d9d1d54e1ac87bdd6032133768dfaa2c2a94585218e4a6d3cc4ab86536ffa47"
+    },
+    {
+      "path": "graphs/graphs_0094.bin",
+      "bytes": 9352916,
+      "sha256": "88221cf24211025200c52c5fc52b1947cfd76efc1895eb300b37a9831a1ec021"
+    },
+    {
+      "path": "graphs/graphs_0095.bin",
+      "bytes": 9265644,
+      "sha256": "2c01c286f49fca1452d18d5b2470dd92dc16d03f1b7599f609564e3dd484dd56"
+    },
+    {
+      "path": "graphs/graphs_0096.bin",
+      "bytes": 10134616,
+      "sha256": "f6ede0cd5a874f7292eed80bcaeba1398e8c9f204d6831fdbfbf4fed72dc2298"
+    },
+    {
+      "path": "graphs/graphs_0097.bin",
+      "bytes": 9251672,
+      "sha256": "a8f3180ed6301c66c378bcd90fdfb791dc5251035486309f700fcc376f44d7a1"
+    },
+    {
+      "path": "graphs/graphs_0098.bin",
+      "bytes": 9405700,
+      "sha256": "c1d50150d3d32b2e314bba467c234a9b4d33cc6ee63608974273b8702f7a104d"
+    },
+    {
+      "path": "graphs/graphs_0099.bin",
+      "bytes": 7336104,
+      "sha256": "b22220e1bd31376c329dd154d69593e1067952b90ebe9cf1ae09a1ac876120c6"
+    },
+    {
+      "path": "graphs/graphs_0100.bin",
+      "bytes": 9621964,
+      "sha256": "c9d99ee22087d795da79778a1cfcc0af33e41b903a8c1891e02c22f33a0d506b"
+    },
+    {
+      "path": "graphs/graphs_0101.bin",
+      "bytes": 9573532,
+      "sha256": "87c628657b6b693431a7bbb7559e6fd7496d4a8d0d8ce87c23353850525ed0d2"
+    },
+    {
+      "path": "graphs/graphs_0102.bin",
+      "bytes": 9513576,
+      "sha256": "94ba50e4630128694a5ce56e1fb9106a2519f0c8879f895894040892a922a652"
+    },
+    {
+      "path": "graphs/graphs_0103.bin",
+      "bytes": 9526676,
+      "sha256": "c516024a5d2e1b48cfa38c34c7ba33e2c013a9050f0c50bb588a759616163547"
+    },
+    {
+      "path": "graphs/graphs_0104.bin",
+      "bytes": 9505816,
+      "sha256": "62b1c4e8d332fd1183a15c6944646e9571780149134dbdd87941f3e16e808c25"
+    },
+    {
+      "path": "graphs/graphs_0105.bin",
+      "bytes": 9555508,
+      "sha256": "0f3c5a735e7f14dfc624efff1ba5863899b9b64b5023c888805585ff0d77eba0"
+    },
+    {
+      "path": "graphs/graphs_0106.bin",
+      "bytes": 9342240,
+      "sha256": "41b64cd2b783386471b7435b998cb866d4f5044ec10c94e4b3611cb4e453dd84"
+    },
+    {
+      "path": "graphs/graphs_0107.bin",
+      "bytes": 9902332,
+      "sha256": "1ab0a459e41aa7f165e66092e51d0e8944ad7c1ef42919a8d9e77052f2d12600"
+    },
+    {
+      "path": "graphs/graphs_0108.bin",
+      "bytes": 9456388,
+      "sha256": "58bb7b4565d5cd5c38d8fe0e79e2c04d08ca2e36ed6a2ede4bcfd4f63cc1bbea"
+    },
+    {
+      "path": "graphs/graphs_0109.bin",
+      "bytes": 7194984,
+      "sha256": "16e5bf9cc2a005fac8b6d200b67af42946c0cb21381d6d3a7752eae3f0c6c28d"
+    },
+    {
+      "path": "graphs/graphs_0110.bin",
+      "bytes": 9618344,
+      "sha256": "d93da1132c8e0459a3a49e49d08d1fd53f1d4fb3cce24ce1396584ccc2f19d9e"
+    },
+    {
+      "path": "graphs/graphs_0111.bin",
+      "bytes": 9442020,
+      "sha256": "39b8083da3a46edefd4221c2c85abfd14d39ea422a3a83f4d1cc0cbb3b9addd7"
+    },
+    {
+      "path": "graphs/graphs_0112.bin",
+      "bytes": 9509764,
+      "sha256": "149f899f560d391135f97bbc62f54e3b3b45d864d38fd176f7bd88bcd28647cf"
+    },
+    {
+      "path": "graphs/graphs_0113.bin",
+      "bytes": 9959236,
+      "sha256": "6e5e192196fa7dccd861bde1d6a0e0c7e13a9adb230d413c150cc9d45577bb11"
+    },
+    {
+      "path": "graphs/graphs_0114.bin",
+      "bytes": 9559840,
+      "sha256": "080cd065b3cf21d219abe6ff86897b4139b5133713518914769dec0f6d4bd5b1"
+    },
+    {
+      "path": "graphs/graphs_0115.bin",
+      "bytes": 9437124,
+      "sha256": "59d7d669acd5f60a6736ca6fd6803df50e3a55c2422028824cc048473ee84c4e"
+    },
+    {
+      "path": "graphs/graphs_0116.bin",
+      "bytes": 9444740,
+      "sha256": "196961bf98ec255f4d2f56232a35895e83b8a1d098355bcfc33696f26638da92"
+    },
+    {
+      "path": "graphs/graphs_0117.bin",
+      "bytes": 9650612,
+      "sha256": "317ed5e7362a6cfdd3722c4bc3fbc46ad9b65cde7c3dc6107bbc733eeb4e3924"
+    },
+    {
+      "path": "graphs/graphs_0118.bin",
+      "bytes": 9698472,
+      "sha256": "a4941cd7542ea4b6c6ee8c0a7948ea537e28beced72a27c81573e1ad95b6c4e6"
+    },
+    {
+      "path": "graphs/graphs_0119.bin",
+      "bytes": 7259468,
+      "sha256": "cc1dc91c6f7248e084a11268efadfaaac8ba341adfd606d399872b2b4cd60bbe"
+    },
+    {
+      "path": "graphs/graphs_0120.bin",
+      "bytes": 9657508,
+      "sha256": "d28f4ddc43f48ee1c3308f97d805c66c9664e1653243106ea265bf0381328cfc"
+    },
+    {
+      "path": "graphs/graphs_0121.bin",
+      "bytes": 9373488,
+      "sha256": "4cf11b3bef7908f6933ef10fd0978c0a85e03ffd4fcb7f4fbd6f1ff4c9b5c191"
+    },
+    {
+      "path": "graphs/graphs_0122.bin",
+      "bytes": 9692948,
+      "sha256": "5c2bc824ae9f10d9060db43e20a45547bdd277c2f2654213b53680553078ed73"
+    },
+    {
+      "path": "graphs/graphs_0123.bin",
+      "bytes": 9573812,
+      "sha256": "106e343d77405b063d022f99feab7444b5c07a3da4089e8a8ddcaaf1561dc56b"
+    },
+    {
+      "path": "graphs/graphs_0124.bin",
+      "bytes": 9401272,
+      "sha256": "cbb2df28eb14076bc45527227278389b581f8f4b99364339d3e1a90d8c3ff485"
+    },
+    {
+      "path": "graphs/graphs_0125.bin",
+      "bytes": 9463732,
+      "sha256": "03a8c11a083d308296ba08586b3ba01d525f3c7b2f36f8d24bf4974535ce6e55"
+    },
+    {
+      "path": "graphs/graphs_0126.bin",
+      "bytes": 9583796,
+      "sha256": "72cb7989d27e483c52a5527faa3c2c651ea0bf439cedaac25365907e598cc282"
+    },
+    {
+      "path": "graphs/graphs_0127.bin",
+      "bytes": 9795932,
+      "sha256": "e67d963bbf827de0825104dfef434cd9dbf8f9fedbd48bfd8fe991546dab955c"
+    },
+    {
+      "path": "graphs/graphs_0128.bin",
+      "bytes": 9373940,
+      "sha256": "7ee6eacdf33c739ce0b7d71ac92f05c68e785f9efc7385aebc0265073ead4b25"
+    },
+    {
+      "path": "graphs/graphs_0129.bin",
+      "bytes": 7289364,
+      "sha256": "3fb2f6470c22c9e1090526fa68db1d8d9c1ebed49dbcd6183a83463f24f8b45e"
+    },
+    {
+      "path": "graphs/graphs_0130.bin",
+      "bytes": 9671292,
+      "sha256": "84bf9e2c14133fde8bd7e62d126d524ea55cbc8702401611a21183871e3c9125"
+    },
+    {
+      "path": "graphs/graphs_0131.bin",
+      "bytes": 9609552,
+      "sha256": "8dc629d5f1a614a6636478c9596c8b2fcfeb587ba61c3a206272a602318910e4"
+    },
+    {
+      "path": "graphs/graphs_0132.bin",
+      "bytes": 9442668,
+      "sha256": "833277d483fbe36d020cddcdd83474481fb81304cb1ab0ef256e2d432d7ae964"
+    },
+    {
+      "path": "graphs/graphs_0133.bin",
+      "bytes": 9332444,
+      "sha256": "da399841aab1a09d73c508208c4c8cf001fdc13f8c971f8036c149d3c633bc1f"
+    },
+    {
+      "path": "graphs/graphs_0134.bin",
+      "bytes": 9680416,
+      "sha256": "41e140b950ae9d055e387b15394ff177b11498686996934697f6ad3f69bb8ca7"
+    },
+    {
+      "path": "graphs/graphs_0135.bin",
+      "bytes": 9502656,
+      "sha256": "b70141cf0cbe5a8f1ab356c611a48ce4322592439d4cd7bc659dcc43496432b1"
+    },
+    {
+      "path": "graphs/graphs_0136.bin",
+      "bytes": 9800124,
+      "sha256": "049483053794556aed246688450f6cc469905eef2ccc0eaae5aa40f1e1d849af"
+    },
+    {
+      "path": "graphs/graphs_0137.bin",
+      "bytes": 9378708,
+      "sha256": "63bb9aed4b799091c7b86179188c09a71824eead50b8e84f3f36d694863f7a5e"
+    },
+    {
+      "path": "graphs/graphs_0138.bin",
+      "bytes": 9436608,
+      "sha256": "182a7dfe76bea8d250772da9d96c36ff208933ab7caa5ef5c4a9aa104f489583"
+    },
+    {
+      "path": "graphs/graphs_0139.bin",
+      "bytes": 7281240,
+      "sha256": "7873cee99beb6865f77b161896e27753981a8963fcad0b9f99c5f254a76f6736"
+    },
+    {
+      "path": "graphs/graphs_0140.bin",
+      "bytes": 9574784,
+      "sha256": "c5c4d34740886aecd4cf624b1c45e4d864ccff392803bc4796471de89568b69e"
+    },
+    {
+      "path": "graphs/graphs_0141.bin",
+      "bytes": 9408816,
+      "sha256": "9a9336ca73aa02d270e7eb350cf5be98e65aaf2d5dd19563d90091e40164eb57"
+    },
+    {
+      "path": "graphs/graphs_0142.bin",
+      "bytes": 9528852,
+      "sha256": "451e2503efca72a66c802434dc5d00f70f82272d37dbc725aa0bc20f8486dd7e"
+    },
+    {
+      "path": "graphs/graphs_0143.bin",
+      "bytes": 9313304,
+      "sha256": "70105a933e4658e54851aa523dfbbabf4c8fa9674a5acd8ab28ff14a21699273"
+    },
+    {
+      "path": "graphs/graphs_0144.bin",
+      "bytes": 9378196,
+      "sha256": "840a40078cd397469beb8586370839c107aa4fa459d7a1a240c07191b1e95c87"
+    },
+    {
+      "path": "graphs/graphs_0145.bin",
+      "bytes": 9653688,
+      "sha256": "8850569fd297af012f39cb28e955cc9a55dfc8da1bb73f890584aa6344cb7339"
+    },
+    {
+      "path": "graphs/graphs_0146.bin",
+      "bytes": 9454584,
+      "sha256": "72a611692575c14b40b2dd6b5aa58f134190498ead4187b50b727a9e301e7137"
+    },
+    {
+      "path": "graphs/graphs_0147.bin",
+      "bytes": 9487764,
+      "sha256": "c4e1ca92b627fbf24b146d26be6eb2d0137e3614909a2d278950c0d97f48e960"
+    },
+    {
+      "path": "graphs/graphs_0148.bin",
+      "bytes": 9881192,
+      "sha256": "598d45dea44c4bdb1b3b5e6649140603ffa301399c1984424c00a3e5df671373"
+    },
+    {
+      "path": "graphs/graphs_0149.bin",
+      "bytes": 7271592,
+      "sha256": "4226e32d0959f11883916ced5185233868c086636bc7e5d54131d723c694adc9"
+    },
+    {
+      "path": "graphs/graphs_0150.bin",
+      "bytes": 9358344,
+      "sha256": "7ddaf7cfcbaebc30e48cffd5b1bbdc1bfda4fb44811dc9911e78ec513daa7cf7"
+    },
+    {
+      "path": "graphs/graphs_0151.bin",
+      "bytes": 9461904,
+      "sha256": "86d1dea01d4afbd2feb017708b962254f8bc97e32d7486d33e5a34f7d0cb34a6"
+    },
+    {
+      "path": "graphs/graphs_0152.bin",
+      "bytes": 9514396,
+      "sha256": "4169551f0d7234b944d5e39afbdc432bc966adf5bd216169d7a0ff988445d2f4"
+    },
+    {
+      "path": "graphs/graphs_0153.bin",
+      "bytes": 9475244,
+      "sha256": "82f88ccb7c10acf8345f3e40ed4874636940c09dc700abda800dedf770d16691"
+    },
+    {
+      "path": "graphs/graphs_0154.bin",
+      "bytes": 9751964,
+      "sha256": "3cfd292d5b5256b5138aab8f70a9f902e2a50518877555ccaa0b6cc0aaa1c1fe"
+    },
+    {
+      "path": "graphs/graphs_0155.bin",
+      "bytes": 9660504,
+      "sha256": "77a5bc41b608c9c2dc22f1124a4ffb465d4b3c371edbf03b960c4aae5d7929f8"
+    },
+    {
+      "path": "graphs/graphs_0156.bin",
+      "bytes": 9615984,
+      "sha256": "a4c306b3dffb579bcb8c25df7696f0f7ad0e2050bb991f8f702a078d70015ce2"
+    },
+    {
+      "path": "graphs/graphs_0157.bin",
+      "bytes": 9279568,
+      "sha256": "e5a8d9cfdaafd6489e20d35df0dcb67424a826a3318753e87b6d859bfd272ec4"
+    },
+    {
+      "path": "graphs/graphs_0158.bin",
+      "bytes": 9417640,
+      "sha256": "c4f9a1e189d4fc48bbb7f97c59bcf5e074bcec617443ea1388770c0358c5f33e"
+    },
+    {
+      "path": "graphs/graphs_0159.bin",
+      "bytes": 7639340,
+      "sha256": "0bd2aa1bae1e2ea283e321cf14f8a148b3f34a6fe88c3a0ceb5c9d35ff64781b"
+    },
+    {
+      "path": "graphs/graphs_0160.bin",
+      "bytes": 10051424,
+      "sha256": "f14500f89f157f375da87bae24c7caf6abb75cba72cac643c023d9a9e06a50e5"
+    },
+    {
+      "path": "graphs/graphs_0161.bin",
+      "bytes": 9476996,
+      "sha256": "21bce4b6a37e28a90f564ac0a6af8708e4d1bf071ef313872110f3cff61dbb8e"
+    },
+    {
+      "path": "graphs/graphs_0162.bin",
+      "bytes": 9626008,
+      "sha256": "db774580149118c38d1ad5866e8ce09ca07d8bf598206c2ff6e3d04e2d952dbd"
+    },
+    {
+      "path": "graphs/graphs_0163.bin",
+      "bytes": 9368596,
+      "sha256": "db8bce049674cdaac1c5914ae04600eb929fcbd08cf360ba5ecea3d5d2be1c44"
+    },
+    {
+      "path": "graphs/graphs_0164.bin",
+      "bytes": 9426760,
+      "sha256": "9c65e05681c95f45b6ccfc23bac2328ecc0f465487a22f52b07cd24819f1d57f"
+    },
+    {
+      "path": "graphs/graphs_0165.bin",
+      "bytes": 9633836,
+      "sha256": "ac36e72f856370f7cd867819daf73c4216f31399e1d58d379d223c8fc79b9c4c"
+    },
+    {
+      "path": "graphs/graphs_0166.bin",
+      "bytes": 9387188,
+      "sha256": "f6ad21d8e2d95a688d39b0f4d079d5d7f7fd390bed6e84300409fad5b3aa3938"
+    },
+    {
+      "path": "graphs/graphs_0167.bin",
+      "bytes": 9472124,
+      "sha256": "9c86688377a4044a9fc6c78d0e3598058c8e0376772aff0a65c45ceae87ab18e"
+    },
+    {
+      "path": "graphs/graphs_0168.bin",
+      "bytes": 9312340,
+      "sha256": "6f82371089de07174fec628a50738ad14531a3ffc4ba68214393e8dac0d5d592"
+    },
+    {
+      "path": "graphs/graphs_0169.bin",
+      "bytes": 7374148,
+      "sha256": "694cc23fa51591bc99193271a126a149cacb6a3ad726094c6d546bb978c9a193"
+    },
+    {
+      "path": "graphs/graphs_0170.bin",
+      "bytes": 9730388,
+      "sha256": "18b47d7451af690cee4bad1fc21a4318cecfda4ac0b9af5ec49c9a85f8918404"
+    },
+    {
+      "path": "graphs/graphs_0171.bin",
+      "bytes": 9392196,
+      "sha256": "d4174729a6fb6f2f647752e78ae0d6e38962c19f2f248a74d8ad1553008ce7e5"
+    },
+    {
+      "path": "graphs/graphs_0172.bin",
+      "bytes": 9818108,
+      "sha256": "0c626e67b3c3a731f8c2cb1983716ae228b434d5df1c4507f7ef806689b6db67"
+    },
+    {
+      "path": "graphs/graphs_0173.bin",
+      "bytes": 9602764,
+      "sha256": "8314ca34ebe1e6d24a82920a7b436dbac0cbbcc0f59b0af14d8f3a7d7a8a4254"
+    },
+    {
+      "path": "graphs/graphs_0174.bin",
+      "bytes": 9647416,
+      "sha256": "38f274fbfa413e335ec931d0113fe6f98ceecc532fad18c0199d6ee35397bf68"
+    },
+    {
+      "path": "graphs/graphs_0175.bin",
+      "bytes": 9558780,
+      "sha256": "c2d8398ad7f6e8ad469120560e53d5bcb2da5edec90c880f2160b00efe32f1af"
+    },
+    {
+      "path": "graphs/graphs_0176.bin",
+      "bytes": 9315156,
+      "sha256": "518c0cf361b52982ca841d195ae85c7251208ff9a07ec433510aaeac35fcf94f"
+    },
+    {
+      "path": "graphs/graphs_0177.bin",
+      "bytes": 9335548,
+      "sha256": "3c97051c9c1c3dba6fb7924bdfaff95088b0640487d61ccc72258444fb718264"
+    },
+    {
+      "path": "graphs/graphs_0178.bin",
+      "bytes": 9294528,
+      "sha256": "e871926125faec2617bd6fb1f663a90720266477a045e76dc98e620962812389"
+    },
+    {
+      "path": "graphs/graphs_0179.bin",
+      "bytes": 7376868,
+      "sha256": "1bd9384b935a0836f531e4f2ced21953170a1471e7410f973fba39bd93967024"
+    },
+    {
+      "path": "graphs/graphs_0180.bin",
+      "bytes": 9226048,
+      "sha256": "aab64e5b00f21b5bcd86f75d75330c780f10c1cd1238a48485de77638cedf531"
+    },
+    {
+      "path": "graphs/graphs_0181.bin",
+      "bytes": 9298088,
+      "sha256": "d91f4296b011b8f0c930ad67aa48636084a8c7b7df2fd3317a9d463d3885331e"
+    },
+    {
+      "path": "graphs/graphs_0182.bin",
+      "bytes": 9853376,
+      "sha256": "55fc614433ba875f79d845bf606559e018952bb4c7c85e6879ac72a1ce31c76c"
+    },
+    {
+      "path": "graphs/graphs_0183.bin",
+      "bytes": 9576500,
+      "sha256": "d9f13bddf9bc586bf09ceb4dccccc3d9ae7654207cf4b51395e4b0e6b6df9731"
+    },
+    {
+      "path": "graphs/graphs_0184.bin",
+      "bytes": 9507424,
+      "sha256": "82f31312f958905f5aab4e5cb3d1f43264ed7bce0b6aa99c8a0a6b2d56cbb531"
+    },
+    {
+      "path": "graphs/graphs_0185.bin",
+      "bytes": 9632772,
+      "sha256": "f9c8bcc86da0c498a7ff2c4f74234aaa89dbf4b5bef16c12cf208100c24f2948"
+    },
+    {
+      "path": "graphs/graphs_0186.bin",
+      "bytes": 9522744,
+      "sha256": "33838d6c7c6b095e2efab500770af097f70cb3cd3949fe703b35589f91027069"
+    },
+    {
+      "path": "graphs/graphs_0187.bin",
+      "bytes": 9429912,
+      "sha256": "c67c8d1ad84203747d1f7f135c06af3c01e9bbecf6d31a90288f920506039e4b"
+    },
+    {
+      "path": "graphs/graphs_0188.bin",
+      "bytes": 9426020,
+      "sha256": "281944e8ee5bd93613655019dfe935654d540c329045c5fe569d390c226a38ce"
+    },
+    {
+      "path": "graphs/graphs_0189.bin",
+      "bytes": 7375172,
+      "sha256": "1f8d9533701b804a81eea89e7ba9551f42d2b213fec5fdfa78a51558314ca828"
+    },
+    {
+      "path": "graphs/graphs_0190.bin",
+      "bytes": 9761116,
+      "sha256": "f0a4aa32dcb60d6706e1797fb3b3b9e9c754a2ae1472ac6136ee6ad5793d5b29"
+    },
+    {
+      "path": "graphs/graphs_0191.bin",
+      "bytes": 9331540,
+      "sha256": "829f3567e94228b3c8eff93ef3c9abb43e1781b2bce74774afeccc17260c1c41"
+    },
+    {
+      "path": "graphs/graphs_0192.bin",
+      "bytes": 9185404,
+      "sha256": "3d9e7db50677cadc9169a4140a064a06d7f1b0aecce27d5d28a590365e77b2eb"
+    },
+    {
+      "path": "graphs/graphs_0193.bin",
+      "bytes": 9472040,
+      "sha256": "ec71261d95b56b00766577a9ce5283de9ec70a529651ddc8293d944455098223"
+    },
+    {
+      "path": "graphs/graphs_0194.bin",
+      "bytes": 9580516,
+      "sha256": "03ee47b4bcfb02c3e43cfa31f5d88641800797c7d77fbd0464c7c8a7c9fb5169"
+    },
+    {
+      "path": "graphs/graphs_0195.bin",
+      "bytes": 9222784,
+      "sha256": "ef4e1bdd8588eb400d46e2add25c5fe69f22ec1ae090bf0d439e15b39762529e"
+    },
+    {
+      "path": "graphs/graphs_0196.bin",
+      "bytes": 9265652,
+      "sha256": "918a90ef1f370c2b4bf0314effa178750bb9c40a8493af2a28e5a6cf1a27159e"
+    },
+    {
+      "path": "graphs/graphs_0197.bin",
+      "bytes": 9582756,
+      "sha256": "c1e442e58a2e4edb3c49e87819a46f779d7b4aa14ff7726b3918a15c29e17d9d"
+    },
+    {
+      "path": "graphs/graphs_0198.bin",
+      "bytes": 9615692,
+      "sha256": "070d0e1484bc8d3a4ae45c8d52e8c54d222ec11f250db264af5845ebd445e870"
+    },
+    {
+      "path": "graphs/graphs_0199.bin",
+      "bytes": 7192680,
+      "sha256": "22bd06665564121476c2ebb60a637cc26911ea548f1d752187b6ecefaa540784"
+    },
+    {
+      "path": "graphs/graphs_0200.bin",
+      "bytes": 9209656,
+      "sha256": "57416c34ea067976a24d3f50828071f7ff30cab533c6af5f94da604978eca7c3"
+    },
+    {
+      "path": "graphs/graphs_0201.bin",
+      "bytes": 9532640,
+      "sha256": "78b30bbd78189833129009419991c084609fd738479ef5fcead4d00af702e152"
+    },
+    {
+      "path": "graphs/graphs_0202.bin",
+      "bytes": 9613180,
+      "sha256": "dcaed1acf39fd6b62db6c50a0d872d132128ff981096be3e22821b3c58813c59"
+    },
+    {
+      "path": "graphs/graphs_0203.bin",
+      "bytes": 9700856,
+      "sha256": "1411dc70e6159f43997f7e5477c41c487881368b24feac25abb2c3c3d4e1186f"
+    },
+    {
+      "path": "graphs/graphs_0204.bin",
+      "bytes": 9452064,
+      "sha256": "ef6bde9fd5e965d76fdabf3f634f38c19e051588b7543bd6f64532337e51d907"
+    },
+    {
+      "path": "graphs/graphs_0205.bin",
+      "bytes": 9153548,
+      "sha256": "c71b062ec3fb3dbea258215e8ae2d780d997da0f382e4d4f8bd64d242296e7ed"
+    },
+    {
+      "path": "graphs/graphs_0206.bin",
+      "bytes": 9849472,
+      "sha256": "697faf2b4ea7fda0f19b0335128eae22357bd5c001092ee8a6efed694cc56cb4"
+    },
+    {
+      "path": "graphs/graphs_0207.bin",
+      "bytes": 9396488,
+      "sha256": "b0b87764aa2e7fbef9994944f195f82963caf24165a3a98ac18ed5f24430d23e"
+    },
+    {
+      "path": "graphs/graphs_0208.bin",
+      "bytes": 9536092,
+      "sha256": "8b4cf002583ecc3204a505331b06fd07d2c2025f48a431544d504a28d029eb0b"
+    },
+    {
+      "path": "graphs/graphs_0209.bin",
+      "bytes": 7241420,
+      "sha256": "fd976fd825d2262f8539ed65ee5339f81e01c1d89f544a8f3536339b2663bb04"
+    },
+    {
+      "path": "graphs/graphs_0210.bin",
+      "bytes": 9393920,
+      "sha256": "1a3f851f48a487c3b8021fc2452170e9804ac430103e3b2c0353eee988a1d995"
+    },
+    {
+      "path": "graphs/graphs_0211.bin",
+      "bytes": 9404200,
+      "sha256": "4ece8ba191cc820fabac3ac89008910f551afa49317786fcfcda3e77bc7a7f89"
+    },
+    {
+      "path": "graphs/graphs_0212.bin",
+      "bytes": 9381068,
+      "sha256": "5ddafaae128f815ddb8b11ee38f12a05f17421d0e216127ae5fc1d1aa6f8900f"
+    },
+    {
+      "path": "graphs/graphs_0213.bin",
+      "bytes": 9507528,
+      "sha256": "445fcb57551215b39208e3bc42c041cc7ca71b2a372b3c0f8a306ced41d7dc0d"
+    },
+    {
+      "path": "graphs/graphs_0214.bin",
+      "bytes": 9430840,
+      "sha256": "58ace850a1298131f822a62e2e67033af0eda0708925b7ca3a80edbf33a6fdf1"
+    },
+    {
+      "path": "graphs/graphs_0215.bin",
+      "bytes": 9339320,
+      "sha256": "48f6efb45a7d2c8d1f60b8eed3dd6e740a2508dbfd2ae846c6c598c27a922547"
+    },
+    {
+      "path": "graphs/graphs_0216.bin",
+      "bytes": 9660764,
+      "sha256": "bb4eaefda4355828667c2c38c13f52346a28d6e33c3e05d57e98d019cde07ae8"
+    },
+    {
+      "path": "graphs/graphs_0217.bin",
+      "bytes": 9330360,
+      "sha256": "14ff213d60dbac2ab0c3bd0939203e44707d234d13d89edfebd86f67c52d42c9"
+    },
+    {
+      "path": "graphs/graphs_0218.bin",
+      "bytes": 9425924,
+      "sha256": "58cfcf5af0096de1f9ade094e3581ab3ca358d1b71e9d6f6c57d866bfba5b3ad"
+    },
+    {
+      "path": "graphs/graphs_0219.bin",
+      "bytes": 7126180,
+      "sha256": "80bc2eb50fa429f4afc1cb7f62326224cefccf1a74e2a44f4b3b5b45dcc5acdf"
+    },
+    {
+      "path": "graphs/graphs_0220.bin",
+      "bytes": 10037608,
+      "sha256": "94fa3b630cb952539bf6f8ba23ec8db46f5fce6e14a97580e6fa7a92c22a7d12"
+    },
+    {
+      "path": "graphs/graphs_0221.bin",
+      "bytes": 9670924,
+      "sha256": "bf85b66761f7fdc0e302b9bd498e503b282735ac5e162936e767c76a14be7d5f"
+    },
+    {
+      "path": "graphs/graphs_0222.bin",
+      "bytes": 9589312,
+      "sha256": "6b0d1f0bbae00b1feb1fa05cfb9785df50658cd988107a3b74b223e5f4ae5ebf"
+    },
+    {
+      "path": "graphs/graphs_0223.bin",
+      "bytes": 9804956,
+      "sha256": "11c4d34b1149bb6d23f75902c8583905d513cf2c7f64a4bc5202d9aded1a6b5e"
+    },
+    {
+      "path": "graphs/graphs_0224.bin",
+      "bytes": 9437612,
+      "sha256": "d5568ca42e7c101aa2bd8d0ed3f974223ed2fc6f0c95f9c5dfa1986cfe561fc4"
+    },
+    {
+      "path": "graphs/graphs_0225.bin",
+      "bytes": 9474940,
+      "sha256": "761e0a495b64dad96664ee42daf9691a6a9c72043f05c44ebde116b5efffc736"
+    },
+    {
+      "path": "graphs/graphs_0226.bin",
+      "bytes": 9403100,
+      "sha256": "55835ccb1059af4f5a1bf5fecf028bb702278f45466e33d8351674a6ce9ebd08"
+    },
+    {
+      "path": "graphs/graphs_0227.bin",
+      "bytes": 9584832,
+      "sha256": "7e7499456af0ca8ad0316b8f2ea2947c4cbf3e3982e493c4746683ed7855b743"
+    },
+    {
+      "path": "graphs/graphs_0228.bin",
+      "bytes": 9610172,
+      "sha256": "b0dedfdaa3d81926cee8fc9d7172a6857978bd1c206a09df4bbe88da4e65058d"
+    },
+    {
+      "path": "graphs/graphs_0229.bin",
+      "bytes": 7324648,
+      "sha256": "501f842c4afbb4b49649611bda4fbffdc2efb1c58d6c6a258225c7893523cd3b"
+    },
+    {
+      "path": "graphs/graphs_0230.bin",
+      "bytes": 9593416,
+      "sha256": "6c78102c9616d80a930326a0fb0b2de9d4952067b7695db9afe99065381597df"
+    },
+    {
+      "path": "graphs/graphs_0231.bin",
+      "bytes": 9618844,
+      "sha256": "005219087bdd6a1fd4a60d8f7df3a644fa4b76a1257bfa5f6b38d47ab8e4cb8a"
+    },
+    {
+      "path": "graphs/graphs_0232.bin",
+      "bytes": 9483620,
+      "sha256": "242b9729cf5d8a6764db5936099413faf52bbc6a34acf5e641e735c40cf1fc58"
+    },
+    {
+      "path": "graphs/graphs_0233.bin",
+      "bytes": 9688632,
+      "sha256": "6020757018f42f6a2eb699a58495acf0becfc3bc5356f264cbfe297536c77a2e"
+    },
+    {
+      "path": "graphs/graphs_0234.bin",
+      "bytes": 9742284,
+      "sha256": "fe0bf3e36064eedb3233c71727629a4160b7b48bfb08bc94203f2e74ef3fa2d4"
+    },
+    {
+      "path": "graphs/graphs_0235.bin",
+      "bytes": 9623968,
+      "sha256": "12dd8aef9b25a41ed495d45212ff30804f6cc6781b1dad3b7e9fb906fa2f7127"
+    },
+    {
+      "path": "graphs/graphs_0236.bin",
+      "bytes": 9625656,
+      "sha256": "c740839ec49e295ac8459ce922fd14ff49ad271945c4664fd191a74214d68fae"
+    },
+    {
+      "path": "graphs/graphs_0237.bin",
+      "bytes": 9503868,
+      "sha256": "d1f569247c82d801c812f20f3e40e035e699c7241f1e251fae2661b46f8e9469"
+    },
+    {
+      "path": "graphs/graphs_0238.bin",
+      "bytes": 9596344,
+      "sha256": "050a8e6ab1196c84fd80d19d99052207b37d612dff26b86e819501ec91ce2037"
+    },
+    {
+      "path": "graphs/graphs_0239.bin",
+      "bytes": 7138928,
+      "sha256": "aae964b875594be19daf7619399661913ea5e60febcfc64c2cca3aad7c8a04ae"
+    },
+    {
+      "path": "graphs/graphs_0240.bin",
+      "bytes": 9549216,
+      "sha256": "e57c207235bc0bbda365f3df79ace519dd71749c53a3d9f3c8ad0d00b9d1fe71"
+    },
+    {
+      "path": "graphs/graphs_0241.bin",
+      "bytes": 9485708,
+      "sha256": "4841d01c8e1f55297ba2ae28a8c6acedde737061285a6fcc729789a9b05397cd"
+    },
+    {
+      "path": "graphs/graphs_0242.bin",
+      "bytes": 9601968,
+      "sha256": "38f734d73cc621843cab0c32571ebf337d4bf61ecba1c643bb4bd07ccd6baa36"
+    },
+    {
+      "path": "graphs/graphs_0243.bin",
+      "bytes": 9498800,
+      "sha256": "64776dd88330e49c3ef229e658c830fdc3bf0a81ab6484d433881485cd7d013f"
+    },
+    {
+      "path": "graphs/graphs_0244.bin",
+      "bytes": 9478496,
+      "sha256": "ed4142647ce472d81296067c1aa21ea3017efa1ad2889b5323304f45ecea4120"
+    },
+    {
+      "path": "graphs/graphs_0245.bin",
+      "bytes": 9623908,
+      "sha256": "3cf798b3e8018cb0076fe7eeae21f78ea00d542f88739aff6318f3411b35d6e9"
+    },
+    {
+      "path": "graphs/graphs_0246.bin",
+      "bytes": 9637092,
+      "sha256": "5e0670d828a44e0374db5e773af37860c4c25aa84a0985138894e086fac4c6f4"
+    },
+    {
+      "path": "graphs/graphs_0247.bin",
+      "bytes": 9484220,
+      "sha256": "28b9439fda0063bd11001059e217c82f34b936e83c12ae5e366223544d0efab4"
+    },
+    {
+      "path": "graphs/graphs_0248.bin",
+      "bytes": 9512204,
+      "sha256": "86c7849527333fcd2a2aa1ef644fa7be050a226a5593410462979500d8d1c174"
+    },
+    {
+      "path": "graphs/graphs_0249.bin",
+      "bytes": 7231732,
+      "sha256": "e06085f54acf6780f1f9178364e15be38c5bd462f1a7062e2006bc87001720c9"
+    },
+    {
+      "path": "graphs/graphs_0250.bin",
+      "bytes": 9435032,
+      "sha256": "892a8066b9d8f767a722950119b16a95271fd28e8c6ae00b0a680b92a3523897"
+    },
+    {
+      "path": "graphs/graphs_0251.bin",
+      "bytes": 9523868,
+      "sha256": "7ef614233994726a48fb7018ebc9d394d0635ceb5d52bd10cedc1266622c4ac5"
+    },
+    {
+      "path": "graphs/graphs_0252.bin",
+      "bytes": 9535616,
+      "sha256": "0c7e01d0394b016e4f77050341472eca637e78809a6dedda436ca493e6d8369a"
+    },
+    {
+      "path": "graphs/graphs_0253.bin",
+      "bytes": 9695476,
+      "sha256": "9bbc0986b40e16e310408a11ec43eda96f74b25e64cd6ccbddb03ca06e5f1a3a"
+    },
+    {
+      "path": "graphs/graphs_0254.bin",
+      "bytes": 9531016,
+      "sha256": "ae31e590f9da0427fbc59dce108c1043c24e07565a19c73dd1af1b9fa5242992"
+    },
+    {
+      "path": "graphs/graphs_0255.bin",
+      "bytes": 9466720,
+      "sha256": "8fb9c0eeec3c7d48fab38a117aef942ac7b258bd0a568fa2369bb6df1ff3eafc"
+    },
+    {
+      "path": "graphs/graphs_0256.bin",
+      "bytes": 9492164,
+      "sha256": "045c1d8b310352e0003ca7be1f71504184b0c1f2db92133d104895c29ce03afd"
+    },
+    {
+      "path": "graphs/graphs_0257.bin",
+      "bytes": 10124300,
+      "sha256": "9cb6c139e3bae6b6bb346e327ade6b079afdb872a3b121a4aa9982757f4f6060"
+    },
+    {
+      "path": "graphs/graphs_0258.bin",
+      "bytes": 9137464,
+      "sha256": "28974d2b26d9c8b7e9e5a5098775a329427d16d3a68ff139690eb9f5c6f6d58e"
+    },
+    {
+      "path": "graphs/graphs_0259.bin",
+      "bytes": 7426172,
+      "sha256": "9e8317824d2b03731ece02e363f1d2319ef28964916504ff148f478f4c244c78"
+    },
+    {
+      "path": "graphs/graphs_0260.bin",
+      "bytes": 9613744,
+      "sha256": "7350a9b2dacc07df92bd2a0480a6f6d679bc44b5f059debc21616c311e7249bc"
+    },
+    {
+      "path": "graphs/graphs_0261.bin",
+      "bytes": 9523772,
+      "sha256": "2b655b31825c6124e39ff09afe6d733ef9406413ff61933e9f9d6d9fca103811"
+    },
+    {
+      "path": "graphs/graphs_0262.bin",
+      "bytes": 9398428,
+      "sha256": "e93af432f9e5fb76c6b6e58e31188c2c9eef416105473f6524b320f88f1cc99e"
+    },
+    {
+      "path": "graphs/graphs_0263.bin",
+      "bytes": 9401488,
+      "sha256": "a136a128e65edf6b065d70c78303ef413da413f2cd015c009b77bc1c60c362ee"
+    },
+    {
+      "path": "graphs/graphs_0264.bin",
+      "bytes": 9802968,
+      "sha256": "b8a71c578bbb996a35dcdb78507c10693fa1f219cf0cf6d20f2c1517c4d51dcb"
+    },
+    {
+      "path": "graphs/graphs_0265.bin",
+      "bytes": 9480200,
+      "sha256": "d2d87e001ba657d9484a3e0109f5c31f1b83e8e63cb0fddcb1c2e4b7e4e2a98c"
+    },
+    {
+      "path": "graphs/graphs_0266.bin",
+      "bytes": 9701724,
+      "sha256": "2845d90572d4950fda1275ba60792460a50c3242e6c121e48e2a4bab0a2c7d26"
+    },
+    {
+      "path": "graphs/graphs_0267.bin",
+      "bytes": 9310904,
+      "sha256": "05fdd20b1ee6e036b05aa578cda32b87b13d3e434b653eab0f698da8a71e450a"
+    },
+    {
+      "path": "graphs/graphs_0268.bin",
+      "bytes": 9312820,
+      "sha256": "e792edf758b40fe1ac96db6a4c22140a320ef9595a6f8c77a798d83aa9f68b39"
+    },
+    {
+      "path": "graphs/graphs_0269.bin",
+      "bytes": 7217316,
+      "sha256": "19a206cc220b3f0d5eb2308674420ff4ce5eef96eaae3e5ffde107066c362e7c"
+    },
+    {
+      "path": "graphs/graphs_0270.bin",
+      "bytes": 9727300,
+      "sha256": "8f9c745b1563100fd660e5e9532460690cef77ccc615f3790a0b8bcb8371f941"
+    },
+    {
+      "path": "graphs/graphs_0271.bin",
+      "bytes": 9455112,
+      "sha256": "8c9877ad7aa57101bdaabd71daa28d00026c4714939bc17212c2dead89c2216a"
+    },
+    {
+      "path": "graphs/graphs_0272.bin",
+      "bytes": 9611644,
+      "sha256": "06c3c887972e16326f732431b02e2aab972c8c42ade71f8a1678c7beecd3eca2"
+    },
+    {
+      "path": "graphs/graphs_0273.bin",
+      "bytes": 9225448,
+      "sha256": "591f89b4736c5c7a1091ae220b616072fe89cf8b8ce30217ff968de849385bbf"
+    },
+    {
+      "path": "graphs/graphs_0274.bin",
+      "bytes": 9423604,
+      "sha256": "5c6173ac23b20fc1b1a8c287fa78c93b5c97ef681ef5b737fbbf672ca287397b"
+    },
+    {
+      "path": "graphs/graphs_0275.bin",
+      "bytes": 9935636,
+      "sha256": "cc01d139ef2d13d6221e9ce5d3bb77a9c6a9562b6c9fd8bb438980b51898ba96"
+    },
+    {
+      "path": "graphs/graphs_0276.bin",
+      "bytes": 9531168,
+      "sha256": "08d92057a2fe38766b9050f594f29a285949b139c9cd932bd408f59726b6a622"
+    },
+    {
+      "path": "graphs/graphs_0277.bin",
+      "bytes": 9551012,
+      "sha256": "61d452f3387598573e596838297304c0e1dbb0f4393990d9c546f040876e3477"
+    },
+    {
+      "path": "graphs/graphs_0278.bin",
+      "bytes": 9252176,
+      "sha256": "ae26e838b6534d3856eb35e29aa0e666b8d6124df90515cf79b883ae33316587"
+    },
+    {
+      "path": "graphs/graphs_0279.bin",
+      "bytes": 7349104,
+      "sha256": "e44079c783e007fe62453145ae832becc16ffa0aa950a38223cddbb606407fb6"
+    },
+    {
+      "path": "graphs/graphs_0280.bin",
+      "bytes": 9638628,
+      "sha256": "aad1e1ffb3b0e1b601b8e1587f4384babbf99428ddbacd3d4facd08638c745e2"
+    },
+    {
+      "path": "graphs/graphs_0281.bin",
+      "bytes": 9446252,
+      "sha256": "56801d6c7ea4dff33008ee303124ba9724d0592f1d1e0d55a13aa125cfb03618"
+    },
+    {
+      "path": "graphs/graphs_0282.bin",
+      "bytes": 9622320,
+      "sha256": "371d89cdf1685701e67eb46839ee1b79dc8deea18cec7054b2950bec7f440940"
+    },
+    {
+      "path": "graphs/graphs_0283.bin",
+      "bytes": 9174180,
+      "sha256": "f82acaffdf31481f328b8dbba93e6eea1060d649663bfd30a94b280974116156"
+    },
+    {
+      "path": "graphs/graphs_0284.bin",
+      "bytes": 9558176,
+      "sha256": "952ce80732917bcc82c19d25c86694296226e6fe35ea948219d249f360423656"
+    },
+    {
+      "path": "graphs/graphs_0285.bin",
+      "bytes": 9500960,
+      "sha256": "9c46ce0d220f4bb89c15f870476dfe8f7db4ac98d71209574ae458206bba4c2f"
+    },
+    {
+      "path": "graphs/graphs_0286.bin",
+      "bytes": 9266400,
+      "sha256": "d221e727fe540a6cab5170138016ac27d6963f4dba2ed0375d018ddfb177b5f4"
+    },
+    {
+      "path": "graphs/graphs_0287.bin",
+      "bytes": 9332936,
+      "sha256": "c70aa66c3f661f154fc85d3dd51160b35d8b792973dbf7379c738c0a7176c561"
+    },
+    {
+      "path": "graphs/graphs_0288.bin",
+      "bytes": 9630216,
+      "sha256": "05635df1c775c16ff8f77a01c35c89a0033c9d900c5264f00c7ac72ee87c2254"
+    },
+    {
+      "path": "graphs/graphs_0289.bin",
+      "bytes": 7147928,
+      "sha256": "62fc76ed5f6262bc77cfeb927b926e464d7b0c655c54f152410e17b29b5a15b9"
+    },
+    {
+      "path": "graphs/graphs_0290.bin",
+      "bytes": 9558560,
+      "sha256": "28b0d41d962b0401b33646bfe0f563b79711601000d630fc1600bde822cdcf76"
+    },
+    {
+      "path": "graphs/graphs_0291.bin",
+      "bytes": 9750524,
+      "sha256": "6b9c5a2ee3e6f5880eadf40612ea9059c805dab08bd051e6859134ded4ac464e"
+    },
+    {
+      "path": "graphs/graphs_0292.bin",
+      "bytes": 9240696,
+      "sha256": "7215b0f98603e3391d37106dcdea8bafcd0aeb805d8468d56d302b5e94f4636a"
+    },
+    {
+      "path": "graphs/graphs_0293.bin",
+      "bytes": 9642940,
+      "sha256": "bdda0166bd3e9d633e3ad07e21478c4fc49b1e3cf11c84c8d56de5cfe728e1e0"
+    },
+    {
+      "path": "graphs/graphs_0294.bin",
+      "bytes": 9341908,
+      "sha256": "9fc4258469bbd12d8979e5387405e07b49750abd199f2b038e6998b783606f63"
+    },
+    {
+      "path": "graphs/graphs_0295.bin",
+      "bytes": 9505792,
+      "sha256": "47997f075e2e2e1b5bd0381f7bc473abc2111c17cc1b1eec6255e139824762ab"
+    },
+    {
+      "path": "graphs/graphs_0296.bin",
+      "bytes": 9476568,
+      "sha256": "c51e31a7aa3a3b94ee3d3131d747be36da164bdf5c79d3e6402fde60a09b5ba7"
+    },
+    {
+      "path": "graphs/graphs_0297.bin",
+      "bytes": 9515400,
+      "sha256": "8f14e79ca0dc941e35c991e2f8ce6ba4b85760ca7c115a71c2ff7ed43676813e"
+    },
+    {
+      "path": "graphs/graphs_0298.bin",
+      "bytes": 9608672,
+      "sha256": "3a8775ce2a57c94079238caf14010f008543b3e07afcc5c49fba89f215be9944"
+    },
+    {
+      "path": "graphs/graphs_0299.bin",
+      "bytes": 7117900,
+      "sha256": "57aee1ef26720cf62dc27cb5fb06d2b6f77e1169e732f5c15ef082f467bd8f80"
+    },
+    {
+      "path": "graphs/graphs_0300.bin",
+      "bytes": 9551104,
+      "sha256": "e14c8ffea5944f712489c0f26b1d8c2a6ce95a67b148dd1cc7931cd04ee41823"
+    },
+    {
+      "path": "graphs/graphs_0301.bin",
+      "bytes": 9389820,
+      "sha256": "c05a7df262b0f94db2e3c18fc02e4d167e1654a3b4848bce5240aad014f7dcdc"
+    },
+    {
+      "path": "graphs/graphs_0302.bin",
+      "bytes": 9680464,
+      "sha256": "0ea6106a874caa8a565f970e3e37206dba0a18ad7d1791458a7c09f4601e260a"
+    },
+    {
+      "path": "graphs/graphs_0303.bin",
+      "bytes": 9708376,
+      "sha256": "964667595427dd9a0a0ed0d6355b379944c190027264019b23438aa7d703e77d"
+    },
+    {
+      "path": "graphs/graphs_0304.bin",
+      "bytes": 9523180,
+      "sha256": "db09cc530925a7d3b387ed9cb68157cbe1b67096cf788dec7294e404043894a3"
+    },
+    {
+      "path": "graphs/graphs_0305.bin",
+      "bytes": 9516356,
+      "sha256": "adbb4dd088a1ad3a099cffda760204f4fb4e538747a8c2004259a0fb2bc68b3e"
+    },
+    {
+      "path": "graphs/graphs_0306.bin",
+      "bytes": 9317052,
+      "sha256": "f6694b5a6c7676d9ee4097aacf90dc72a8ba79edcc1ee4e432d4f94134f59090"
+    },
+    {
+      "path": "graphs/graphs_0307.bin",
+      "bytes": 9783772,
+      "sha256": "28be7c2af74472b03a9562d5081ee452906ad36eb67dea4e428f55c53413b69e"
+    },
+    {
+      "path": "graphs/graphs_0308.bin",
+      "bytes": 9586736,
+      "sha256": "35c49bf5880adc16d642ea3a1785d64275dd748f81b6122a52d78320d62419ac"
+    },
+    {
+      "path": "graphs/graphs_0309.bin",
+      "bytes": 7424720,
+      "sha256": "376fb7e1e88682a50c04d218dd077ae7de1395a36bc4cd8477976a18746f1a0e"
+    },
+    {
+      "path": "graphs/graphs_0310.bin",
+      "bytes": 9778724,
+      "sha256": "2d1e3d750e5fd9db7beba8d78b8287260aa64bf03c06d7cc5864e3650f3c25f5"
+    },
+    {
+      "path": "graphs/graphs_0311.bin",
+      "bytes": 9721880,
+      "sha256": "e9d92952ecf873c66455e024ec40d33ce4c1aa458335c593f815a69ec867cab4"
+    },
+    {
+      "path": "graphs/graphs_0312.bin",
+      "bytes": 9772524,
+      "sha256": "48bfa8f27d1757d38d98bd908de70e5b52e1d12b61b0951e8231616b38ed7e55"
+    },
+    {
+      "path": "graphs/graphs_0313.bin",
+      "bytes": 9833600,
+      "sha256": "1ee7750974d37a9d87f1f894c01cc35ad77dc5f80e7da65ce9d8d8a816c459d2"
+    },
+    {
+      "path": "graphs/graphs_0314.bin",
+      "bytes": 9360108,
+      "sha256": "1407dafcfcd74a21ab095e6f3f46c54779f8d9ea9db7cab0b62effdbb6e20069"
+    },
+    {
+      "path": "graphs/graphs_0315.bin",
+      "bytes": 9855152,
+      "sha256": "970978049ebe2281e8f9560167edebdf0152296883086bdf88def2a924a743e0"
+    },
+    {
+      "path": "graphs/graphs_0316.bin",
+      "bytes": 9164396,
+      "sha256": "58af90a4b101dbef81bdb7c81f5fc328a8f6b492290e984c338a662f58ae5444"
+    },
+    {
+      "path": "graphs/graphs_0317.bin",
+      "bytes": 9706684,
+      "sha256": "41bc5b7e53854a19ae962497edee3d86c406eaf1d0bc78d7f67e4460d17f479d"
+    },
+    {
+      "path": "graphs/graphs_0318.bin",
+      "bytes": 9621548,
+      "sha256": "a30cbd0c4ab544f09e12c4a3642f705317137b187c2dc8afe5ccffb58f3fad3a"
+    },
+    {
+      "path": "graphs/graphs_0319.bin",
+      "bytes": 7210744,
+      "sha256": "a8a66c30bdea055f930fa30dcb6079478de86e07e76ad3864e6c0aef2ff6ac56"
+    },
+    {
+      "path": "graphs/graphs_0320.bin",
+      "bytes": 9786984,
+      "sha256": "0e7b8ad9481bd49d1749dad696c9836732d7c19f92948eee8a3398ea65da210b"
+    },
+    {
+      "path": "graphs/graphs_0321.bin",
+      "bytes": 9658908,
+      "sha256": "ea9a2100e6414cf3283b01e6792a7cb2cf78aadd8c1872eb03fb05fb749a0d57"
+    },
+    {
+      "path": "graphs/graphs_0322.bin",
+      "bytes": 9586564,
+      "sha256": "ca1fa4462a5ab84624a36db0034a2531c47ae22032dcb91645d04f0b38522068"
+    },
+    {
+      "path": "graphs/graphs_0323.bin",
+      "bytes": 9631436,
+      "sha256": "ca960fd690a5d99275fbb5b7aac68c92cc664b644ca4c9fc641dd267137ac7fe"
+    },
+    {
+      "path": "graphs/graphs_0324.bin",
+      "bytes": 9535136,
+      "sha256": "b83d5a2f6252974068f6cfc5677888fe64ec53a1a7f61275c3ca3cdbd2d7d05e"
+    },
+    {
+      "path": "graphs/graphs_0325.bin",
+      "bytes": 9572588,
+      "sha256": "561fbfcfb2807570776ba0dff2f55813a3453555d7fd0786ee6cbe15356aa22d"
+    },
+    {
+      "path": "graphs/graphs_0326.bin",
+      "bytes": 9668848,
+      "sha256": "bc6089c7bf455c2759ebe17c0cefeb3b5ff1fda5e330f72a094abfa2ca6d4bef"
+    },
+    {
+      "path": "graphs/graphs_0327.bin",
+      "bytes": 9471164,
+      "sha256": "9c4fd8ee5d7716a377b83f4740b97a408382242f08ee493f1f0848e70b4e2377"
+    },
+    {
+      "path": "graphs/graphs_0328.bin",
+      "bytes": 9668012,
+      "sha256": "f6c400cfa48a23af115d462837a45ac0808b3cb673b06f71de9f1ae2931661c9"
+    },
+    {
+      "path": "graphs/graphs_0329.bin",
+      "bytes": 7074484,
+      "sha256": "22ec81bb811c3a823096998157d3eb7af570a73ab87caaa7ca88ebfd15ac4922"
+    },
+    {
+      "path": "graphs/graphs_0330.bin",
+      "bytes": 9529052,
+      "sha256": "bdb63c401dd15baa0223c7897c7f505cd89c55e19db89b80931516fbfcd22a43"
+    },
+    {
+      "path": "graphs/graphs_0331.bin",
+      "bytes": 9846576,
+      "sha256": "e58e7e1f010f4ddc2a40b5f2e58c872133e815b02f5ee31bf0df26b39be2d42b"
+    },
+    {
+      "path": "graphs/graphs_0332.bin",
+      "bytes": 9333144,
+      "sha256": "111663bcbb53ee834fd40e791c75084093e12829264d9e89e9cffafdc653ee58"
+    },
+    {
+      "path": "graphs/graphs_0333.bin",
+      "bytes": 9824532,
+      "sha256": "5a9131d3de0da5a6f42055847e7ebc827d050ae828d339fd8852ed1f72319696"
+    },
+    {
+      "path": "graphs/graphs_0334.bin",
+      "bytes": 9435816,
+      "sha256": "c22bec801c90cf434d89a4c071fe5cbb9ea91b6c62260b7a2731da8b4eb66fe8"
+    },
+    {
+      "path": "graphs/graphs_0335.bin",
+      "bytes": 9237572,
+      "sha256": "85ec31f842ba3ce2b40248e8828e8410ea06ee284a4ac8c6b3f73bf3f2dcaa56"
+    },
+    {
+      "path": "graphs/graphs_0336.bin",
+      "bytes": 9509992,
+      "sha256": "25fb3b3616401872e39e7ef9cf2cd659c3de626e5f962ceef1dc94be565b2a9b"
+    },
+    {
+      "path": "graphs/graphs_0337.bin",
+      "bytes": 9460556,
+      "sha256": "273bf81508466735c3403be036bcee3ccace09895b64a4fd8fde1367ac0de406"
+    },
+    {
+      "path": "graphs/graphs_0338.bin",
+      "bytes": 9717128,
+      "sha256": "eb3843d34ceb3cb25bf1e80bea135d3d4b54d2e3d5f8504fc41b3d29542e32f0"
+    },
+    {
+      "path": "graphs/graphs_0339.bin",
+      "bytes": 7316096,
+      "sha256": "2987b43bf70f5a6a40d7eb8b4da351185d7aaab98c8795d72a2d2a4923d579aa"
+    },
+    {
+      "path": "graphs/graphs_0340.bin",
+      "bytes": 9636676,
+      "sha256": "bded54b99790c16edcd170cb27ca90cd2d3ab93429da2a9ffd9d36a8003d0eb9"
+    },
+    {
+      "path": "graphs/graphs_0341.bin",
+      "bytes": 9334588,
+      "sha256": "982a3e446811b021a7cbff4f32ecee704cd320b94698ef43f7ce64911d165449"
+    },
+    {
+      "path": "graphs/graphs_0342.bin",
+      "bytes": 9292820,
+      "sha256": "bb6a112c7b87c383b5928f6025f12d642423ca905bc2312a690bd5942ae49a9e"
+    },
+    {
+      "path": "graphs/graphs_0343.bin",
+      "bytes": 9731636,
+      "sha256": "0fe21e595e26ea980f0152975575a32d807a0e554348cbf9960dd86341082c70"
+    },
+    {
+      "path": "graphs/graphs_0344.bin",
+      "bytes": 9808272,
+      "sha256": "1ed7f19e53770dec278c5dbfe2007f39b64e8ae0cbf39d2934040c7af10600d8"
+    },
+    {
+      "path": "graphs/graphs_0345.bin",
+      "bytes": 9541056,
+      "sha256": "1a2fb70a67300540080a3871bcd1477b514a0f729ea38e55626c216edf87ad1c"
+    },
+    {
+      "path": "graphs/graphs_0346.bin",
+      "bytes": 9542868,
+      "sha256": "a3af6f9320f9335013c7d59eb27e49ac8939a6ff4993799b350afff4f614284d"
+    },
+    {
+      "path": "graphs/graphs_0347.bin",
+      "bytes": 9749176,
+      "sha256": "143bbbe444614a97c43e0603c6c4ef9e09b19edf90963dbd4df6ce6ffca13c4a"
+    },
+    {
+      "path": "graphs/graphs_0348.bin",
+      "bytes": 9638856,
+      "sha256": "62728efad8dd15b173e83ece607f09a64b1fbdf2737594bf5d2ce0104ea1c91d"
+    },
+    {
+      "path": "graphs/graphs_0349.bin",
+      "bytes": 7431220,
+      "sha256": "13fd344e52894ea5f21647e52149ada5acc4c9c5b058674bd4e1c784c943350b"
+    },
+    {
+      "path": "graphs/graphs_0350.bin",
+      "bytes": 9474600,
+      "sha256": "ecb9bf8f1cea29b29f0512e84ce814fe85cdf22374a6bfd4b5b14d2c8a388c5c"
+    },
+    {
+      "path": "graphs/graphs_0351.bin",
+      "bytes": 6159808,
+      "sha256": "cb337277c220023a61a197e9f265c8eac65af7ea662a54c8cb81acd6ffe3eec4"
+    },
+    {
+      "path": "graphs/graphs_0352.bin",
+      "bytes": 12781128,
+      "sha256": "5cfd9bd0e52e093e37ad08a2dd5cd15f22ed535fae810ba083064a2016f479cc"
+    },
+    {
+      "path": "graphs/graphs_0353.bin",
+      "bytes": 13836128,
+      "sha256": "c887f99003ca4fcdb4ce76e67d7086d5699d1ce87d799af281fe4dfe443124b4"
+    },
+    {
+      "path": "graphs/graphs_0354.bin",
+      "bytes": 12281468,
+      "sha256": "5a2216e9edada1213b7ead6230dc3f15b39a8407c9268e925847d8fda555532c"
+    },
+    {
+      "path": "graphs/graphs_0355.bin",
+      "bytes": 12978500,
+      "sha256": "498a4389aa5295350fe683b95e4f3da482bcf47138518faf5678dd2ebaa28419"
+    },
+    {
+      "path": "graphs/graphs_0356.bin",
+      "bytes": 3439248,
+      "sha256": "b707c3161d44a1d7c35357a6a1039426548cf22fef94c119fb800ed9301ed1ad"
+    },
+    {
+      "path": "graphs/graphs_0357.bin",
+      "bytes": 13125432,
+      "sha256": "017f897245e7591da6c5f9e7587aa43623f25857cf84984fa74f44358aa9526f"
+    },
+    {
+      "path": "graphs/graphs_0358.bin",
+      "bytes": 8599664,
+      "sha256": "6e9702334ca052bc559d76f4beffb334b0c9cf6e3ce40cc35ecbe98b73193952"
+    },
+    {
+      "path": "graphs/graphs_0359.bin",
+      "bytes": 163604,
+      "sha256": "d3312bbcd1c02e2ade27cd64aab967e531bbf9a040381b461b0282344f06e337"
+    },
+    {
+      "path": "graphs/graphs_0360.bin",
+      "bytes": 10619424,
+      "sha256": "00018519f49c254ec2b3363cfc04fb073abb34c331fa21365d6a7066a6fb4674"
+    },
+    {
+      "path": "graphs/graphs_0361.bin",
+      "bytes": 9669876,
+      "sha256": "09a22a08edcba0312f0fb93b2f3252c0715049ab59024e1a1f56b79385290f22"
+    },
+    {
+      "path": "graphs/graphs_0362.bin",
+      "bytes": 3935716,
+      "sha256": "80ff9478ed85a691be0a4f9754ac5bceef1fab51f86654dcecd57036f60540a2"
+    },
+    {
+      "path": "graphs/graphs_0363.bin",
+      "bytes": 1756520,
+      "sha256": "a690bbc23d262f953cc5d9a23414d82722f4cdde2d92a2b45164594ef8e51acd"
+    },
+    {
+      "path": "normalizers/fold_0.json",
+      "bytes": 1498,
+      "sha256": "ad1fc875dc2de95b01fd3664791d73c29f521c2d19e115a440b89e5b947988a7"
+    },
+    {
+      "path": "normalizers/fold_1.json",
+      "bytes": 1494,
+      "sha256": "a5dbf15c4265a228fe972224e9b35ec36464639aa354150f2b49e74fe650cc99"
+    },
+    {
+      "path": "normalizers/fold_2.json",
+      "bytes": 1488,
+      "sha256": "39ba0956bd065778954d3a81b4ae35bc28c07047782fae1f74778a0d5b8474ac"
+    },
+    {
+      "path": "normalizers/fold_3.json",
+      "bytes": 1498,
+      "sha256": "46b9d425d2560ebb3783ae66d69ce80eb25b0606c0c6e77517d5e1ba3adff9bd"
+    },
+    {
+      "path": "normalizers/fold_4.json",
+      "bytes": 1496,
+      "sha256": "27c065abd2d7a62672593bc62947f4b315c3e558072f40c5c677a91ba9be3f73"
+    },
+    {
+      "path": "relations.bin",
+      "bytes": 758,
+      "sha256": "5da7ecb4729a7e956b94550de878c822e8bf34a1f4cf5398d1d3218517f36e6b"
+    },
+    {
+      "path": "splits/external.bin",
+      "bytes": 9184,
+      "sha256": "62489e8b1fe4bc7c697006536b3dbb86dac468b4b09b4baa90e22411e9277b2f"
+    },
+    {
+      "path": "splits/fold_0_train.bin",
+      "bytes": 1553935,
+      "sha256": "ee4e6d1c588b16d6156931e9d91d855a44f941118ae2864f201d2fbe17b35ce3"
+    },
+    {
+      "path": "splits/fold_0_valid.bin",
+      "bytes": 407471,
+      "sha256": "064cd3e156c04274ace6a786fb82e1fe41837893a00a9d6b7d03fe3d06894b56"
+    },
+    {
+      "path": "splits/fold_1_train.bin",
+      "bytes": 1548698,
+      "sha256": "e02e748f6ebae5151a7bb0f3adff37d56bc4e4b0addd829260dd5f3b72cef46f"
+    },
+    {
+      "path": "splits/fold_1_valid.bin",
+      "bytes": 413415,
+      "sha256": "a4baf3703ca56520ac8e31cff58f6e2cb6e7dbae57dbc22dfc5d2888d763e6dd"
+    },
+    {
+      "path": "splits/fold_2_train.bin",
+      "bytes": 1550107,
+      "sha256": "110009c8b7477f4c2af6e363f048f8f5e095e2009cced76532c10666a75fe367"
+    },
+    {
+      "path": "splits/fold_2_valid.bin",
+      "bytes": 412449,
+      "sha256": "6b62bb5233b9979a599a09109952974d7db7a1a20b15a7c6f404116d8d366c2a"
+    },
+    {
+      "path": "splits/fold_3_train.bin",
+      "bytes": 1553711,
+      "sha256": "71f997f9b8f7d9b9b78bff433dd868ee243651dad95f72442efcf5497922635f"
+    },
+    {
+      "path": "splits/fold_3_valid.bin",
+      "bytes": 407618,
+      "sha256": "65a7ec102737d1731a4dbb35df302baf25736d21624382a26b10513afa8a8344"
+    },
+    {
+      "path": "splits/fold_4_train.bin",
+      "bytes": 1549057,
+      "sha256": "f5e63432e82918464f11ed1779fa1e2bebda6a451b59c734244b263191741e2f"
+    },
+    {
+      "path": "splits/fold_4_valid.bin",
+      "bytes": 412482,
+      "sha256": "c159c949f556a58b60ae7a79d28fd35dbd9a4d7f813f1a3b7f64e7a8bd705abc"
+    },
+    {
+      "path": "splits/test.bin",
+      "bytes": 260453,
+      "sha256": "a20cf208b5f4522ec457ec4290830f3f8473405143d282d29724d64522d47655"
+    }
+  ],
+  "contains_plaintext_smiles": false,
+  "contains_model_weights": false,
+  "structural_recoverability": "Molecular graph inputs retain structure information and remain paired with real labels. No anonymity or confidentiality guarantee is made.",
+  "software": {
+    "python": "3.11.7",
+    "dgl": "1.1.2",
+    "torch": "2.2.2+cpu"
+  },
+  "validation": "Every exported graph topology and model-input tensor round-tripped identically; numeric label, mask, ID arrays round-tripped identically.",
+  "shared_endpoint_label_overlap": [
+    {
+      "fold": 0,
+      "pairs": {
+        "train/valid": {
+          "shared_molecules": 1419,
+          "shared_observed_endpoint_labels": 0,
+          "same_value_labels": 0,
+          "different_value_labels": 0
+        },
+        "train/test": {
+          "shared_molecules": 880,
+          "shared_observed_endpoint_labels": 0,
+          "same_value_labels": 0,
+          "different_value_labels": 0
+        },
+        "valid/test": {
+          "shared_molecules": 262,
+          "shared_observed_endpoint_labels": 0,
+          "same_value_labels": 0,
+          "different_value_labels": 0
+        }
+      }
+    },
+    {
+      "fold": 1,
+      "pairs": {
+        "train/valid": {
+          "shared_molecules": 1400,
+          "shared_observed_endpoint_labels": 0,
+          "same_value_labels": 0,
+          "different_value_labels": 0
+        },
+        "train/test": {
+          "shared_molecules": 902,
+          "shared_observed_endpoint_labels": 0,
+          "same_value_labels": 0,
+          "different_value_labels": 0
+        },
+        "valid/test": {
+          "shared_molecules": 241,
+          "shared_observed_endpoint_labels": 0,
+          "same_value_labels": 0,
+          "different_value_labels": 0
+        }
+      }
+    },
+    {
+      "fold": 2,
+      "pairs": {
+        "train/valid": {
+          "shared_molecules": 1410,
+          "shared_observed_endpoint_labels": 0,
+          "same_value_labels": 0,
+          "different_value_labels": 0
+        },
+        "train/test": {
+          "shared_molecules": 898,
+          "shared_observed_endpoint_labels": 0,
+          "same_value_labels": 0,
+          "different_value_labels": 0
+        },
+        "valid/test": {
+          "shared_molecules": 241,
+          "shared_observed_endpoint_labels": 0,
+          "same_value_labels": 0,
+          "different_value_labels": 0
+        }
+      }
+    },
+    {
+      "fold": 3,
+      "pairs": {
+        "train/valid": {
+          "shared_molecules": 1405,
+          "shared_observed_endpoint_labels": 0,
+          "same_value_labels": 0,
+          "different_value_labels": 0
+        },
+        "train/test": {
+          "shared_molecules": 904,
+          "shared_observed_endpoint_labels": 0,
+          "same_value_labels": 0,
+          "different_value_labels": 0
+        },
+        "valid/test": {
+          "shared_molecules": 243,
+          "shared_observed_endpoint_labels": 0,
+          "same_value_labels": 0,
+          "different_value_labels": 0
+        }
+      }
+    },
+    {
+      "fold": 4,
+      "pairs": {
+        "train/valid": {
+          "shared_molecules": 1401,
+          "shared_observed_endpoint_labels": 0,
+          "same_value_labels": 0,
+          "different_value_labels": 0
+        },
+        "train/test": {
+          "shared_molecules": 926,
+          "shared_observed_endpoint_labels": 0,
+          "same_value_labels": 0,
+          "different_value_labels": 0
+        },
+        "valid/test": {
+          "shared_molecules": 224,
+          "shared_observed_endpoint_labels": 0,
+          "same_value_labels": 0,
+          "different_value_labels": 0
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,136 @@
+Task,Type1
+Caco-2,0.7-0.8
+CLr classify,<0.7
+logMRT,<0.7
+logT05,<0.7
+logVDss,<0.7
+Mouse carcinogenicity,0.7-0.8
+Mouse carcinogenicity.1,<0.7
+Neurotoxicity,<0.7
+PAMPA,0.7-0.8
+Photoallergy,0.7-0.8
+Photoinduced toxicity,0.7-0.8
+Phototoxicity/Photoirritation,0.7-0.8
+pka_b,0.7-0.8
+PPB,0.7-0.8
+Rat carcinogenicity,0.7-0.8
+Rat carcinogenicity.1,<0.7
+Repeated dose toxicity,0.7-0.8
+Rodents carcinogenicity,0.7-0.8
+"Aquatic toxicity (T. pyriformis, classify)",>0.9
+BCF classify,>0.9
+Eye corrosion,>0.9
+Eye irritation,>0.9
+MRP1 inhibitor,>0.9
+A549 Cytotoxicity,0.8-0.9
+Acute dermal toxicity,0.8-0.9
+Avain toxicity (Anas platyrhynchos),0.8-0.9
+Avain toxicity (Colinus virginanus),0.7-0.8
+BCF,0.7-0.8
+Biodegradability,0.8-0.9
+CLp classify,0.8-0.9
+CYP2B6 inhibitor,0.7-0.8
+CYP2C9  substrate,0.8-0.9
+CYP3A4 substrate,0.8-0.9
+DILI,0.7-0.8
+F20%,0.8-0.9
+F50%,0.7-0.8
+FDAMDD,0.8-0.9
+HEK293,0.8-0.9
+Hemolytic toxicity,0.8-0.9
+Honey bee toxicity,0.7-0.8
+MDCK,0.7-0.8
+Nephrotoxicity,0.8-0.9
+OATP1B1 inhibitor,0.8-0.9
+OCT2 inhibitor,0.8-0.9
+Ototoxicity,0.7-0.8
+pKa_a,0.8-0.9
+RLM,0.8-0.9
+Skin irritation,0.7-0.8
+UGT substrate,0.8-0.9
+Acute oral toxicity classify,0.8-0.9
+Ames mutagenesis,0.8-0.9
+Aquatic toxicity (Bluegill sunfish),>0.9
+Aquatic toxicity (Crustaceans),0.8-0.9
+Aquatic toxicity (D. magna),0.8-0.9
+Aquatic toxicity (Fathead minnow),>0.9
+Aquatic toxicity (Fish),>0.9
+Aquatic toxicity (P. subcapitata),0.8-0.9
+Aquatic toxicity (Rainbow trout),0.8-0.9
+Aquatic toxicity (Sheepshead minnow),>0.9
+Aquatic toxicity (T. pyriformis),0.8-0.9
+BBB,>0.9
+BCRP inhibitor,>0.9
+BSEP inhibitor,>0.9
+Caco-2 classify,>0.9
+CYP1A2 inhibitor,>0.9
+CYP1A2 substrate,0.8-0.9
+CYP2B6 substrate,>0.9
+CYP2C19 inhibitor,>0.9
+CYP2C19 substrate,>0.9
+CYP2C8 inhibitor,>0.9
+CYP2C9i inhibitor,>0.9
+CYP2D6 inhibitor,0.8-0.9
+CYP2D6 substrate,0.8-0.9
+CYP3A inhibitor,>0.9
+F30%,0.8-0.9
+Fu,0.8-0.9
+GR,>0.9
+hERG 10-30uM,>0.9
+hERG 10uM,0.8-0.9
+hERG 1-10uM,>0.9
+hERG 1uM,0.8-0.9
+hERG 30uM,>0.9
+HIA,>0.9
+HLM,0.8-0.9
+logbq,>0.9
+logD,0.8-0.9
+logmp,0.8-0.9
+logP,>0.9
+logS,>0.9
+MATE1 inhibitor,0.8-0.9
+Micronucleus,>0.9
+Mitochondrial toxicity,>0.9
+NR_AhR,0.8-0.9
+NR_AR,0.8-0.9
+NR_Aromatase,0.8-0.9
+NR_ER,0.8-0.9
+NR_ER_LBD,0.8-0.9
+NR-AR-LBD,>0.9
+OATP1B3 inhibitor,0.8-0.9
+OATP2B1 inhibitor,0.8-0.9
+OCT1 inhibitor,0.8-0.9
+Pgp inhibitor,>0.9
+Pgp substrate,0.8-0.9
+Reproductive toxicity,0.8-0.9
+Respiratory toxicity,0.8-0.9
+RPMI-8226 Immunitoxicity,0.8-0.9
+Skin corrosion,>0.9
+Skin sensitisation,0.8-0.9
+SR-ARE,0.8-0.9
+SR-ATAD5,0.8-0.9
+SR-HSE,0.8-0.9
+SR-MMP,>0.9
+SR-P53,0.8-0.9
+SR-PPAR-gamma,>0.9
+TR,0.8-0.9
+CRL-7250,new
+CYP1A1 inhibitor,new
+CYP1B1 inhibitor,new
+CYP2A6 inhibitor,new
+CYP2E1 inhibitor,new
+HaCat_dermatotoxicity,new
+Hepatotoxicity_Cholestasis,new
+human_MLC,new
+logAUC,new
+logCL(ml/min/k),new
+logCLF,new
+logCmax,new
+logTmax,new
+Lysosomal toxicity (Phospholipidosis),new
+Mouse_MIC,new
+Myotoxicity_rhabdomyolysis,new
+NIH3T3,new
+rat_chronic,new
+Rat_MIC,new
+Urinary tract toxicity,new

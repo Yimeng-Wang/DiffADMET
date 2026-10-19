@@ -1,0 +1,21 @@
+name: Validate training source
+on: [push, pull_request]
+jobs:
+  source-and-smoke:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    defaults:
+      run:
+        shell: bash -el {0}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: conda-incubator/setup-miniconda@v4
+        with:
+          miniforge-version: latest
+          activate-environment: myenv
+          environment-file: environment.yml
+      - run: python scripts/check_release.py
+      - run: python scripts/smoke_test.py
+        env:
+          DGLBACKEND: pytorch
+          PYTHONHASHSEED: '66'

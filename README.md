@@ -4,7 +4,7 @@
 
 DiffADMET is a multitask learning framework for molecular absorption, distribution, metabolism, excretion and toxicity prediction. It uses 2D and 3D molecular graphs, task-modality attention and directed transfer between related endpoints to learn from sparse classification and regression observations.
 
-This repository contains the training code and processed graph data for 135 ADMET endpoints. The final prediction models are deployed on the DiffADMET platform (https://idrblab.org/diffadmet/)..
+This repository contains the training code and processed graph data for 135 ADMET endpoints. The final prediction models are deployed on the DiffADMET platform (https://idrblab.org/diffadmet/).
 
 ## Code Environment
 

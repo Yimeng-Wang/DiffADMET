@@ -38,8 +38,6 @@ The main dataset contains 179,810 molecular inputs and 471,034 observed endpoint
 | Classification | 108 | 381,231 |
 | Regression | 27 | 89,803 |
 
-The BIN package contains 2D/3D graphs, labels, missing-label masks, predefined five-fold splits, task relationships and fold normalization parameters. Missing labels are masked; observed zeros are retained. Plaintext SMILES, original CSVs and pretrained weights are not included.
-
 Download all three data ZIPs from the [v1.0.0 release](https://github.com/Yimeng-Wang/DiffADMET/releases/tag/v1.0.0), then extract them in the repository root:
 
 ```bash
@@ -78,6 +76,6 @@ Results are saved in `outputs/<mode>/fold_<n>/`. Use `--output-dir` to change th
 
 `<split>` is `train`, `valid`, `test` or `external`. No per-sample prediction/probability/label/mask CSVs are generated. `R2_denorm` is squared Pearson correlation.
 
-Console summaries show overall and fixed-group mean AUC or `R2_denorm`. Group labels are provided in the `Type1` column of [configs/Type.csv](configs/Type.csv).
+Console summaries show overall and fixed-group mean AUC or `R2_denorm`.
 
 Data format: [BIN_DATA_FORMAT.md](docs/BIN_DATA_FORMAT.md). Reproduction notes: [REPRODUCIBILITY.md](docs/REPRODUCIBILITY.md). Third-party notices: [NOTICE.md](NOTICE.md).
